@@ -3,7 +3,7 @@ const path = require("path");
 const seoHelper = require("../utils/seoHelper");
 const appConfig = require("../config/appConfig");
 
-const cranesData = JSON.parse(
+const equipmentData = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../../data/cranes.json"), "utf8")
 );
 const districtsData = JSON.parse(
@@ -12,7 +12,9 @@ const districtsData = JSON.parse(
 
 const homeController = {
   index: (req, res) => {
-    const featuredCranes = cranesData.cranes.slice(0, 6);
+    const featuredCranes = equipmentData.equipment
+      .filter((eq) => eq.category === "vinç")
+      .slice(0, 6);
     const popularDistricts = districtsData.districts.slice(0, 8);
 
     const seoData = {

@@ -24,6 +24,7 @@ app.use(
           "https://fonts.googleapis.com",
         ],
         scriptSrc: ["'self'", "'unsafe-inline'", "https://cdn.jsdelivr.net"],
+        scriptSrcAttr: ["'unsafe-inline'"],
         imgSrc: ["'self'", "data:", "https:"],
         fontSrc: ["'self'", "https://fonts.gstatic.com", "data:"],
         connectSrc: [

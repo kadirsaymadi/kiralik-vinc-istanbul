@@ -1,206 +1,1603 @@
 {
-  "cranes": [
+  "equipment": [
     {
       "id": "crane-001",
-      "name": "Liebherr LTM 1100-5.2",
+      "name": "5 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
-      "capacity": "100 ton",
-      "height": "78 m",
-      "radius": "70 m",
-      "description": "Şehir içi ve dar alanlarda kullanım için ideal mobil vinç. Yüksek kaldırma kapasitesi ve kompakt tasarımı ile dikkat çeker.",
+      "category": "vinç",
+      "capacity": "5 ton",
+      "height": "25 m",
+      "radius": "20 m",
+      "description": "Küçük projeler ve şehir içi işler için ideal 5 tonluk mobil vinç. Dar alanlarda kolay manevra yapabilir.",
       "features": [
-        "Yüksek kaldırma kapasitesi",
+        "5 ton kaldırma kapasitesi",
+        "25 metre bom uzunluğu",
         "Kompakt tasarım",
-        "Modern kontrol sistemi",
-        "Güvenli operasyon",
+        "Şehir içi uyumlu",
         "Hızlı kurulum"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
       ],
       "availability": true,
-      "tags": ["mobil", "şehir-içi", "100-ton"],
+      "tags": ["mobil", "5-ton", "şehir-içi"],
       "seo": {
-        "title": "Liebherr LTM 100 Ton Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da Liebherr LTM 100 ton mobil vinç kiralama hizmeti. Profesyonel operatör, hızlı teslimat.",
+        "title": "5 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 5 tonluk mobil vinç kiralama hizmeti. Küçük projeler için ideal, profesyonel operatörlü.",
         "keywords": [
-          "100 ton vinç",
+          "5 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
-          "liebherr"
+          "küçük proje vinç"
         ]
       }
     },
     {
       "id": "crane-002",
-      "name": "Grove GMK 5150L",
+      "name": "10 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
-      "capacity": "150 ton",
-      "height": "85 m",
-      "radius": "75 m",
-      "description": "Büyük projeler için ideal yüksek kapasiteli mobil vinç. Uzun bom uzunluğu ve güçlü motoru ile zorlu işlerde kullanılır.",
+      "category": "vinç",
+      "capacity": "10 ton",
+      "height": "30 m",
+      "radius": "25 m",
+      "description": "Orta ölçekli projeler için ideal 10 tonluk mobil vinç. Güvenilir performans ve ekonomik çözüm.",
       "features": [
-        "150 ton kaldırma kapasitesi",
-        "85 metre bom uzunluğu",
-        "Gelişmiş teknoloji",
-        "Yakıt tasarrufu",
-        "Kolay bakım"
+        "10 ton kaldırma kapasitesi",
+        "30 metre bom uzunluğu",
+        "Ekonomik çözüm",
+        "Güvenilir performans",
+        "Kolay operasyon"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
       ],
       "availability": true,
-      "tags": ["mobil", "150-ton", "büyük-proje"],
+      "tags": ["mobil", "10-ton", "orta-proje"],
       "seo": {
-        "title": "Grove GMK 150 Ton Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da Grove GMK 150 ton mobil vinç kiralama. Büyük projeler için ideal, profesyonel operatörlü.",
+        "title": "10 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 10 tonluk mobil vinç kiralama hizmeti. Orta ölçekli projeler için ideal.",
         "keywords": [
-          "150 ton vinç",
-          "grove vinç",
-          "mobil vinç",
-          "istanbul vinç kiralama"
+          "10 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "orta proje vinç"
         ]
       }
     },
     {
       "id": "crane-003",
-      "name": "Terex AC 350/6",
-      "type": "Sabit Vinç",
-      "capacity": "350 ton",
-      "height": "120 m",
-      "radius": "90 m",
-      "description": "İnşaat sektöründe kullanılan güçlü sabit vinç. Yüksek binalar ve büyük projeler için idealdir.",
+      "name": "15 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "15 ton",
+      "height": "35 m",
+      "radius": "30 m",
+      "description": "Orta-büyük projeler için güçlü 15 tonluk mobil vinç. Yüksek performans ve güvenilir çözüm.",
       "features": [
-        "350 ton kaldırma kapasitesi",
-        "120 metre yükseklik",
-        "Sabit kurulum",
-        "Uzun ömürlü",
-        "Güvenilir performans"
+        "15 ton kaldırma kapasitesi",
+        "35 metre bom uzunluğu",
+        "Yüksek performans",
+        "Güvenilir çözüm",
+        "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
       ],
       "availability": true,
-      "tags": ["sabit", "350-ton", "inşaat"],
+      "tags": ["mobil", "15-ton", "orta-büyük"],
       "seo": {
-        "title": "Terex AC 350 Ton Sabit Vinç Kiralama İstanbul",
-        "description": "İstanbul'da Terex AC 350 ton sabit vinç kiralama hizmeti. İnşaat projeleri için profesyonel çözüm.",
+        "title": "15 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 15 tonluk mobil vinç kiralama hizmeti. Orta-büyük projeler için güçlü çözüm.",
         "keywords": [
-          "350 ton vinç",
-          "sabit vinç",
-          "terex vinç",
-          "istanbul vinç kiralama"
+          "15 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "orta büyük proje vinç"
         ]
       }
     },
     {
       "id": "crane-004",
-      "name": "Manitex TC 50155",
+      "name": "20 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
-      "capacity": "50 ton",
-      "height": "55 m",
-      "radius": "45 m",
-      "description": "Orta ölçekli projeler için ideal kompakt mobil vinç. Dar alanlarda kolay manevra yapabilir.",
+      "category": "vinç",
+      "capacity": "20 ton",
+      "height": "40 m",
+      "radius": "35 m",
+      "description": "Büyük projeler için güçlü 20 tonluk mobil vinç. Yüksek kapasite ve uzun bom uzunluğu.",
       "features": [
-        "50 ton kaldırma kapasitesi",
-        "Kompakt boyut",
-        "Dar alan uyumluluğu",
-        "Verimli operasyon",
-        "Hızlı kurulum"
+        "20 ton kaldırma kapasitesi",
+        "40 metre bom uzunluğu",
+        "Büyük proje uyumlu",
+        "Uzun bom uzunluğu",
+        "Güçlü motor"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
       ],
       "availability": true,
-      "tags": ["mobil", "50-ton", "kompakt"],
+      "tags": ["mobil", "20-ton", "büyük-proje"],
       "seo": {
-        "title": "Manitex TC 50 Ton Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da Manitex TC 50 ton mobil vinç kiralama. Dar alanlar için ideal.",
+        "title": "20 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 20 tonluk mobil vinç kiralama hizmeti. Büyük projeler için güçlü çözüm.",
         "keywords": [
-          "50 ton vinç",
-          "manitex vinç",
+          "20 ton vinç",
           "mobil vinç kiralama",
-          "istanbul vinç"
+          "istanbul vinç",
+          "büyük proje vinç"
         ]
       }
     },
     {
       "id": "crane-005",
-      "name": "Kato NK 250E",
+      "name": "25 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
+      "category": "vinç",
       "capacity": "25 ton",
-      "height": "35 m",
-      "radius": "30 m",
-      "description": "Küçük ve orta ölçekli işler için ideal mobil vinç. Şehir içi kullanım için mükemmel boyut.",
+      "height": "45 m",
+      "radius": "40 m",
+      "description": "Endüstriyel projeler için ideal 25 tonluk mobil vinç. Yüksek kapasite ve profesyonel çözüm.",
       "features": [
         "25 ton kaldırma kapasitesi",
-        "Şehir içi uyumlu",
-        "Düşük maliyet",
-        "Kolay ulaşım",
-        "Çok amaçlı kullanım"
+        "45 metre bom uzunluğu",
+        "Endüstriyel proje uyumlu",
+        "Profesyonel çözüm",
+        "Gelişmiş teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
       ],
       "availability": true,
-      "tags": ["mobil", "25-ton", "şehir-içi"],
+      "tags": ["mobil", "25-ton", "endüstriyel"],
       "seo": {
-        "title": "Kato NK 25 Ton Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da Kato NK 25 ton mobil vinç kiralama. Şehir içi işler için ideal.",
+        "title": "25 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 25 tonluk mobil vinç kiralama hizmeti. Endüstriyel projeler için ideal.",
         "keywords": [
           "25 ton vinç",
-          "kato vinç",
           "mobil vinç kiralama",
-          "istanbul vinç"
+          "istanbul vinç",
+          "endüstriyel proje vinç"
         ]
       }
     },
     {
       "id": "crane-006",
-      "name": "Liebherr LTM 1200-5.1",
+      "name": "30 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
-      "capacity": "200 ton",
-      "height": "95 m",
+      "category": "vinç",
+      "capacity": "30 ton",
+      "height": "50 m",
+      "radius": "45 m",
+      "description": "Ağır yükler için güçlü 30 tonluk mobil vinç. Yüksek performans ve güvenilir operasyon.",
+      "features": [
+        "30 ton kaldırma kapasitesi",
+        "50 metre bom uzunluğu",
+        "Ağır yük uyumlu",
+        "Yüksek performans",
+        "Güvenilir operasyon"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "30-ton", "ağır-yük"],
+      "seo": {
+        "title": "30 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 30 tonluk mobil vinç kiralama hizmeti. Ağır yükler için güçlü çözüm.",
+        "keywords": [
+          "30 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "ağır yük vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-007",
+      "name": "35 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "35 ton",
+      "height": "55 m",
+      "radius": "50 m",
+      "description": "Büyük endüstriyel projeler için güçlü 35 tonluk mobil vinç. Yüksek kapasite ve uzun erişim.",
+      "features": [
+        "35 ton kaldırma kapasitesi",
+        "55 metre bom uzunluğu",
+        "Büyük endüstriyel proje uyumlu",
+        "Uzun erişim",
+        "Güçlü motor sistemi"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "35-ton", "endüstriyel"],
+      "seo": {
+        "title": "35 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 35 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel projeler için güçlü çözüm.",
+        "keywords": [
+          "35 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "büyük endüstriyel proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-008",
+      "name": "40 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "40 ton",
+      "height": "60 m",
+      "radius": "55 m",
+      "description": "Mega projeler için güçlü 40 tonluk mobil vinç. Yüksek kapasite ve profesyonel çözüm.",
+      "features": [
+        "40 ton kaldırma kapasitesi",
+        "60 metre bom uzunluğu",
+        "Mega proje uyumlu",
+        "Profesyonel çözüm",
+        "En son teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "40-ton", "mega-proje"],
+      "seo": {
+        "title": "40 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 40 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
+        "keywords": [
+          "40 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "mega proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-009",
+      "name": "45 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "45 ton",
+      "height": "65 m",
+      "radius": "60 m",
+      "description": "Büyük inşaat projeleri için güçlü 45 tonluk mobil vinç. Yüksek performans ve güvenilir çözüm.",
+      "features": [
+        "45 ton kaldırma kapasitesi",
+        "65 metre bom uzunluğu",
+        "Büyük inşaat projesi uyumlu",
+        "Yüksek performans",
+        "Güvenilir çözüm"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "45-ton", "büyük-inşaat"],
+      "seo": {
+        "title": "45 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 45 tonluk mobil vinç kiralama hizmeti. Büyük inşaat projeleri için güçlü çözüm.",
+        "keywords": [
+          "45 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "büyük inşaat proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-010",
+      "name": "50 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "50 ton",
+      "height": "70 m",
+      "radius": "65 m",
+      "description": "Endüstriyel mega projeler için güçlü 50 tonluk mobil vinç. Yüksek kapasite ve uzun bom uzunluğu.",
+      "features": [
+        "50 ton kaldırma kapasitesi",
+        "70 metre bom uzunluğu",
+        "Endüstriyel mega proje uyumlu",
+        "Uzun bom uzunluğu",
+        "Güçlü motor sistemi"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "50-ton", "endüstriyel-mega"],
+      "seo": {
+        "title": "50 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 50 tonluk mobil vinç kiralama hizmeti. Endüstriyel mega projeler için güçlü çözüm.",
+        "keywords": [
+          "50 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "endüstriyel mega proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-011",
+      "name": "55 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "55 ton",
+      "height": "75 m",
+      "radius": "70 m",
+      "description": "Büyük endüstriyel tesisler için güçlü 55 tonluk mobil vinç. Yüksek performans ve profesyonel çözüm.",
+      "features": [
+        "55 ton kaldırma kapasitesi",
+        "75 metre bom uzunluğu",
+        "Büyük endüstriyel tesis uyumlu",
+        "Profesyonel çözüm",
+        "Gelişmiş teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "55-ton", "endüstriyel-tesis"],
+      "seo": {
+        "title": "55 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 55 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel tesisler için güçlü çözüm.",
+        "keywords": [
+          "55 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "büyük endüstriyel tesis vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-012",
+      "name": "60 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "60 ton",
+      "height": "80 m",
+      "radius": "75 m",
+      "description": "Mega endüstriyel projeler için güçlü 60 tonluk mobil vinç. Yüksek kapasite ve uzun erişim mesafesi.",
+      "features": [
+        "60 ton kaldırma kapasitesi",
+        "80 metre bom uzunluğu",
+        "Mega endüstriyel proje uyumlu",
+        "Uzun erişim mesafesi",
+        "En son teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "60-ton", "mega-endüstriyel"],
+      "seo": {
+        "title": "60 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 60 tonluk mobil vinç kiralama hizmeti. Mega endüstriyel projeler için güçlü çözüm.",
+        "keywords": [
+          "60 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "mega endüstriyel proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-013",
+      "name": "65 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "65 ton",
+      "height": "85 m",
       "radius": "80 m",
+      "description": "Büyük inşaat ve endüstriyel projeler için güçlü 65 tonluk mobil vinç. Yüksek performans ve güvenilir çözüm.",
+      "features": [
+        "65 ton kaldırma kapasitesi",
+        "85 metre bom uzunluğu",
+        "Büyük inşaat ve endüstriyel proje uyumlu",
+        "Yüksek performans",
+        "Güvenilir çözüm"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "65-ton", "büyük-inşaat-endüstriyel"],
+      "seo": {
+        "title": "65 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 65 tonluk mobil vinç kiralama hizmeti. Büyük inşaat ve endüstriyel projeler için güçlü çözüm.",
+        "keywords": [
+          "65 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "büyük inşaat endüstriyel proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-014",
+      "name": "70 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "70 ton",
+      "height": "90 m",
+      "radius": "85 m",
+      "description": "Mega projeler için güçlü 70 tonluk mobil vinç. Yüksek kapasite ve uzun bom uzunluğu ile dikkat çeker.",
+      "features": [
+        "70 ton kaldırma kapasitesi",
+        "90 metre bom uzunluğu",
+        "Mega proje uyumlu",
+        "Uzun bom uzunluğu",
+        "Güçlü motor sistemi"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "70-ton", "mega-proje"],
+      "seo": {
+        "title": "70 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 70 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
+        "keywords": [
+          "70 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "mega proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-015",
+      "name": "75 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "75 ton",
+      "height": "95 m",
+      "radius": "90 m",
+      "description": "Endüstriyel mega projeler için güçlü 75 tonluk mobil vinç. Yüksek performans ve profesyonel çözüm.",
+      "features": [
+        "75 ton kaldırma kapasitesi",
+        "95 metre bom uzunluğu",
+        "Endüstriyel mega proje uyumlu",
+        "Profesyonel çözüm",
+        "Gelişmiş teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "75-ton", "endüstriyel-mega"],
+      "seo": {
+        "title": "75 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 75 tonluk mobil vinç kiralama hizmeti. Endüstriyel mega projeler için güçlü çözüm.",
+        "keywords": [
+          "75 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "endüstriyel mega proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-016",
+      "name": "80 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "80 ton",
+      "height": "100 m",
+      "radius": "95 m",
+      "description": "Büyük endüstriyel tesisler için güçlü 80 tonluk mobil vinç. Yüksek kapasite ve uzun erişim mesafesi.",
+      "features": [
+        "80 ton kaldırma kapasitesi",
+        "100 metre bom uzunluğu",
+        "Büyük endüstriyel tesis uyumlu",
+        "Uzun erişim mesafesi",
+        "En son teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "80-ton", "endüstriyel-tesis"],
+      "seo": {
+        "title": "80 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 80 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel tesisler için güçlü çözüm.",
+        "keywords": [
+          "80 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "büyük endüstriyel tesis vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-017",
+      "name": "85 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "85 ton",
+      "height": "105 m",
+      "radius": "100 m",
+      "description": "Mega endüstriyel projeler için güçlü 85 tonluk mobil vinç. Yüksek performans ve güvenilir çözüm.",
+      "features": [
+        "85 ton kaldırma kapasitesi",
+        "105 metre bom uzunluğu",
+        "Mega endüstriyel proje uyumlu",
+        "Yüksek performans",
+        "Güvenilir çözüm"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "85-ton", "mega-endüstriyel"],
+      "seo": {
+        "title": "85 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 85 tonluk mobil vinç kiralama hizmeti. Mega endüstriyel projeler için güçlü çözüm.",
+        "keywords": [
+          "85 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "mega endüstriyel proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-018",
+      "name": "90 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "90 ton",
+      "height": "110 m",
+      "radius": "105 m",
+      "description": "Büyük inşaat ve endüstriyel projeler için güçlü 90 tonluk mobil vinç. Yüksek kapasite ve uzun bom uzunluğu.",
+      "features": [
+        "90 ton kaldırma kapasitesi",
+        "110 metre bom uzunluğu",
+        "Büyük inşaat ve endüstriyel proje uyumlu",
+        "Uzun bom uzunluğu",
+        "Güçlü motor sistemi"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "90-ton", "büyük-inşaat-endüstriyel"],
+      "seo": {
+        "title": "90 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 90 tonluk mobil vinç kiralama hizmeti. Büyük inşaat ve endüstriyel projeler için güçlü çözüm.",
+        "keywords": [
+          "90 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "büyük inşaat endüstriyel proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-019",
+      "name": "95 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "95 ton",
+      "height": "115 m",
+      "radius": "110 m",
+      "description": "Mega projeler için güçlü 95 tonluk mobil vinç. Yüksek performans ve profesyonel çözüm.",
+      "features": [
+        "95 ton kaldırma kapasitesi",
+        "115 metre bom uzunluğu",
+        "Mega proje uyumlu",
+        "Profesyonel çözüm",
+        "Gelişmiş teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["mobil", "95-ton", "mega-proje"],
+      "seo": {
+        "title": "95 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 95 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
+        "keywords": [
+          "95 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "mega proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "crane-020",
+      "name": "100 Tonluk Kiralık Vinç",
+      "type": "Mobil Vinç",
+      "category": "vinç",
+      "capacity": "100 ton",
+      "height": "120 m",
+      "radius": "115 m",
       "description": "En büyük mobil vinç modellerinden biri. Mega projeler için güçlü ve güvenilir çözüm.",
       "features": [
-        "200 ton kaldırma kapasitesi",
-        "95 metre bom uzunluğu",
+        "100 ton kaldırma kapasitesi",
+        "120 metre bom uzunluğu",
         "Mega proje uyumlu",
         "En son teknoloji",
         "Maksimum güvenlik"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop",
         "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
       ],
       "availability": true,
-      "tags": ["mobil", "200-ton", "mega-proje"],
+      "tags": ["mobil", "100-ton", "mega-proje"],
       "seo": {
-        "title": "Liebherr LTM 200 Ton Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da Liebherr LTM 200 ton mobil vinç kiralama. Mega projeler için güçlü çözüm.",
+        "title": "100 Tonluk Mobil Vinç Kiralama İstanbul",
+        "description": "İstanbul'da 100 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
         "keywords": [
-          "200 ton vinç",
-          "liebherr vinç",
-          "mega proje vinç",
-          "istanbul vinç kiralama"
+          "100 ton vinç",
+          "mobil vinç kiralama",
+          "istanbul vinç",
+          "mega proje vinç"
+        ]
+      }
+    },
+    {
+      "id": "forklift-001",
+      "name": "1.5 Tonluk Kiralık Forklift",
+      "type": "Elektrikli Forklift",
+      "category": "forklift",
+      "capacity": "1.5 ton",
+      "height": "3 m",
+      "description": "Küçük depo ve fabrika içi kullanım için ideal 1.5 tonluk elektrikli forklift. Sessiz çalışma ve düşük bakım maliyeti.",
+      "features": [
+        "1.5 ton kaldırma kapasitesi",
+        "3 metre yükseklik",
+        "Elektrikli motor",
+        "Sessiz çalışma",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "elektrikli", "1.5-ton"],
+      "seo": {
+        "title": "1.5 Tonluk Elektrikli Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 1.5 tonluk elektrikli forklift kiralama. Küçük depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "elektrikli forklift",
+          "1.5 ton forklift",
+          "istanbul forklift kiralama",
+          "küçük depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-002",
+      "name": "2 Tonluk Kiralık Forklift",
+      "type": "Elektrikli Forklift",
+      "category": "forklift",
+      "capacity": "2 ton",
+      "height": "4 m",
+      "description": "2 tonluk elektrikli forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "2 ton kaldırma kapasitesi",
+        "4 metre yükseklik",
+        "Elektrikli motor",
+        "Sessiz çalışma",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "elektrikli", "2-ton"],
+      "seo": {
+        "title": "2 Tonluk Elektrikli Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 2 tonluk elektrikli forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "elektrikli forklift",
+          "2 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-003",
+      "name": "2.5 Tonluk Kiralık Forklift",
+      "type": "Elektrikli Forklift",
+      "category": "forklift",
+      "capacity": "2.5 ton",
+      "height": "4.25 m",
+      "description": "2.5 tonluk elektrikli forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "2.5 ton kaldırma kapasitesi",
+        "4.25 metre yükseklik",
+        "Elektrikli motor",
+        "Sessiz çalışma",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "elektrikli", "2.5-ton"],
+      "seo": {
+        "title": "2.5 Tonluk Elektrikli Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 2.5 tonluk elektrikli forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "elektrikli forklift",
+          "2.5 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-004",
+      "name": "3 Tonluk Kiralık Forklift",
+      "type": "Elektrikli Forklift",
+      "category": "forklift",
+      "capacity": "3 ton",
+      "height": "4.5 m",
+      "description": "3 tonluk elektrikli forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "3 ton kaldırma kapasitesi",
+        "4.5 metre yükseklik",
+        "Elektrikli motor",
+        "Sessiz çalışma",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "elektrikli", "3-ton"],
+      "seo": {
+        "title": "3 Tonluk Elektrikli Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 3 tonluk elektrikli forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "elektrikli forklift",
+          "3 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-005",
+      "name": "3.5 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "3.5 ton",
+      "height": "4.75 m",
+      "description": "3.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "3.5 ton kaldırma kapasitesi",
+        "4.75 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "3.5-ton"],
+      "seo": {
+        "title": "3.5 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 3.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "3.5 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-006",
+      "name": "4 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "4 ton",
+      "height": "5 m",
+      "description": "4 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "4 ton kaldırma kapasitesi",
+        "5 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "4-ton"],
+      "seo": {
+        "title": "4 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 4 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "4 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-007",
+      "name": "4.5 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "4.5 ton",
+      "height": "5.25 m",
+      "description": "4.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "4.5 ton kaldırma kapasitesi",
+        "5.25 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "4.5-ton"],
+      "seo": {
+        "title": "4.5 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 4.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "4.5 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-008",
+      "name": "5 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "5 ton",
+      "height": "5.5 m",
+      "description": "5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "5 ton kaldırma kapasitesi",
+        "5.5 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "5-ton"],
+      "seo": {
+        "title": "5 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "5 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-009",
+      "name": "5.5 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "5.5 ton",
+      "height": "5.75 m",
+      "description": "5.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "5.5 ton kaldırma kapasitesi",
+        "5.75 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "5.5-ton"],
+      "seo": {
+        "title": "5.5 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 5.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "5.5 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-010",
+      "name": "6 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "6 ton",
+      "height": "6 m",
+      "description": "6 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "6 ton kaldırma kapasitesi",
+        "6 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "6-ton"],
+      "seo": {
+        "title": "6 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 6 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "6 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-011",
+      "name": "6.5 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "6.5 ton",
+      "height": "6.25 m",
+      "description": "6.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "6.5 ton kaldırma kapasitesi",
+        "6.25 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "6.5-ton"],
+      "seo": {
+        "title": "6.5 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 6.5 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "6.5 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "forklift-012",
+      "name": "7 Tonluk Kiralık Forklift",
+      "type": "Dizel Forklift",
+      "category": "forklift",
+      "capacity": "7 ton",
+      "height": "6.5 m",
+      "description": "7 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+      "features": [
+        "7 ton kaldırma kapasitesi",
+        "6.5 metre yükseklik",
+        "Dizel motor",
+        "Yüksek güç",
+        "Düşük bakım maliyeti"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["forklift", "dizel", "7-ton"],
+      "seo": {
+        "title": "7 Tonluk Dizel Forklift Kiralama İstanbul",
+        "description": "İstanbul'da 7 tonluk dizel forklift kiralama hizmeti. Depo ve fabrika içi kullanım için ideal.",
+        "keywords": [
+          "dizel forklift",
+          "7 ton forklift",
+          "istanbul forklift kiralama",
+          "depo forklift"
+        ]
+      }
+    },
+    {
+      "id": "platform-001",
+      "name": "10 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "10 m",
+      "capacity": "230 kg",
+      "description": "10 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "10 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "10m", "yüksek-erişim"],
+      "seo": {
+        "title": "10 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 10 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "10 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-002",
+      "name": "15 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "15 m",
+      "capacity": "230 kg",
+      "description": "15 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "15 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "15m", "yüksek-erişim"],
+      "seo": {
+        "title": "15 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 15 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "15 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-003",
+      "name": "20 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "20 m",
+      "capacity": "230 kg",
+      "description": "20 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "20 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "20m", "yüksek-erişim"],
+      "seo": {
+        "title": "20 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 20 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "20 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-004",
+      "name": "25 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "25 m",
+      "capacity": "230 kg",
+      "description": "25 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "25 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "25m", "yüksek-erişim"],
+      "seo": {
+        "title": "25 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 25 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "25 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-005",
+      "name": "30 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "30 m",
+      "capacity": "230 kg",
+      "description": "30 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "30 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "30m", "yüksek-erişim"],
+      "seo": {
+        "title": "30 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 30 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "30 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-006",
+      "name": "35 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "35 m",
+      "capacity": "230 kg",
+      "description": "35 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "35 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "35m", "yüksek-erişim"],
+      "seo": {
+        "title": "35 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 35 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "35 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-007",
+      "name": "40 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "40 m",
+      "capacity": "230 kg",
+      "description": "40 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "40 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "40m", "yüksek-erişim"],
+      "seo": {
+        "title": "40 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 40 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "40 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-008",
+      "name": "45 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "45 m",
+      "capacity": "230 kg",
+      "description": "45 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "45 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "45m", "yüksek-erişim"],
+      "seo": {
+        "title": "45 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 45 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "45 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-009",
+      "name": "50 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "50 m",
+      "capacity": "230 kg",
+      "description": "50 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "50 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "50m", "yüksek-erişim"],
+      "seo": {
+        "title": "50 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 50 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "50 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-010",
+      "name": "55 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "55 m",
+      "capacity": "230 kg",
+      "description": "55 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "55 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "55m", "yüksek-erişim"],
+      "seo": {
+        "title": "55 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 55 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "55 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-011",
+      "name": "60 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "60 m",
+      "capacity": "230 kg",
+      "description": "60 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "60 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "60m", "yüksek-erişim"],
+      "seo": {
+        "title": "60 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 60 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "60 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-012",
+      "name": "65 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "65 m",
+      "capacity": "230 kg",
+      "description": "65 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "65 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "65m", "yüksek-erişim"],
+      "seo": {
+        "title": "65 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 65 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "65 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-013",
+      "name": "70 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "70 m",
+      "capacity": "230 kg",
+      "description": "70 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "70 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "70m", "yüksek-erişim"],
+      "seo": {
+        "title": "70 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 70 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "70 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-014",
+      "name": "75 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "75 m",
+      "capacity": "230 kg",
+      "description": "75 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "75 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "75m", "yüksek-erişim"],
+      "seo": {
+        "title": "75 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 75 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "75 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-015",
+      "name": "80 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "80 m",
+      "capacity": "230 kg",
+      "description": "80 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "80 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "80m", "yüksek-erişim"],
+      "seo": {
+        "title": "80 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 80 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "80 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-016",
+      "name": "85 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "85 m",
+      "capacity": "230 kg",
+      "description": "85 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "85 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "85m", "yüksek-erişim"],
+      "seo": {
+        "title": "85 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 85 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "85 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-017",
+      "name": "90 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "90 m",
+      "capacity": "230 kg",
+      "description": "90 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "90 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "90m", "yüksek-erişim"],
+      "seo": {
+        "title": "90 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 90 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "90 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-018",
+      "name": "95 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "95 m",
+      "capacity": "230 kg",
+      "description": "95 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "95 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "95m", "yüksek-erişim"],
+      "seo": {
+        "title": "95 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 95 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "95 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
+        ]
+      }
+    },
+    {
+      "id": "platform-019",
+      "name": "100 Metre Kiralık Sepetli Platform",
+      "type": "Sepetli Platform",
+      "category": "sepetli-platform",
+      "height": "100 m",
+      "capacity": "230 kg",
+      "description": "100 metre çalışma yüksekliğine sahip sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+      "features": [
+        "100 metre çalışma yüksekliği",
+        "230 kg platform kapasitesi",
+        "Güvenli operasyon",
+        "Hızlı kurulum",
+        "Modern teknoloji"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+      ],
+      "availability": true,
+      "tags": ["sepetli-platform", "100m", "yüksek-erişim"],
+      "seo": {
+        "title": "100 Metre Sepetli Platform Kiralama İstanbul",
+        "description": "İstanbul'da 100 metre sepetli platform kiralama hizmeti. Yüksek erişim işleri için ideal.",
+        "keywords": [
+          "sepetli platform",
+          "100 metre",
+          "istanbul platform kiralama",
+          "yüksek erişim"
         ]
       }
     }

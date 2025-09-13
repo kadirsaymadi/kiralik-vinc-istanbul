@@ -3,7 +3,7 @@ const path = require("path");
 const seoHelper = require("../utils/seoHelper");
 const slugGenerator = require("../utils/slugGenerator");
 
-const cranesData = JSON.parse(
+const equipmentData = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../../data/cranes.json"), "utf8")
 );
 const districtsData = JSON.parse(
@@ -27,8 +27,8 @@ const categoryController = {
     }
 
     const districtNeighborhoods = district.neighborhoods;
-    const availableCranes = cranesData.cranes.filter(
-      (crane) => crane.availability
+    const availableCranes = equipmentData.equipment.filter(
+      (equipment) => equipment.availability && equipment.category === "vinç"
     );
 
     const seoData = {
@@ -126,8 +126,8 @@ const categoryController = {
       });
     }
 
-    const availableCranes = cranesData.cranes.filter(
-      (crane) => crane.availability
+    const availableCranes = equipmentData.equipment.filter(
+      (equipment) => equipment.availability && equipment.category === "vinç"
     );
 
     const seoData = {

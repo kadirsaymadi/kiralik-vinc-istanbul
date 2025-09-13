@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const seoHelper = require("../utils/seoHelper");
 
-const cranesData = JSON.parse(
+const equipmentData = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../../data/cranes.json"), "utf8")
 );
 const districtsData = JSON.parse(
@@ -12,7 +12,7 @@ const districtsData = JSON.parse(
 const craneController = {
   detail: (req, res) => {
     const craneSlug = req.params.crane;
-    const crane = cranesData.cranes.find(
+    const crane = equipmentData.equipment.find(
       (c) => c.id === craneSlug.replace("-vinc-kiralama", "")
     );
 
@@ -25,8 +25,10 @@ const craneController = {
       });
     }
 
-    const relatedCranes = cranesData.cranes
-      .filter((c) => c.id !== crane.id && c.availability)
+    const relatedCranes = equipmentData.equipment
+      .filter(
+        (c) => c.id !== crane.id && c.availability && c.category === "vinç"
+      )
       .slice(0, 3);
 
     const seoData = {
@@ -72,8 +74,8 @@ const craneController = {
   },
 
   list: (req, res) => {
-    const availableCranes = cranesData.cranes.filter(
-      (crane) => crane.availability
+    const availableCranes = equipmentData.equipment.filter(
+      (equipment) => equipment.availability && equipment.category === "vinç"
     );
 
     const seoData = {
