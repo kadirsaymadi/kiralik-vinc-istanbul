@@ -4,7 +4,7 @@ header.navbar.navbar-expand-lg.navbar-dark.bg-gradient-orange.shadow-sm
       .logo-container
         .logo-main kiralikvincistanbul.com
     
-    button.navbar-toggler(type="button", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+    button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
       span.navbar-toggler-icon
     
     .collapse.navbar-collapse#navbarNav
@@ -24,7 +24,7 @@ header.navbar.navbar-expand-lg.navbar-dark.bg-gradient-orange.shadow-sm
       
       .navbar-nav.ms-auto
         .nav-item.d-flex.align-items-center
-          .contact-info.me-3
+          .contact-info.me-3.d-none.d-md-block
             i.fas.fa-phone.text-gradient-orange.me-1
             span.small +90 XXX XXX XX XX
           a.btn.btn-warning(href="/teklif-al") Teklif Al

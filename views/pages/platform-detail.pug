@@ -2,31 +2,32 @@ extends ../layouts/main
 include ../partials/crane-card
 
 block content
-  section.py-5.bg-light
+  section.py-4.py-md-5.bg-light
     .container
-      .row.align-items-center.mb-5
-        .col-lg-8
-          h1.display-5.fw-bold.text-dark.mb-3= platform.name
+      .row.align-items-center.mb-4.mb-md-5
+        .col-12.col-lg-8.mb-4.mb-lg-0
+          h1.display-6.display-md-5.fw-bold.text-dark.mb-3= platform.name
           p.lead.text-muted.mb-4= platform.description
           
           .platform-badges.mb-4
-            span.badge.bg-warning.me-2= platform.type
-            span.badge.bg-warning.me-2= platform.capacity
-            span.badge.bg-warning.me-2= platform.height
-            if platform.availability
-              span.badge.bg-warning
-                i.fas.fa-check.me-1
-                | Mevcut
+            .d-flex.flex-wrap.gap-2
+              span.badge.bg-warning= platform.type
+              span.badge.bg-warning= platform.capacity
+              span.badge.bg-warning= platform.height
+              if platform.availability
+                span.badge.bg-warning
+                  i.fas.fa-check.me-1
+                  | Mevcut
         
-        .col-lg-4.text-center
-          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+        .col-12.col-lg-4.text-center.text-lg-end
+          a.btn.btn-warning.btn-lg.w-100.w-md-auto(href="/teklif-al") Teklif Al
   
-  section.py-5
+  section.py-4.py-md-5
     .container
       .row
-        .col-lg-8
+        .col-12.col-lg-8.mb-5.mb-lg-0
           .platform-gallery.mb-5
-            .swiper.platform-detail-swiper
+            .swiper.crane-detail-swiper
               .swiper-wrapper
                 each image in platform.images
                   .swiper-slide
@@ -35,33 +36,33 @@ block content
               .swiper-button-next
               .swiper-button-prev
           
-          .platform-features.mb-5
+          .platform-features.mb-4.mb-md-5
             h3.display-6.fw-bold.text-dark.mb-4 Özellikler
             .row.g-3
               each feature in platform.features
-                .col-md-6
+                .col-12.col-sm-6
                   .feature-item.d-flex.align-items-center
                     .feature-icon.bg-warning.text-dark.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                       i.fas.fa-check
                     span= feature
           
-          .platform-specifications.mb-5
+          .platform-specifications.mb-4.mb-md-5
             h3.display-6.fw-bold.text-dark.mb-4 Teknik Özellikler
             .row.g-3
-              .col-md-6
-                .spec-item.bg-white.p-3.rounded.shadow
-                  .spec-label.text-muted.small Kapasite
+              .col-12.col-sm-6
+                .spec-card.bg-light.p-3.rounded
+                  .spec-label.text-muted.small Platform Kapasitesi
                   .spec-value.fw-bold.text-warning= platform.capacity
-              .col-md-6
-                .spec-item.bg-white.p-3.rounded.shadow
-                  .spec-label.text-muted.small Yükseklik
+              .col-12.col-sm-6
+                .spec-card.bg-light.p-3.rounded
+                  .spec-label.text-muted.small Çalışma Yüksekliği
                   .spec-value.fw-bold.text-warning= platform.height
-              .col-md-6
-                .spec-item.bg-white.p-3.rounded.shadow
+              .col-12.col-sm-6
+                .spec-card.bg-light.p-3.rounded
                   .spec-label.text-muted.small Tip
                   .spec-value.fw-bold.text-warning= platform.type
-              .col-md-6
-                .spec-item.bg-white.p-3.rounded.shadow
+              .col-12.col-sm-6
+                .spec-card.bg-light.p-3.rounded
                   .spec-label.text-muted.small Durum
                   if platform.availability
                     .spec-value.fw-bold.text-success Mevcut
@@ -72,24 +73,24 @@ block content
             h3.display-6.fw-bold.text-dark.mb-4 Açıklama
             p.text-muted= platform.description
           
-          .platform-tags.mb-5
+          .platform-tags.mb-4.mb-md-5
             h3.display-6.fw-bold.text-dark.mb-4 Etiketler
             .row.g-3
               each tag in platform.tags
-                .col-md-6
+                .col-12.col-sm-6
                   .tag-item.d-flex.align-items-center
                     .tag-icon.bg-warning.text-dark.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                       i.fas.fa-tag
                     span= tag
         
-        .col-lg-4
-          .platform-info.bg-white.p-4.rounded.shadow.mb-4
+        .col-12.col-lg-4
+          .platform-info.bg-light.p-3.p-md-4.rounded.shadow.mb-4
             h4.fw-bold.text-dark.mb-3 Platform Bilgileri
             .info-item.mb-3
-              .info-label.text-muted.small Kapasite
+              .info-label.text-muted.small Platform Kapasitesi
               .info-value.fw-bold.text-warning= platform.capacity
             .info-item.mb-3
-              .info-label.text-muted.small Yükseklik
+              .info-label.text-muted.small Çalışma Yüksekliği
               .info-value.fw-bold.text-warning= platform.height
             .info-item.mb-3
               .info-label.text-muted.small Tip
@@ -109,7 +110,7 @@ block content
               a.btn.btn-warning.btn-lg.w-100.mb-2(href="/teklif-al") Teklif Al
               a.btn.btn-outline-warning.btn-lg.w-100(href="/kiralik-sepetli-platformlar") Tüm Platformları Gör
           
-          .platform-contact.bg-white.p-4.rounded.shadow
+          .platform-contact.bg-white.p-3.p-md-4.rounded.shadow
             h4.fw-bold.text-dark.mb-3 İletişim
             .contact-item.d-flex.align-items-center.mb-3
               i.fas.fa-phone.text-warning.me-3
@@ -123,11 +124,15 @@ block content
   
   section.py-5.bg-light
     .container
-      h2.display-6.fw-bold.text-dark.mb-4.text-center İlgili Platformlar
+      .text-center.mb-5
+        h2.display-6.fw-bold.text-dark.mb-3
+          | Benzer 
+          span.text-warning Platform Modelleri
+        p.lead.text-muted Diğer platform modellerimizi de inceleyin
+      
       .row
         each relatedPlatform in relatedPlatforms
-          .col-lg-4.col-md-6.mb-4
-            +craneCard(relatedPlatform)
+          +craneCard(relatedPlatform)
       
       .text-center.mt-4
         a.btn.btn-outline-warning.btn-lg(href="/kiralik-sepetli-platformlar") Tüm Platformları Gör
@@ -137,8 +142,8 @@ block content
       h2.display-6.fw-bold.mb-4 İletişim
       p.lead.mb-4 7/24 hizmet için bizi arayın
       .row.justify-content-center
-        .col-lg-6
-          .contact-info.bg-white.p-4.rounded.shadow
+        .col-12.col-md-8.col-lg-6
+          .contact-info.bg-white.p-3.p-md-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
               span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
