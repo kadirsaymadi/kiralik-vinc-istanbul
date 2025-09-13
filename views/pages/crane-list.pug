@@ -6,29 +6,29 @@ block content
     .container
       .row.align-items-center.mb-5
         .col-lg-8
-          h1.display-5.fw-bold.text-dark.mb-3 Vinç Modelleri
-          p.lead.text-muted.mb-4 İstanbul'da kiralık vinç modelleri. 25 ton'dan 350 ton'a kadar mobil ve sabit vinç çeşitleri.
+          h1.display-5.fw-bold.text-dark.mb-3 #{siteConfig.texts.featuredCranesTitle}
+          p.lead.text-muted.mb-4 #{siteConfig.texts.featuredCranesSubtitle}
           
           .crane-stats.row.g-3.mb-4
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h4= cranes.length
-                .stat-label.text-muted.small Toplam Model
+                .stat-label.text-muted.small #{siteConfig.texts.craneModels}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h4= cranes.filter(c => c.type === 'Mobil Vinç').length
-                .stat-label.text-muted.small Mobil Vinç
+                .stat-label.text-muted.small #{siteConfig.texts.mobileCrane}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h4= cranes.filter(c => c.type === 'Sabit Vinç').length
-                .stat-label.text-muted.small Sabit Vinç
+                .stat-label.text-muted.small #{siteConfig.texts.fixedCrane}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h4 350
                 .stat-label.text-muted.small Max Kapasite (Ton)
         
         .col-lg-4.text-center
-          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+          a.btn.btn-warning.btn-lg(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-5
     .container
@@ -47,9 +47,9 @@ block content
                   option(value="350") 350 Ton
               .col-md-6
                 select.form-select#typeFilter
-                  option(value="") Tipe Göre Filtrele
-                  option(value="Mobil Vinç") Mobil Vinç
-                  option(value="Sabit Vinç") Sabit Vinç
+                  option(value="") #{siteConfig.texts.filterByType}
+                  option(value="Mobil Vinç") #{siteConfig.texts.mobileCrane}
+                  option(value="Sabit Vinç") #{siteConfig.texts.fixedCrane}
         .col-lg-4.text-end
           .sort-section
             select.form-select#sortSelect
@@ -62,7 +62,7 @@ block content
           +craneCard(crane)
       
       .text-center.mt-5
-        a.btn.btn-outline-primary.btn-lg(href="/teklif-al") Teklif Al
+        a.btn.btn-outline-warning.btn-lg(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-5.bg-light
     .container
@@ -70,15 +70,15 @@ block content
         h2.display-6.fw-bold.text-dark.mb-3
           | Vinç Kiralama 
           span.text-warning Süreci
-        p.lead.text-muted Kolay ve hızlı kiralama süreci
+        p.lead.text-muted #{siteConfig.texts.forkliftProcessSubtitle}
       
       .row.g-4
         .col-lg-3.col-md-6
           .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .process-icon.mb-3
               .step-number.bg-warning.text-dark.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center 1
-            h5.card-title Teklif Al
-            p.card-text.text-muted Projeniz için ücretsiz teklif alın
+            h5.card-title #{siteConfig.texts.forkliftStep1}
+            p.card-text.text-muted #{siteConfig.texts.forkliftStep1Desc}
         .col-lg-3.col-md-6
           .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .process-icon.mb-3
@@ -89,25 +89,25 @@ block content
           .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .process-icon.mb-3
               .step-number.bg-warning.text-dark.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center 3
-            h5.card-title Sözleşme
-            p.card-text.text-muted Sözleşme imzalayın ve ödeme yapın
+            h5.card-title #{siteConfig.texts.forkliftStep3}
+            p.card-text.text-muted #{siteConfig.texts.forkliftStep3Desc}
         .col-lg-3.col-md-6
           .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .process-icon.mb-3
               .step-number.bg-warning.text-dark.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center 4
-            h5.card-title Operatörlü Teslimat
-            p.card-text.text-muted Uzman operatörümüzle birlikte vinçi teslim ediyoruz
+            h5.card-title #{siteConfig.texts.forkliftStep4}
+            p.card-text.text-muted #{siteConfig.texts.forkliftStep4Desc}
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 İletişim
-      p.lead.mb-4 7/24 hizmet için bizi arayın
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.contactTitle}
+      p.lead.mb-4 #{siteConfig.texts.contactSubtitle}
       .row.justify-content-center
         .col-lg-6
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}
 
 block scripts
   script(src="/js/crane-list.js")

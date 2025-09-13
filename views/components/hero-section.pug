@@ -9,12 +9,9 @@ section.hero-section.py-0.bg-gradient-primary.text-white.position-relative.overf
     .row.align-items-center.min-vh-75
       .col-lg-6(data-aos="fade-right")
         h1.display-4.fw-bold.mb-4
-          | İstanbul'un 
-          span.text-white En Güvenilir
-          |  Vinç Kiralama Hizmeti
+          | #{siteConfig.texts.heroTitle}
         p.lead.mb-4
-          | 25 ton'dan 350 ton'a kadar mobil ve sabit vinç kiralama hizmeti. 
-          | Deneyimli operatörlerimiz ve modern vinç filomuzla projelerinizi güvenle tamamlayın.
+          | #{siteConfig.texts.heroDescription}
         
         .hero-features.mb-4
           .row.g-3
@@ -22,30 +19,30 @@ section.hero-section.py-0.bg-gradient-primary.text-white.position-relative.overf
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   | ✓
-                span 7/24 Hizmet
+                span #{siteConfig.texts.feature1}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   | ✓
-                span Sigortalı Hizmet
+                span #{siteConfig.texts.feature2}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   | ✓
-                span Deneyimli Operatör
+                span #{siteConfig.texts.feature3}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   | ✓
-                span Hızlı Teslimat
+                span #{siteConfig.texts.feature4}
         
         .hero-actions
           a.btn.btn-warning.btn-lg.me-3.mb-2(href="/iletisim") 
             i.fas.fa-calculator.me-2
-            | Ücretsiz Teklif Al
+            | #{siteConfig.texts.heroButton1}
           a.btn.btn-outline-light.btn-lg.mb-2(href="/kiralik-vincler") 
             i.fas.fa-truck.me-2
-            | Vinçleri Gör
+            | #{siteConfig.texts.heroButton2}
       
       .col-lg-6(data-aos="fade-left")
         .hero-image.text-center
@@ -57,17 +54,17 @@ section.hero-section.py-0.bg-gradient-primary.text-white.position-relative.overf
       .row.text-center
         .col-md-3.col-6.mb-3
           .stat-item
-            .stat-number.display-6.fw-bold.text-white 500+
-            .stat-label Proje Tamamlandı
+            .stat-number.display-6.fw-bold.text-white #{siteConfig.stats[0].number}
+            .stat-label #{siteConfig.stats[0].label}
         .col-md-3.col-6.mb-3
           .stat-item
-            .stat-number.display-6.fw-bold.text-white 50+
-            .stat-label Vinç Modeli
+            .stat-number.display-6.fw-bold.text-white #{siteConfig.stats[1].number}
+            .stat-label #{siteConfig.stats[1].label}
         .col-md-3.col-6.mb-3
           .stat-item
-            .stat-number.display-6.fw-bold.text-white 39
-            .stat-label İlçede Hizmet
+            .stat-number.display-6.fw-bold.text-white #{siteConfig.stats[2].number}
+            .stat-label #{siteConfig.stats[2].label}
         .col-md-3.col-6.mb-3
           .stat-item
-            .stat-number.display-6.fw-bold.text-white 24/7
-            .stat-label Hizmet Saati
+            .stat-number.display-6.fw-bold.text-white #{siteConfig.stats[3].number}
+            .stat-label #{siteConfig.stats[3].label}

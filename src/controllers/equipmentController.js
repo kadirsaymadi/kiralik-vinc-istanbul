@@ -74,6 +74,7 @@ const equipmentController = {
       platforms: availablePlatforms,
       districts: districtsData.districts,
       currentPath: "/kiralik-sepetli-platformlar",
+      siteConfig: appConfig,
     });
   },
 

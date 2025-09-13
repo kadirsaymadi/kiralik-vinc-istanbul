@@ -28,77 +28,77 @@ block content
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-warning.text-dark.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-truck
-                span Hızlı Teslimat
+                span #{siteConfig.texts.feature4}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-warning.text-dark.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-clock
-                span 7/24 Hizmet
+                span #{siteConfig.texts.feature1}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-user-tie
-                span Deneyimli Operatör
+                span #{siteConfig.texts.feature3}
         
         .col-lg-4.text-center
-          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+          a.btn.btn-warning.btn-lg(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-5
     .container
       .text-center.mb-5
         h2.display-6.fw-bold.text-dark.mb-3
           | #{neighborhood.name} Mahallesinde 
-          span.text-warning Mevcut Vinçler
-        p.lead.text-muted Mahallenizde kullanabileceğiniz vinç modelleri
+          span.text-warning #{siteConfig.texts.availableCranes}
+        p.lead.text-muted #{siteConfig.texts.otherCranes}
       
       .row
         each crane in availableCranes
           +craneCard(crane)
       
       .text-center.mt-4
-        a.btn.btn-outline-primary.btn-lg(href="/vinc") Tüm Vinçleri Gör
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") #{siteConfig.texts.seeAllCranes}
   
   section.py-5.bg-light
     .container
       .text-center.mb-5
         h2.display-6.fw-bold.text-dark.mb-3
           | #{neighborhood.name} Mahallesinde 
-          span.text-warning Hizmet Alanlarımız
-        p.lead.text-muted Mahallenizdeki projeleriniz için kapsamlı hizmet
+          span.text-warning #{siteConfig.texts.serviceAreas}
+        p.lead.text-muted #{siteConfig.texts.allDistrictsServiceDesc}
       
       .row.g-4
         .col-lg-3.col-md-6
           .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .service-icon.mb-3
               i.fas.fa-building.text-warning.fa-3x
-            h5.card-title İnşaat Projeleri
-            p.card-text.text-muted Küçük ve büyük ölçekli inşaat projeleri için vinç hizmeti
+            h5.card-title #{siteConfig.texts.constructionProjects}
+            p.card-text.text-muted #{siteConfig.texts.constructionProjectsDesc}
         .col-lg-3.col-md-6
           .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .service-icon.mb-3
               i.fas.fa-home.text-warning.fa-3x
-            h5.card-title Konut Projeleri
-            p.card-text.text-muted Villa, apartman ve konut projeleri için özel vinç çözümleri
+            h5.card-title #{siteConfig.texts.housingProjects}
+            p.card-text.text-muted #{siteConfig.texts.housingProjectsDesc}
         .col-lg-3.col-md-6
           .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .service-icon.mb-3
               i.fas.fa-industry.text-warning.fa-3x
-            h5.card-title Sanayi Projeleri
-            p.card-text.text-muted Fabrika ve sanayi tesisleri için ağır vinç hizmetleri
+            h5.card-title #{siteConfig.texts.industrialProjects}
+            p.card-text.text-muted #{siteConfig.texts.industrialProjectsDesc}
         .col-lg-3.col-md-6
           .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
             .service-icon.mb-3
               i.fas.fa-tools.text-warning.fa-3x
-            h5.card-title Bakım Onarım
-            p.card-text.text-muted Bina bakım ve onarım işleri için vinç kiralama hizmeti
+            h5.card-title #{siteConfig.texts.commercialProjects}
+            p.card-text.text-muted #{siteConfig.texts.commercialProjectsDesc}
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 İletişim
-      p.lead.mb-4 7/24 hizmet için bizi arayın
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.contactTitle}
+      p.lead.mb-4 #{siteConfig.texts.contactSubtitle}
       .row.justify-content-center
         .col-lg-6
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}

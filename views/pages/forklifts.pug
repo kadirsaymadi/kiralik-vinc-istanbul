@@ -50,9 +50,9 @@ block content
                   option(value="7") 7 Ton
               .col-md-6
                 select.form-select#typeFilter
-                  option(value="") Tipe Göre Filtrele
-                  option(value="Elektrikli Forklift") Elektrikli Forklift
-                  option(value="Dizel Forklift") Dizel Forklift
+                  option(value="") #{siteConfig.texts.filterByType}
+                  option(value="Elektrikli Forklift") #{siteConfig.texts.electricForklift}
+                  option(value="Dizel Forklift") #{siteConfig.texts.dieselForklift}
         .col-lg-4.text-end
           .sort-section
             select.form-select#sortSelect
@@ -146,4 +146,4 @@ block content
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}

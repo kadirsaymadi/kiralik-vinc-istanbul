@@ -88,7 +88,7 @@ const seoHelper = {
           logo: "https://kiralikvincistanbul.com/images/logo.png",
           contactPoint: {
             "@type": "ContactPoint",
-            telephone: "+90-XXX-XXX-XXXX",
+            telephone: "+90-541-414-3421",
             contactType: "customer service",
             availableLanguage: "Turkish",
           },

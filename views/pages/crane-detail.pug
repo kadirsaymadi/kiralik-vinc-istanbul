@@ -17,10 +17,10 @@ block content
             if crane.availability
               span.badge.bg-warning
                 i.fas.fa-check.me-1
-                | Mevcut
+                | #{siteConfig.texts.available}
         
         .col-lg-4.text-center
-          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+          a.btn.btn-warning.btn-lg(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-5
     .container
@@ -37,7 +37,7 @@ block content
               .swiper-button-prev
           
           .crane-features.mb-5
-            h3.display-6.fw-bold.text-dark.mb-4 Özellikler
+            h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.features}
             .row.g-3
               each feature in crane.features
                 .col-md-6
@@ -47,15 +47,15 @@ block content
                     span= feature
           
           .crane-specifications.mb-5
-            h3.display-6.fw-bold.text-dark.mb-4 Teknik Özellikler
+            h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.technicalSpecs}
             .row.g-3
               .col-md-6
                 .spec-card.bg-light.p-3.rounded
-                  .spec-label.text-muted.small Kaldırma Kapasitesi
+                  .spec-label.text-muted.small #{siteConfig.texts.liftingCapacity}
                   .spec-value.fw-bold.text-warning= crane.capacity
               .col-md-6
                 .spec-card.bg-light.p-3.rounded
-                  .spec-label.text-muted.small Bom Uzunluğu
+                  .spec-label.text-muted.small #{siteConfig.texts.workingHeight}
                   .spec-value.fw-bold.text-warning= crane.height
               .col-md-6
                 .spec-card.bg-light.p-3.rounded
@@ -63,12 +63,12 @@ block content
                   .spec-value.fw-bold.text-warning= crane.radius
               .col-md-6
                 .spec-card.bg-light.p-3.rounded
-                  .spec-label.text-muted.small Vinç Tipi
+                  .spec-label.text-muted.small #{siteConfig.texts.type}
                   .spec-value.fw-bold.text-warning= crane.type
         
         .col-lg-4
           .features-card.bg-white.p-4.rounded.shadow.sticky-top
-            h4.fw-bold.text-dark.mb-4 Özellikler
+            h4.fw-bold.text-dark.mb-4 #{siteConfig.texts.features}
             .features-list
               each feature in crane.features
                 .feature-item.d-flex.align-items-center.mb-3
@@ -82,31 +82,30 @@ block content
                 | Detaylı bilgi ve teklif için iletişime geçin.
             
             .contact-actions
-              a.btn.btn-warning.btn-lg.w-100.mb-2(href="/teklif-al") Teklif Al
-              a.btn.btn-outline-warning.btn-lg.w-100(href="tel:+90XXXXXXXXXX") Hemen Ara
+              a.btn.btn-warning.btn-lg.w-100.mb-2(href="/iletisim") #{siteConfig.texts.getQuote}
+              a.btn.btn-outline-warning.btn-lg.w-100(href=siteConfig.contact.phoneLink) #{siteConfig.texts.callNow}
   
   section.py-5.bg-light
     .container
       .text-center.mb-5
         h2.display-6.fw-bold.text-dark.mb-3
-          | Benzer 
-          span.text-warning Vinç Modelleri
-        p.lead.text-muted Diğer vinç modellerimizi de inceleyin
+          | #{siteConfig.texts.similarCranes}
+        p.lead.text-muted #{siteConfig.texts.otherCranes}
       
       .row
         each relatedCrane in relatedCranes
           +craneCard(relatedCrane)
       
       .text-center.mt-4
-        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") Tüm Vinçleri Gör
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") #{siteConfig.texts.seeAllCranes}
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 İletişim
-      p.lead.mb-4 7/24 hizmet için bizi arayın
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.contactTitle}
+      p.lead.mb-4 #{siteConfig.texts.contactSubtitle}
       .row.justify-content-center
         .col-lg-6
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}

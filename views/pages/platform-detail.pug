@@ -17,10 +17,10 @@ block content
               if platform.availability
                 span.badge.bg-warning
                   i.fas.fa-check.me-1
-                  | Mevcut
+                  | #{siteConfig.texts.available}
         
         .col-12.col-lg-4.text-center.text-lg-end
-          a.btn.btn-warning.btn-lg.w-100.w-md-auto(href="/teklif-al") Teklif Al
+          a.btn.btn-warning.btn-lg.w-100.w-md-auto(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-4.py-md-5
     .container
@@ -37,7 +37,7 @@ block content
               .swiper-button-prev
           
           .platform-features.mb-4.mb-md-5
-            h3.display-6.fw-bold.text-dark.mb-4 Özellikler
+            h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.features}
             .row.g-3
               each feature in platform.features
                 .col-12.col-sm-6
@@ -47,34 +47,34 @@ block content
                     span= feature
           
           .platform-specifications.mb-4.mb-md-5
-            h3.display-6.fw-bold.text-dark.mb-4 Teknik Özellikler
+            h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.technicalSpecs}
             .row.g-3
               .col-12.col-sm-6
                 .spec-card.bg-light.p-3.rounded
-                  .spec-label.text-muted.small Platform Kapasitesi
+                  .spec-label.text-muted.small #{siteConfig.texts.liftingCapacity}
                   .spec-value.fw-bold.text-warning= platform.capacity
               .col-12.col-sm-6
                 .spec-card.bg-light.p-3.rounded
-                  .spec-label.text-muted.small Çalışma Yüksekliği
+                  .spec-label.text-muted.small #{siteConfig.texts.workingHeight}
                   .spec-value.fw-bold.text-warning= platform.height
               .col-12.col-sm-6
                 .spec-card.bg-light.p-3.rounded
-                  .spec-label.text-muted.small Tip
+                  .spec-label.text-muted.small #{siteConfig.texts.type}
                   .spec-value.fw-bold.text-warning= platform.type
               .col-12.col-sm-6
                 .spec-card.bg-light.p-3.rounded
-                  .spec-label.text-muted.small Durum
+                  .spec-label.text-muted.small #{siteConfig.texts.status}
                   if platform.availability
-                    .spec-value.fw-bold.text-success Mevcut
+                    .spec-value.fw-bold.text-success #{siteConfig.texts.available}
                   else
-                    .spec-value.fw-bold.text-danger Mevcut Değil
+                    .spec-value.fw-bold.text-danger #{siteConfig.texts.notAvailable}
           
           .platform-description.mb-5
-            h3.display-6.fw-bold.text-dark.mb-4 Açıklama
+            h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.description}
             p.text-muted= platform.description
           
           .platform-tags.mb-4.mb-md-5
-            h3.display-6.fw-bold.text-dark.mb-4 Etiketler
+            h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.tags}
             .row.g-3
               each tag in platform.tags
                 .col-12.col-sm-6
@@ -85,68 +85,67 @@ block content
         
         .col-12.col-lg-4
           .platform-info.bg-light.p-3.p-md-4.rounded.shadow.mb-4
-            h4.fw-bold.text-dark.mb-3 Platform Bilgileri
+            h4.fw-bold.text-dark.mb-3 #{siteConfig.texts.platformInfo}
             .info-item.mb-3
-              .info-label.text-muted.small Platform Kapasitesi
+              .info-label.text-muted.small #{siteConfig.texts.liftingCapacity}
               .info-value.fw-bold.text-warning= platform.capacity
             .info-item.mb-3
-              .info-label.text-muted.small Çalışma Yüksekliği
+              .info-label.text-muted.small #{siteConfig.texts.workingHeight}
               .info-value.fw-bold.text-warning= platform.height
             .info-item.mb-3
-              .info-label.text-muted.small Tip
+              .info-label.text-muted.small #{siteConfig.texts.type}
               .info-value.fw-bold.text-warning= platform.type
             .info-item.mb-3
-              .info-label.text-muted.small Durum
+              .info-label.text-muted.small #{siteConfig.texts.status}
               if platform.availability
                 .info-value.fw-bold.text-success
                   i.fas.fa-check.me-1
-                  | Mevcut
+                  | #{siteConfig.texts.available}
               else
                 .info-value.fw-bold.text-danger
                   i.fas.fa-times.me-1
-                  | Mevcut Değil
+                  | #{siteConfig.texts.available} Değil
             
             .platform-actions.mt-4
-              a.btn.btn-warning.btn-lg.w-100.mb-2(href="/teklif-al") Teklif Al
-              a.btn.btn-outline-warning.btn-lg.w-100(href="/kiralik-sepetli-platformlar") Tüm Platformları Gör
+              a.btn.btn-warning.btn-lg.w-100.mb-2(href="/iletisim") #{siteConfig.texts.getQuote}
+              a.btn.btn-outline-warning.btn-lg.w-100(href="/kiralik-sepetli-platformlar") #{siteConfig.texts.seePlatforms}
           
           .platform-contact.bg-white.p-3.p-md-4.rounded.shadow
-            h4.fw-bold.text-dark.mb-3 İletişim
+            h4.fw-bold.text-dark.mb-3 #{siteConfig.texts.contactTitle}
             .contact-item.d-flex.align-items-center.mb-3
               i.fas.fa-phone.text-warning.me-3
-              span +90 XXX XXX XX XX
+              span #{siteConfig.contact.phoneDisplay}
             .contact-item.d-flex.align-items-center.mb-3
               i.fas.fa-envelope.text-warning.me-3
-              span info@kiralikvincistanbul.com
+              span #{siteConfig.contact.email}
             .contact-item.d-flex.align-items-center
               i.fas.fa-clock.text-warning.me-3
-              span 7/24 Hizmet
+              span #{siteConfig.contact.workingHours}
   
   section.py-5.bg-light
     .container
       .text-center.mb-5
         h2.display-6.fw-bold.text-dark.mb-3
-          | Benzer 
-          span.text-warning Platform Modelleri
-        p.lead.text-muted Diğer platform modellerimizi de inceleyin
+          | #{siteConfig.texts.similarPlatforms}
+        p.lead.text-muted #{siteConfig.texts.otherPlatforms}
       
       .row
         each relatedPlatform in relatedPlatforms
           +craneCard(relatedPlatform)
       
       .text-center.mt-4
-        a.btn.btn-outline-warning.btn-lg(href="/kiralik-sepetli-platformlar") Tüm Platformları Gör
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-sepetli-platformlar") #{siteConfig.texts.seePlatforms}
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 İletişim
-      p.lead.mb-4 7/24 hizmet için bizi arayın
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.contactTitle}
+      p.lead.mb-4 #{siteConfig.texts.contactSubtitle}
       .row.justify-content-center
         .col-12.col-md-8.col-lg-6
           .contact-info.bg-white.p-3.p-md-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}
 
 block scripts
   script(src="/js/slider.js")

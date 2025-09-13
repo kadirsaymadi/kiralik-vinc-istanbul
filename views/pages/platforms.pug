@@ -48,8 +48,8 @@ block content
                   option(value="100") 100 Metre
               .col-md-6
                 select.form-select#typeFilter
-                  option(value="") Tipe Göre Filtrele
-                  option(value="Sepetli Platform") Sepetli Platform
+                  option(value="") #{siteConfig.texts.filterByType}
+                  option(value="Sepetli Platform") #{siteConfig.texts.aerialPlatform}
         .col-lg-4.text-end
           .sort-section
             select.form-select#sortSelect
@@ -143,4 +143,4 @@ block content
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}

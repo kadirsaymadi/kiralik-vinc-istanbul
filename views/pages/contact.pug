@@ -5,52 +5,52 @@ block content
     .container
       .row.align-items-center.mb-5
         .col-lg-8
-          h1.display-5.fw-bold.text-dark.mb-3 İletişim
-          p.lead.text-muted.mb-4 İstanbul vinç kiralama hizmeti için bizimle iletişime geçin. Ücretsiz teklif alın, profesyonel danışmanlık hizmeti.
+          h1.display-5.fw-bold.text-dark.mb-3 #{siteConfig.texts.contactTitle}
+          p.lead.text-muted.mb-4 #{siteConfig.texts.contactSubtitle}
           
           .contact-features.row.g-3.mb-4
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-phone
-                span 7/24 Destek Hattı
+                span #{siteConfig.texts.feature1}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-clock
-                span Hızlı Yanıt
+                span #{siteConfig.texts.feature4}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-calculator
-                span Ücretsiz Teklif
+                span #{siteConfig.texts.getFreeQuote}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-user-tie
-                span Uzman Danışmanlık
+                span #{siteConfig.texts.feature3}
         
         .col-lg-4.text-center
           .contact-card.bg-white.p-4.rounded.shadow
-            h4.text-warning.mb-3 Hemen Ara
-            a.btn.btn-warning.btn-lg.w-100.mb-3(href="tel:+90XXXXXXXXXX")
+            h4.text-warning.mb-3 #{siteConfig.texts.callNow}
+            a.btn.btn-warning.btn-lg.w-100.mb-3(href=siteConfig.contact.phoneLink)
               i.fas.fa-phone.me-2
-              | +90 XXX XXX XX XX
-            p.small.text-muted.mb-0 7/24 Destek Hattı
+              | #{siteConfig.contact.phoneDisplay}
+            p.small.text-muted.mb-0 #{siteConfig.texts.feature1}
 
   section.py-5
     .container
       .row
         .col-lg-6
           .contact-info-card.bg-white.p-4.rounded.shadow
-            h4.fw-bold.text-dark.mb-4 İletişim Bilgileri
+            h4.fw-bold.text-dark.mb-4 #{siteConfig.texts.contactTitle}
             
             .contact-item.mb-4
               .contact-icon.bg-warning.text-white.rounded-circle.d-inline-flex.align-items-center.justify-content-center.me-3
                 i.fas.fa-map-marker-alt
               .contact-details
                 h6.fw-bold.mb-1 Adres
-                p.text-muted.mb-0 İstanbul, Türkiye
+                p.text-muted.mb-0 #{siteConfig.contact.address}
                 p.text-muted.mb-0 Tüm ilçelerde hizmet
             
             .contact-item.mb-4
@@ -59,8 +59,8 @@ block content
               .contact-details
                 h6.fw-bold.mb-1 Telefon
                 p.text-muted.mb-0
-                  a.text-decoration-none(href="tel:+90XXXXXXXXXX") +90 XXX XXX XX XX
-                p.text-muted.mb-0 7/24 Destek Hattı
+                  a.text-decoration-none(href=siteConfig.contact.phoneLink) #{siteConfig.contact.phoneDisplay}
+                p.text-muted.mb-0 #{siteConfig.texts.feature1}
             
             .contact-item.mb-4
               .contact-icon.bg-warning.text-white.rounded-circle.d-inline-flex.align-items-center.justify-content-center.me-3
@@ -68,14 +68,15 @@ block content
               .contact-details
                 h6.fw-bold.mb-1 E-posta
                 p.text-muted.mb-0
-                  a.text-decoration-none(href="mailto:info@example.com") info@example.com
-                p.text-muted.mb-0 Hızlı yanıt garantisi
+                  a.text-decoration-none(href=`mailto:${siteConfig.contact.email}`) #{siteConfig.contact.email}
+                p.text-muted.mb-0 #{siteConfig.texts.feature4}
             
             .contact-item.mb-4
               .contact-icon.bg-warning.text-white.rounded-circle.d-inline-flex.align-items-center.justify-content-center.me-3
                 i.fas.fa-clock
               .contact-details
                 h6.fw-bold.mb-1 Çalışma Saatleri
+                p.text-muted.mb-0 #{siteConfig.contact.workingHours}
                 p.text-muted.mb-0 Pazartesi - Cuma: 08:00 - 18:00
                 p.text-muted.mb-0 Cumartesi: 09:00 - 16:00
                 p.text-muted.mb-0 Pazar: Acil durumlar için 7/24
@@ -88,11 +89,11 @@ block content
 
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 İletişim
-      p.lead.mb-4 7/24 hizmet için bizi arayın
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.contactTitle}
+      p.lead.mb-4 #{siteConfig.texts.contactSubtitle}
       .row.justify-content-center
         .col-lg-6
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}

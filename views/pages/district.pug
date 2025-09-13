@@ -14,38 +14,38 @@ block content
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-map-marker-alt
-                span= `${district.neighborhoods.length} Mahallede Hizmet`
+                span #{district.neighborhoods.length} #{siteConfig.texts.neighborhoodCount}de #{siteConfig.texts.serviceHours}
             .col-md-6
               .feature-item.d-flex.align-items-center
                 .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-truck
-                span Tüm Vinç Modelleri Mevcut
+                span #{siteConfig.texts.availableCranes}
         
         .col-lg-4.text-center
-          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+          a.btn.btn-warning.btn-lg(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-5
     .container
       .text-center.mb-5
         h2.display-6.fw-bold.text-dark.mb-3
           | #{district.name} İlçesinde 
-          span.text-warning Mevcut Vinçler
-        p.lead.text-muted İlçenizde kullanabileceğiniz vinç modelleri
+          span.text-warning #{siteConfig.texts.availableCranes}
+        p.lead.text-muted #{siteConfig.texts.otherCranes}
       
       .row
         each crane in availableCranes
           +craneCard(crane)
       
       .text-center.mt-4
-        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") Tüm Vinçleri Gör
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") #{siteConfig.texts.seeAllCranes}
   
   section.py-5.bg-light
     .container
       .text-center.mb-5
         h2.display-6.fw-bold.text-dark.mb-3
           | #{district.name} İlçesinde 
-          span.text-warning Mahallelerimiz
-        p.lead.text-muted İlçenizin tüm mahallelerinde hizmet veriyoruz
+          span.text-warning #{siteConfig.texts.neighborhoods}
+        p.lead.text-muted #{siteConfig.texts.allDistrictsServiceDesc}
       
       .row.g-4
         each neighborhood in neighborhoods
@@ -59,15 +59,15 @@ block content
                 - const turkishChars = {'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'I': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U'}
                 - const convertedName = neighborhood.replace(/[çÇğĞıIöÖşŞüÜ]/g, (char) => turkishChars[char] || char)
                 - const neighborhoodSlug = convertedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '').replace('-mahallesi', '')
-                a.btn.btn-outline-warning.btn-sm(href=`/kiralik-vinc-${district.slug}/${neighborhoodSlug}`) Vinçleri Gör
+                a.btn.btn-outline-warning.btn-sm(href=`/kiralik-vinc-${district.slug}/${neighborhoodSlug}`) #{siteConfig.texts.seeAllCranes}
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 İletişim
-      p.lead.mb-4 7/24 hizmet için bizi arayın
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.contactTitle}
+      p.lead.mb-4 #{siteConfig.texts.contactSubtitle}
       .row.justify-content-center
         .col-lg-6
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}

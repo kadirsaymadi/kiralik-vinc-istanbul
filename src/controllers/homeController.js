@@ -47,6 +47,7 @@ const homeController = {
       popularDistricts,
       districts: districtsData.districts,
       currentPath: "/",
+      siteConfig: appConfig,
     });
   },
 
@@ -99,6 +100,7 @@ const homeController = {
       cranes,
       districts: districtsData.districts,
       currentPath: "/kiralik-vincler",
+      siteConfig: appConfig,
     });
   },
 
@@ -145,6 +147,7 @@ const homeController = {
       ),
       districts: districtsData.districts,
       currentPath: "/iletisim",
+      siteConfig: appConfig,
     });
   },
 
@@ -194,6 +197,7 @@ const homeController = {
       ),
       districts: districtsData.districts,
       currentPath: "/hizmet-bolgeleri",
+      siteConfig: appConfig,
     });
   },
 };

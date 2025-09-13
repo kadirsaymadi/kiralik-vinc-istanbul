@@ -9,9 +9,7 @@ block content
       .row.align-items-center.mb-5
         .col-lg-6(data-aos="fade-right")
           h2.display-5.fw-bold.text-dark.mb-4
-            | İstanbul'un 
-            span.text-warning En Güvenilir
-            |  Vinç Kiralama Hizmeti
+            | #{siteConfig.texts.heroTitle}
           p.lead.text-muted.mb-4= siteConfig.site.description
           .features-list
             .row.g-3
@@ -19,22 +17,22 @@ block content
                 .feature-item.d-flex.align-items-center
                   .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                     | ✓
-                  span 7/24 Hizmet
+                  span #{siteConfig.texts.feature1}
               .col-md-6
                 .feature-item.d-flex.align-items-center
                   .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                     | ✓
-                  span Sigortalı Hizmet
+                  span #{siteConfig.texts.feature2}
               .col-md-6
                 .feature-item.d-flex.align-items-center
                   .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                     | ✓
-                  span Deneyimli Operatör
+                  span #{siteConfig.texts.feature3}
               .col-md-6
                 .feature-item.d-flex.align-items-center
                   .feature-icon.bg-white.text-success.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                     | ✓
-                  span Hızlı Teslimat
+                  span #{siteConfig.texts.feature4}
         .col-lg-6(data-aos="fade-left")
           .hero-image.text-center
             img.img-fluid.rounded.shadow(src="/images/hero-crane-new.jpg", alt="İstanbul Vinç Kiralama", loading="lazy")
@@ -43,24 +41,22 @@ block content
     .container
       .text-center.mb-5
         h2.display-5.fw-bold.text-dark.mb-3
-          | Öne Çıkan 
-          span.text-warning Vinç Modelleri
-        p.lead.text-muted En popüler vinç modellerimizi keşfedin
+          | #{siteConfig.texts.featuredCranesTitle}
+        p.lead.text-muted #{siteConfig.texts.featuredCranesSubtitle}
       
       .row
         each crane in featuredCranes
           +craneCard(crane)
       
       .text-center.mt-4
-        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") Tüm Vinçleri Gör
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") #{siteConfig.texts.seeAllCranes}
 
   section.py-5.bg-light
     .container
       .text-center.mb-5
         h2.display-5.fw-bold.text-dark.mb-3
-          | Diğer 
-          span.text-warning Ekipmanlarımız
-        p.lead.text-muted Vinçlerin yanında sepetli platform ve forklift kiralama hizmetleri
+          | #{siteConfig.texts.otherEquipmentTitle}
+        p.lead.text-muted #{siteConfig.texts.otherEquipmentSubtitle}
       
       .row.g-4
         .col-lg-4.col-md-6
@@ -68,8 +64,8 @@ block content
             .card-body.text-center
               .equipment-icon.mb-3
                 i.fas.fa-arrow-up.text-warning.fa-3x
-              h5.card-title.text-warning Sepetli Platformlar
-              p.card-text.text-muted.small 10 metre'den 100 metre'ye kadar sepetli platform kiralama hizmeti
+              h5.card-title.text-warning #{siteConfig.texts.aerialPlatforms}
+              p.card-text.text-muted.small #{siteConfig.texts.aerialPlatformDesc}
               .equipment-stats.mb-3
                 .row.g-2
                   .col-6
@@ -80,15 +76,15 @@ block content
                     .stat-item
                       .stat-number.text-warning.fw-bold 100m
                       .stat-label.text-muted.small Max Yükseklik
-              a.btn.btn-outline-warning.btn-sm(href="/kiralik-sepetli-platformlar") Platformları Gör
+              a.btn.btn-outline-warning.btn-sm(href="/kiralik-sepetli-platformlar") #{siteConfig.texts.seePlatforms}
         
         .col-lg-4.col-md-6
           .card.h-100.shadow-sm.border-0.hover-card
             .card-body.text-center
               .equipment-icon.mb-3
                 i.fas.fa-truck.text-warning.fa-3x
-              h5.card-title.text-warning Forkliftler
-              p.card-text.text-muted.small 1.5 ton'dan 7 ton'a kadar elektrikli ve dizel forklift kiralama
+              h5.card-title.text-warning #{siteConfig.texts.forklifts}
+              p.card-text.text-muted.small #{siteConfig.texts.forkliftDesc}
               .equipment-stats.mb-3
                 .row.g-2
                   .col-6
@@ -99,15 +95,15 @@ block content
                     .stat-item
                       .stat-number.text-warning.fw-bold 7t
                       .stat-label.text-muted.small Max Kapasite
-              a.btn.btn-outline-warning.btn-sm(href="/kiralik-forkliftler") Forkliftleri Gör
+              a.btn.btn-outline-warning.btn-sm(href="/kiralik-forkliftler") #{siteConfig.texts.seeForklifts}
         
         .col-lg-4.col-md-6
           .card.h-100.shadow-sm.border-0.hover-card
             .card-body.text-center
               .equipment-icon.mb-3
                 i.fas.fa-tools.text-warning.fa-3x
-              h5.card-title.text-warning İş Makinaları
-              p.card-text.text-muted.small Ekskavatör, loader, buldozer ve diğer iş makinaları kiralama
+              h5.card-title.text-warning #{siteConfig.texts.constructionMachinery}
+              p.card-text.text-muted.small #{siteConfig.texts.constructionMachineryDesc}
               .equipment-stats.mb-3
                 .row.g-2
                   .col-6
@@ -118,26 +114,24 @@ block content
                     .stat-item
                       .stat-number.text-warning.fw-bold 26t
                       .stat-label.text-muted.small Max Ağırlık
-              a.btn.btn-outline-warning.btn-sm(href="/iletisim") Teklif Al
+              a.btn.btn-outline-warning.btn-sm(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-5.bg-gradient-orange.text-white
     .container
       .row.align-items-center
         .col-lg-8
-          h2.display-6.fw-bold.mb-3 İstanbul'un Tüm İlçelerinde Hizmet
+          h2.display-6.fw-bold.mb-3 #{siteConfig.texts.allDistrictsTitle}
           p.lead.mb-4
-            | Beyoğlu'dan Kadıköy'e, Şişli'den Beşiktaş'a kadar İstanbul'un 39 ilçesinde 
-            | profesyonel vinç kiralama hizmeti sunuyoruz.
+            | #{siteConfig.texts.allDistrictsDesc}
         .col-lg-4.text-center
-          a.btn.btn-light.btn-lg(href="/iletisim") Ücretsiz Teklif Al
+          a.btn.btn-light.btn-lg(href="/iletisim") #{siteConfig.texts.getFreeQuote}
   
   section.py-5
     .container
       .text-center.mb-5
         h2.display-5.fw-bold.text-dark.mb-3
-          | Popüler 
-          span.text-warning İlçeler
-        p.lead.text-muted En çok tercih edilen ilçelerimiz
+          | #{siteConfig.texts.popularDistrictsTitle}
+        p.lead.text-muted #{siteConfig.texts.popularDistrictsSubtitle}
       
       .row.g-4
         each district in popularDistricts
@@ -159,7 +153,7 @@ block content
     .container
       .row.align-items-center
         .col-lg-6
-          h2.display-6.fw-bold.text-dark.mb-4 Neden Bizi Tercih Etmelisiniz?
+          h2.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.whyChooseUsTitle}
           .advantages
             .advantage-item.d-flex.mb-4
               .advantage-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
@@ -184,28 +178,28 @@ block content
             .row.g-3
               .col-6
                 .stat-card.bg-white.p-4.rounded.shadow.text-center
-                  .stat-number.text-warning.fw-bold.display-6 500+
-                  .stat-label.text-muted Proje Tamamlandı
+                  .stat-number.text-warning.fw-bold.display-6 #{siteConfig.stats[0].number}
+                  .stat-label.text-muted #{siteConfig.stats[0].label}
               .col-6
                 .stat-card.bg-white.p-4.rounded.shadow.text-center
-                  .stat-number.text-warning.fw-bold.display-6 50+
-                  .stat-label.text-muted Vinç Modeli
+                  .stat-number.text-warning.fw-bold.display-6 #{siteConfig.stats[1].number}
+                  .stat-label.text-muted #{siteConfig.stats[1].label}
               .col-6
                 .stat-card.bg-white.p-4.rounded.shadow.text-center
-                  .stat-number.text-warning.fw-bold.display-6 39
-                  .stat-label.text-muted İlçede Hizmet
+                  .stat-number.text-warning.fw-bold.display-6 #{siteConfig.stats[2].number}
+                  .stat-label.text-muted #{siteConfig.stats[2].label}
               .col-6
                 .stat-card.bg-white.p-4.rounded.shadow.text-center
-                  .stat-number.text-warning.fw-bold.display-6 24/7
-                  .stat-label.text-muted Hizmet Saati
+                  .stat-number.text-warning.fw-bold.display-6 #{siteConfig.stats[3].number}
+                  .stat-label.text-muted #{siteConfig.stats[3].label}
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 İletişim
-      p.lead.mb-4 7/24 hizmet için bizi arayın
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.contactTitle}
+      p.lead.mb-4 #{siteConfig.texts.contactSubtitle}
       .row.justify-content-center
         .col-lg-6
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}

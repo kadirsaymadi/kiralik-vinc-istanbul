@@ -6,8 +6,8 @@ block content
       .text-center.mb-5
         h1.display-4.fw-bold.text-dark.mb-3
           | İstanbul 
-          span.text-warning Hizmet Bölgeleri
-        p.lead.text-muted İstanbul'un tüm ilçelerinde profesyonel vinç, sepetli platform ve forklift kiralama hizmeti
+          span.text-warning #{siteConfig.texts.allDistrictsTitle}
+        p.lead.text-muted #{siteConfig.texts.allDistrictsDesc}
       
       .row.g-4
         each district in districts
@@ -20,7 +20,7 @@ block content
                 p.card-text.text-muted= district.description
               
               .district-neighborhoods.mb-4
-                h6.text-warning.mb-3 Mahalleler (#{district.neighborhoods.length}):
+                h6.text-warning.mb-3 #{siteConfig.texts.neighborhoods} (#{district.neighborhoods.length}):
                 .neighborhoods-list
                   each neighborhood in district.neighborhoods.slice(0, 6)
                     - const turkishChars = {'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'I': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U'}
@@ -32,34 +32,34 @@ block content
               
               .district-actions
                 .btn-group.w-100.mb-2(role="group")
-                  a.btn.btn-warning.btn-sm(href=`/kiralik-vinc-${district.slug}`) Vinçler
-                  a.btn.btn-warning.btn-sm(href=`/kiralik-sepetli-platform-${district.slug}`) Platformlar
-                  a.btn.btn-warning.btn-sm(href=`/kiralik-forklift-${district.slug}`) Forkliftler
-                a.btn.btn-outline-warning.btn-sm.w-100(href="/teklif-al") Teklif Al
+                  a.btn.btn-warning.btn-sm(href=`/kiralik-vinc-${district.slug}`) #{siteConfig.texts.seeAllCranes}
+                  a.btn.btn-warning.btn-sm(href=`/kiralik-sepetli-platform-${district.slug}`) #{siteConfig.texts.seePlatforms}
+                  a.btn.btn-warning.btn-sm(href=`/kiralik-forklift-${district.slug}`) #{siteConfig.texts.seeForklifts}
+                a.btn.btn-outline-warning.btn-sm.w-100(href="/iletisim") #{siteConfig.texts.getQuote}
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 Tüm İlçelerde Hizmet
-      p.lead.mb-4 İstanbul'un her ilçesinde profesyonel vinç, sepetli platform ve forklift kiralama hizmeti sunuyoruz
+      h2.display-6.fw-bold.mb-4 #{siteConfig.texts.allDistrictsService}
+      p.lead.mb-4 #{siteConfig.texts.allDistrictsServiceDesc}
       .row.justify-content-center
         .col-lg-8
           .stats-row.row.g-4
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h3= districts.length
-                .stat-label.text-muted.small İlçe
+                .stat-label.text-muted.small #{siteConfig.texts.districtCount}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h3= districts.reduce((total, district) => total + district.neighborhoods.length, 0)
-                .stat-label.text-muted.small Mahalle
+                .stat-label.text-muted.small #{siteConfig.texts.neighborhoodCount}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h3 24/7
-                .stat-label.text-muted.small Hizmet
+                .stat-label.text-muted.small #{siteConfig.texts.serviceHours}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
                 .stat-number.text-warning.fw-bold.h3 100%
-                .stat-label.text-muted.small Memnuniyet
+                .stat-label.text-muted.small #{siteConfig.texts.satisfaction}
   
   section.py-5
     .container
@@ -104,4 +104,4 @@ block content
           .contact-info.bg-white.p-4.rounded.shadow
             .contact-item.d-flex.align-items-center.justify-content-center.mb-3
               i.fas.fa-phone.text-warning.fa-2x.me-3
-              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+              span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}
