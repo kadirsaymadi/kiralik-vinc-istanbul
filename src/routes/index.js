@@ -6,6 +6,7 @@ const equipmentController = require("../controllers/equipmentController");
 
 router.get("/", homeController.index);
 router.get("/hizmet-bolgeleri", homeController.districts);
+router.get("/kiralik-vincler", homeController.craneList);
 router.get("/kiralik-sepetli-platformlar", equipmentController.platforms);
 router.get(
   "/kiralik-sepetli-platformlar/:platform",

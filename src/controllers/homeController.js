@@ -50,6 +50,58 @@ const homeController = {
     });
   },
 
+  craneList: (req, res) => {
+    const cranes = equipmentData.equipment.filter(
+      (eq) => eq.category === "vinç"
+    );
+
+    const seoData = {
+      seo: {
+        title: "Kiralık Vinçler - İstanbul Vinç Kiralama | Tüm Modeller",
+        description:
+          "İstanbul'da kiralık vinç modelleri. 25 ton'dan 350 ton'a kadar mobil ve sabit vinç kiralama hizmeti. Ücretsiz teklif alın.",
+        keywords: [
+          "kiralık vinçler",
+          "istanbul vinç kiralama",
+          "mobil vinç kiralama",
+          "sabit vinç kiralama",
+          "vinç modelleri",
+        ],
+      },
+      canonical: "/kiralik-vincler",
+      ogUrl: "/kiralik-vincler",
+    };
+
+    const metaTags = seoHelper.generateMetaTags(seoData);
+    const structuredData = seoHelper.generateStructuredData("Service", {
+      name: "İstanbul Vinç Kiralama - Tüm Modeller",
+      description: "İstanbul'da profesyonel vinç kiralama hizmeti",
+    });
+
+    const breadcrumbs = [
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Kiralık Vinçler", url: "/kiralik-vincler" },
+    ];
+
+    res.render("pages/crane-list", {
+      title: metaTags.title,
+      description: metaTags.description,
+      keywords: metaTags.keywords,
+      canonical: metaTags.canonical,
+      ogTitle: metaTags.ogTitle,
+      ogDescription: metaTags.ogDescription,
+      ogImage: metaTags.ogImage,
+      ogUrl: metaTags.ogUrl,
+      structuredData: JSON.stringify(structuredData),
+      breadcrumbSchema: JSON.stringify(
+        seoHelper.generateBreadcrumbSchema(breadcrumbs)
+      ),
+      cranes,
+      districts: districtsData.districts,
+      currentPath: "/kiralik-vincler",
+    });
+  },
+
   contact: (req, res) => {
     const seoData = {
       seo: {
