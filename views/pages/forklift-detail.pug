@@ -1,0 +1,147 @@
+extends ../layouts/main
+include ../partials/crane-card
+
+block content
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-8
+          h1.display-5.fw-bold.text-dark.mb-3= forklift.name
+          p.lead.text-muted.mb-4= forklift.description
+          
+          .forklift-badges.mb-4
+            span.badge.bg-warning.me-2= forklift.type
+            span.badge.bg-warning.me-2= forklift.capacity
+            span.badge.bg-warning.me-2= forklift.height
+            if forklift.availability
+              span.badge.bg-warning
+                i.fas.fa-check.me-1
+                | Mevcut
+        
+        .col-lg-4.text-center
+          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+  
+  section.py-5
+    .container
+      .row
+        .col-lg-8
+          .forklift-gallery.mb-5
+            .swiper.forklift-detail-swiper
+              .swiper-wrapper
+                each image in forklift.images
+                  .swiper-slide
+                    img.img-fluid.rounded.shadow(src=image, alt=forklift.name, loading="lazy")
+              .swiper-pagination
+              .swiper-button-next
+              .swiper-button-prev
+          
+          .forklift-features.mb-5
+            h3.display-6.fw-bold.text-dark.mb-4 Özellikler
+            .row.g-3
+              each feature in forklift.features
+                .col-md-6
+                  .feature-item.d-flex.align-items-center
+                    .feature-icon.bg-warning.text-dark.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                      i.fas.fa-check
+                    span= feature
+          
+          .forklift-specifications.mb-5
+            h3.display-6.fw-bold.text-dark.mb-4 Teknik Özellikler
+            .row.g-3
+              .col-md-6
+                .spec-item.bg-white.p-3.rounded.shadow
+                  .spec-label.text-muted.small Kapasite
+                  .spec-value.fw-bold.text-warning= forklift.capacity
+              .col-md-6
+                .spec-item.bg-white.p-3.rounded.shadow
+                  .spec-label.text-muted.small Yükseklik
+                  .spec-value.fw-bold.text-warning= forklift.height
+              .col-md-6
+                .spec-item.bg-white.p-3.rounded.shadow
+                  .spec-label.text-muted.small Tip
+                  .spec-value.fw-bold.text-warning= forklift.type
+              .col-md-6
+                .spec-item.bg-white.p-3.rounded.shadow
+                  .spec-label.text-muted.small Durum
+                  if forklift.availability
+                    .spec-value.fw-bold.text-success Mevcut
+                  else
+                    .spec-value.fw-bold.text-danger Mevcut Değil
+          
+          .forklift-description.mb-5
+            h3.display-6.fw-bold.text-dark.mb-4 Açıklama
+            p.text-muted= forklift.description
+          
+          .forklift-tags.mb-5
+            h3.display-6.fw-bold.text-dark.mb-4 Etiketler
+            .row.g-3
+              each tag in forklift.tags
+                .col-md-6
+                  .tag-item.d-flex.align-items-center
+                    .tag-icon.bg-warning.text-dark.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                      i.fas.fa-tag
+                    span= tag
+        
+        .col-lg-4
+          .forklift-info.bg-white.p-4.rounded.shadow.mb-4
+            h4.fw-bold.text-dark.mb-3 Forklift Bilgileri
+            .info-item.mb-3
+              .info-label.text-muted.small Kapasite
+              .info-value.fw-bold.text-warning= forklift.capacity
+            .info-item.mb-3
+              .info-label.text-muted.small Yükseklik
+              .info-value.fw-bold.text-warning= forklift.height
+            .info-item.mb-3
+              .info-label.text-muted.small Tip
+              .info-value.fw-bold.text-warning= forklift.type
+            .info-item.mb-3
+              .info-label.text-muted.small Durum
+              if forklift.availability
+                .info-value.fw-bold.text-success
+                  i.fas.fa-check.me-1
+                  | Mevcut
+              else
+                .info-value.fw-bold.text-danger
+                  i.fas.fa-times.me-1
+                  | Mevcut Değil
+            
+            .forklift-actions.mt-4
+              a.btn.btn-warning.btn-lg.w-100.mb-2(href="/teklif-al") Teklif Al
+              a.btn.btn-outline-warning.btn-lg.w-100(href="/kiralik-forkliftler") Tüm Forkliftleri Gör
+          
+          .forklift-contact.bg-white.p-4.rounded.shadow
+            h4.fw-bold.text-dark.mb-3 İletişim
+            .contact-item.d-flex.align-items-center.mb-3
+              i.fas.fa-phone.text-warning.me-3
+              span +90 XXX XXX XX XX
+            .contact-item.d-flex.align-items-center.mb-3
+              i.fas.fa-envelope.text-warning.me-3
+              span info@kiralikvincistanbul.com
+            .contact-item.d-flex.align-items-center
+              i.fas.fa-clock.text-warning.me-3
+              span 7/24 Hizmet
+  
+  section.py-5.bg-light
+    .container
+      h2.display-6.fw-bold.text-dark.mb-4.text-center İlgili Forkliftler
+      .row
+        each relatedForklift in relatedForklifts
+          .col-lg-4.col-md-6.mb-4
+            +craneCard(relatedForklift)
+      
+      .text-center.mt-4
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-forkliftler") Tüm Forkliftleri Gör
+  
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 İletişim
+      p.lead.mb-4 7/24 hizmet için bizi arayın
+      .row.justify-content-center
+        .col-lg-6
+          .contact-info.bg-white.p-4.rounded.shadow
+            .contact-item.d-flex.align-items-center.justify-content-center.mb-3
+              i.fas.fa-phone.text-warning.fa-2x.me-3
+              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX
+
+block scripts
+  script(src="/js/slider.js")

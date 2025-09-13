@@ -97,43 +97,11 @@ block content
   
   section.py-5.bg-light
     .container.text-center
-      h2.display-6.fw-bold.text-dark.mb-4 Hemen Teklif Alın
-      p.lead.mb-4 İlçenizdeki projeniz için en uygun makina modelini belirleyelim
+      h2.display-6.fw-bold.text-dark.mb-4 İletişim
+      p.lead.mb-4 7/24 hizmet için bizi arayın
       .row.justify-content-center
-        .col-lg-8
-          .cta-form.bg-white.p-4.rounded.shadow
-            .row.g-3
-              .col-md-6
-                input.form-control(type="text", placeholder="Adınız Soyadınız")
-              .col-md-6
-                input.form-control(type="tel", placeholder="Telefon Numaranız")
-              .col-md-6
-                select.form-select
-                  option(value="") İlçe Seçin
-                  each district in districts
-                    option(value=district.name)= district.name
-              .col-md-6
-                select.form-select
-                  option(value="") Makina Tipi Seçin
-                  option(value="Vinç") Vinç
-                  option(value="Sepetli Platform") Sepetli Platform
-                  option(value="Forklift") Forklift
-              .col-md-6
-                select.form-select
-                  option(value="") Kapasite/Yükseklik Seçin
-                  option(value="5-25 ton") 5-25 Ton Vinç
-                  option(value="30-50 ton") 30-50 Ton Vinç
-                  option(value="60-100 ton") 60-100 Ton Vinç
-                  option(value="10-30m") 10-30 Metre Platform
-                  option(value="35-60m") 35-60 Metre Platform
-                  option(value="65-100m") 65-100 Metre Platform
-                  option(value="1.5-3 ton") 1.5-3 Ton Forklift
-                  option(value="3.5-7 ton") 3.5-7 Ton Forklift
-              .col-md-6
-                input.form-control(type="date", placeholder="Tarih Seçiniz")
-              .col-12
-                textarea.form-control(rows="3", placeholder="Proje detayları ve özel istekleriniz...")
-              .col-12
-                button.btn.btn-warning.btn-lg.w-100
-                  i.fas.fa-calculator.me-2
-                  | Ücretsiz Teklif Al
+        .col-lg-6
+          .contact-info.bg-white.p-4.rounded.shadow
+            .contact-item.d-flex.align-items-center.justify-content-center.mb-3
+              i.fas.fa-phone.text-warning.fa-2x.me-3
+              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX

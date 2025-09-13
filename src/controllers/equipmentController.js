@@ -518,6 +518,173 @@ const equipmentController = {
       currentPath: `/kiralik-forklift-${district.slug}/${neighborhoodSlug}`,
     });
   },
+
+  platformDetail: (req, res) => {
+    const platformSlug = req.params.platform;
+    const platform = equipmentData.equipment.find(
+      (equipment) =>
+        equipment.availability &&
+        equipment.category === "sepetli-platform" &&
+        equipment.id === platformSlug
+    );
+
+    if (!platform) {
+      return res.status(404).render("pages/404", {
+        title: "Platform Bulunamadı",
+        description: "Aradığınız sepetli platform bulunamadı",
+        currentPath: "/kiralik-sepetli-platformlar",
+      });
+    }
+
+    const relatedPlatforms = equipmentData.equipment
+      .filter(
+        (equipment) =>
+          equipment.availability &&
+          equipment.category === "sepetli-platform" &&
+          equipment.id !== platform.id
+      )
+      .slice(0, 3);
+
+    const seoData = {
+      seo: {
+        title: `${platform.name} - İstanbul Sepetli Platform Kiralama | Detaylı Özellikler`,
+        description: `${platform.name} detaylı özellikleri ve kiralama bilgileri. ${platform.capacity} kapasiteli sepetli platform kiralama hizmeti.`,
+        keywords: [
+          `${platform.name}`,
+          "sepetli platform kiralama",
+          `${platform.capacity} sepetli platform`,
+          "istanbul sepetli platform",
+          "platform kiralama",
+        ],
+      },
+      canonical: `/kiralik-sepetli-platformlar/${platform.id}`,
+      ogUrl: `/kiralik-sepetli-platformlar/${platform.id}`,
+    };
+
+    const metaTags = seoHelper.generateMetaTags(seoData);
+    const structuredData = seoHelper.generateStructuredData("Product", {
+      name: platform.name,
+      description: platform.description,
+      brand: {
+        "@type": "Brand",
+        name: "İstanbul Vinç Kiralama",
+      },
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+        priceCurrency: "TRY",
+      },
+    });
+
+    const breadcrumbs = [
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Sepetli Platformlar", url: "/kiralik-sepetli-platformlar" },
+      {
+        name: platform.name,
+        url: `/kiralik-sepetli-platformlar/${platform.id}`,
+      },
+    ];
+
+    res.render("pages/platform-detail", {
+      title: metaTags.title,
+      description: metaTags.description,
+      keywords: metaTags.keywords,
+      canonical: metaTags.canonical,
+      ogTitle: metaTags.ogTitle,
+      ogDescription: metaTags.ogDescription,
+      ogImage: metaTags.ogImage,
+      ogUrl: metaTags.ogUrl,
+      structuredData: JSON.stringify(structuredData),
+      breadcrumbSchema: JSON.stringify(
+        seoHelper.generateBreadcrumbSchema(breadcrumbs)
+      ),
+      platform,
+      relatedPlatforms,
+      currentPath: `/kiralik-sepetli-platformlar/${platform.id}`,
+    });
+  },
+
+  forkliftDetail: (req, res) => {
+    const forkliftSlug = req.params.forklift;
+    const forklift = equipmentData.equipment.find(
+      (equipment) =>
+        equipment.availability &&
+        equipment.category === "forklift" &&
+        equipment.id === forkliftSlug
+    );
+
+    if (!forklift) {
+      return res.status(404).render("pages/404", {
+        title: "Forklift Bulunamadı",
+        description: "Aradığınız forklift bulunamadı",
+        currentPath: "/kiralik-forkliftler",
+      });
+    }
+
+    const relatedForklifts = equipmentData.equipment
+      .filter(
+        (equipment) =>
+          equipment.availability &&
+          equipment.category === "forklift" &&
+          equipment.id !== forklift.id
+      )
+      .slice(0, 3);
+
+    const seoData = {
+      seo: {
+        title: `${forklift.name} - İstanbul Forklift Kiralama | Detaylı Özellikler`,
+        description: `${forklift.name} detaylı özellikleri ve kiralama bilgileri. ${forklift.capacity} kapasiteli forklift kiralama hizmeti.`,
+        keywords: [
+          `${forklift.name}`,
+          "forklift kiralama",
+          `${forklift.capacity} forklift`,
+          "istanbul forklift",
+          "forklift kiralama",
+        ],
+      },
+      canonical: `/kiralik-forkliftler/${forklift.id}`,
+      ogUrl: `/kiralik-forkliftler/${forklift.id}`,
+    };
+
+    const metaTags = seoHelper.generateMetaTags(seoData);
+    const structuredData = seoHelper.generateStructuredData("Product", {
+      name: forklift.name,
+      description: forklift.description,
+      brand: {
+        "@type": "Brand",
+        name: "İstanbul Vinç Kiralama",
+      },
+      offers: {
+        "@type": "Offer",
+        availability: "https://schema.org/InStock",
+        priceCurrency: "TRY",
+      },
+    });
+
+    const breadcrumbs = [
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Forkliftler", url: "/kiralik-forkliftler" },
+      { name: forklift.name, url: `/kiralik-forkliftler/${forklift.id}` },
+    ];
+
+    res.render("pages/forklift-detail", {
+      title: metaTags.title,
+      description: metaTags.description,
+      keywords: metaTags.keywords,
+      canonical: metaTags.canonical,
+      ogTitle: metaTags.ogTitle,
+      ogDescription: metaTags.ogDescription,
+      ogImage: metaTags.ogImage,
+      ogUrl: metaTags.ogUrl,
+      structuredData: JSON.stringify(structuredData),
+      breadcrumbSchema: JSON.stringify(
+        seoHelper.generateBreadcrumbSchema(breadcrumbs)
+      ),
+      forklift,
+      relatedForklifts,
+      currentPath: `/kiralik-forkliftler/${forklift.id}`,
+    });
+  },
 };
 
 module.exports = equipmentController;

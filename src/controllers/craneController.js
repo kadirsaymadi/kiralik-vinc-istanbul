@@ -13,7 +13,7 @@ const craneController = {
   detail: (req, res) => {
     const craneSlug = req.params.crane;
     const crane = equipmentData.equipment.find(
-      (c) => c.id === craneSlug.replace("-vinc-kiralama", "")
+      (c) => c.id === craneSlug.replace("-kiralama", "")
     );
 
     if (!crane) {

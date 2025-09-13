@@ -1,7 +1,7 @@
 {
   "equipment": [
     {
-      "id": "crane-001",
+      "id": "5-tonluk-vinc",
       "name": "5 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -33,7 +33,7 @@
       }
     },
     {
-      "id": "crane-002",
+      "id": "10-tonluk-vinc",
       "name": "10 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "id": "crane-003",
+      "id": "15-tonluk-vinc",
       "name": "15 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -97,7 +97,7 @@
       }
     },
     {
-      "id": "crane-004",
+      "id": "20-tonluk-vinc",
       "name": "20 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -129,7 +129,7 @@
       }
     },
     {
-      "id": "crane-005",
+      "id": "25-tonluk-vinc",
       "name": "25 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -161,7 +161,7 @@
       }
     },
     {
-      "id": "crane-006",
+      "id": "30-tonluk-vinc",
       "name": "30 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -193,7 +193,7 @@
       }
     },
     {
-      "id": "crane-007",
+      "id": "35-tonluk-vinc",
       "name": "35 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -225,7 +225,7 @@
       }
     },
     {
-      "id": "crane-008",
+      "id": "40-tonluk-vinc",
       "name": "40 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -257,7 +257,7 @@
       }
     },
     {
-      "id": "crane-009",
+      "id": "45-tonluk-vinc",
       "name": "45 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -289,7 +289,7 @@
       }
     },
     {
-      "id": "crane-010",
+      "id": "50-tonluk-vinc",
       "name": "50 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -321,7 +321,7 @@
       }
     },
     {
-      "id": "crane-011",
+      "id": "55-tonluk-vinc",
       "name": "55 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -353,7 +353,7 @@
       }
     },
     {
-      "id": "crane-012",
+      "id": "60-tonluk-vinc",
       "name": "60 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -385,7 +385,7 @@
       }
     },
     {
-      "id": "crane-013",
+      "id": "65-tonluk-vinc",
       "name": "65 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -417,7 +417,7 @@
       }
     },
     {
-      "id": "crane-014",
+      "id": "70-tonluk-vinc",
       "name": "70 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -449,7 +449,7 @@
       }
     },
     {
-      "id": "crane-015",
+      "id": "75-tonluk-vinc",
       "name": "75 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -481,7 +481,7 @@
       }
     },
     {
-      "id": "crane-016",
+      "id": "80-tonluk-vinc",
       "name": "80 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -513,7 +513,7 @@
       }
     },
     {
-      "id": "crane-017",
+      "id": "85-tonluk-vinc",
       "name": "85 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -545,7 +545,7 @@
       }
     },
     {
-      "id": "crane-018",
+      "id": "90-tonluk-vinc",
       "name": "90 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -577,7 +577,7 @@
       }
     },
     {
-      "id": "crane-019",
+      "id": "95-tonluk-vinc",
       "name": "95 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -609,7 +609,7 @@
       }
     },
     {
-      "id": "crane-020",
+      "id": "100-tonluk-vinc",
       "name": "100 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -641,7 +641,7 @@
       }
     },
     {
-      "id": "forklift-001",
+      "id": "1-5-tonluk-forklift",
       "name": "1.5 Tonluk Kiralık Forklift",
       "type": "Elektrikli Forklift",
       "category": "forklift",
@@ -672,7 +672,7 @@
       }
     },
     {
-      "id": "forklift-002",
+      "id": "2-tonluk-forklift",
       "name": "2 Tonluk Kiralık Forklift",
       "type": "Elektrikli Forklift",
       "category": "forklift",
@@ -703,7 +703,7 @@
       }
     },
     {
-      "id": "forklift-003",
+      "id": "2-5-tonluk-forklift",
       "name": "2.5 Tonluk Kiralık Forklift",
       "type": "Elektrikli Forklift",
       "category": "forklift",
@@ -734,7 +734,7 @@
       }
     },
     {
-      "id": "forklift-004",
+      "id": "3-tonluk-forklift",
       "name": "3 Tonluk Kiralık Forklift",
       "type": "Elektrikli Forklift",
       "category": "forklift",
@@ -765,7 +765,7 @@
       }
     },
     {
-      "id": "forklift-005",
+      "id": "3-5-tonluk-forklift",
       "name": "3.5 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -796,7 +796,7 @@
       }
     },
     {
-      "id": "forklift-006",
+      "id": "4-tonluk-forklift",
       "name": "4 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -827,7 +827,7 @@
       }
     },
     {
-      "id": "forklift-007",
+      "id": "4-5-tonluk-forklift",
       "name": "4.5 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -858,7 +858,7 @@
       }
     },
     {
-      "id": "forklift-008",
+      "id": "5-tonluk-forklift",
       "name": "5 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -889,7 +889,7 @@
       }
     },
     {
-      "id": "forklift-009",
+      "id": "5-5-tonluk-forklift",
       "name": "5.5 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -920,7 +920,7 @@
       }
     },
     {
-      "id": "forklift-010",
+      "id": "6-tonluk-forklift",
       "name": "6 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -951,7 +951,7 @@
       }
     },
     {
-      "id": "forklift-011",
+      "id": "6-5-tonluk-forklift",
       "name": "6.5 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -982,7 +982,7 @@
       }
     },
     {
-      "id": "forklift-012",
+      "id": "7-tonluk-forklift",
       "name": "7 Tonluk Kiralık Forklift",
       "type": "Dizel Forklift",
       "category": "forklift",
@@ -1013,7 +1013,7 @@
       }
     },
     {
-      "id": "platform-001",
+      "id": "10-metre-sepetli-platform",
       "name": "10 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1044,7 +1044,7 @@
       }
     },
     {
-      "id": "platform-002",
+      "id": "15-metre-sepetli-platform",
       "name": "15 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1075,7 +1075,7 @@
       }
     },
     {
-      "id": "platform-003",
+      "id": "20-metre-sepetli-platform",
       "name": "20 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1106,7 +1106,7 @@
       }
     },
     {
-      "id": "platform-004",
+      "id": "25-metre-sepetli-platform",
       "name": "25 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1137,7 +1137,7 @@
       }
     },
     {
-      "id": "platform-005",
+      "id": "30-metre-sepetli-platform",
       "name": "30 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1168,7 +1168,7 @@
       }
     },
     {
-      "id": "platform-006",
+      "id": "35-metre-sepetli-platform",
       "name": "35 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1199,7 +1199,7 @@
       }
     },
     {
-      "id": "platform-007",
+      "id": "40-metre-sepetli-platform",
       "name": "40 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1230,7 +1230,7 @@
       }
     },
     {
-      "id": "platform-008",
+      "id": "45-metre-sepetli-platform",
       "name": "45 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1261,7 +1261,7 @@
       }
     },
     {
-      "id": "platform-009",
+      "id": "50-metre-sepetli-platform",
       "name": "50 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1292,7 +1292,7 @@
       }
     },
     {
-      "id": "platform-010",
+      "id": "55-metre-sepetli-platform",
       "name": "55 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1323,7 +1323,7 @@
       }
     },
     {
-      "id": "platform-011",
+      "id": "60-metre-sepetli-platform",
       "name": "60 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1354,7 +1354,7 @@
       }
     },
     {
-      "id": "platform-012",
+      "id": "65-metre-sepetli-platform",
       "name": "65 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1385,7 +1385,7 @@
       }
     },
     {
-      "id": "platform-013",
+      "id": "70-metre-sepetli-platform",
       "name": "70 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1416,7 +1416,7 @@
       }
     },
     {
-      "id": "platform-014",
+      "id": "75-metre-sepetli-platform",
       "name": "75 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1447,7 +1447,7 @@
       }
     },
     {
-      "id": "platform-015",
+      "id": "80-metre-sepetli-platform",
       "name": "80 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1478,7 +1478,7 @@
       }
     },
     {
-      "id": "platform-016",
+      "id": "85-metre-sepetli-platform",
       "name": "85 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1509,7 +1509,7 @@
       }
     },
     {
-      "id": "platform-017",
+      "id": "90-metre-sepetli-platform",
       "name": "90 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1540,7 +1540,7 @@
       }
     },
     {
-      "id": "platform-018",
+      "id": "95-metre-sepetli-platform",
       "name": "95 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",
@@ -1571,7 +1571,7 @@
       }
     },
     {
-      "id": "platform-019",
+      "id": "100-metre-sepetli-platform",
       "name": "100 Metre Kiralık Sepetli Platform",
       "type": "Sepetli Platform",
       "category": "sepetli-platform",

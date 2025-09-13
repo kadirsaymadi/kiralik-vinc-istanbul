@@ -100,7 +100,7 @@ block content
                         i.fas.fa-check.text-warning.me-1
                         = feature
                 .card-actions.mt-auto
-                  a.btn.btn-outline-warning.btn-sm.me-2(href=`/kiralik-forkliftler/${forklift.id}-forklift-kiralama`) Detay
+                  a.btn.btn-outline-warning.btn-sm.me-2(href=`/kiralik-forkliftler/${forklift.id}-kiralama`) Detay
                   a.btn.btn-warning.btn-sm(href="/teklif-al") Teklif Al
 
       .text-center.mt-5
@@ -128,41 +128,11 @@ block content
 
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
-      h2.display-6.fw-bold.mb-4 Hemen Teklif Alın
-      p.lead.mb-4= `${district.name} ilçesindeki projeniz için en uygun forklift modelini belirleyelim`
+      h2.display-6.fw-bold.mb-4 İletişim
+      p.lead.mb-4 7/24 hizmet için bizi arayın
       .row.justify-content-center
-        .col-lg-8
-          .cta-form.bg-white.p-4.rounded.shadow
-            .row.g-3
-              .col-md-6
-                input.form-control(type="text", placeholder="Adınız Soyadınız")
-              .col-md-6
-                input.form-control(type="tel", placeholder="Telefon Numaranız")
-              .col-md-6
-                input.form-control(type="text", value=district.name, readonly)
-              .col-md-6
-                select.form-select
-                  option(value="") Mahalle Seçin
-                  each neighborhood in district.neighborhoods
-                    option(value=neighborhood)= neighborhood
-              .col-md-6
-                select.form-select
-                  option(value="") Forklift Kapasitesi
-                  option(value="1.5") 1.5 Ton
-                  option(value="2") 2 Ton
-                  option(value="2.5") 2.5 Ton
-                  option(value="3") 3 Ton
-                  option(value="3.5") 3.5 Ton
-                  option(value="4") 4 Ton
-                  option(value="4.5") 4.5 Ton
-                  option(value="5") 5 Ton
-                  option(value="5.5") 5.5 Ton
-                  option(value="6") 6 Ton
-                  option(value="6.5") 6.5 Ton
-                  option(value="7") 7 Ton
-              .col-md-6
-                input.form-control(type="date", placeholder="Tarih Seçiniz")
-              .col-12
-                textarea.form-control(rows="3", placeholder="Proje detayları...")
-              .col-12
-                button.btn.btn-warning.btn-lg.w-100 Teklif Al
+        .col-lg-6
+          .contact-info.bg-white.p-4.rounded.shadow
+            .contact-item.d-flex.align-items-center.justify-content-center.mb-3
+              i.fas.fa-phone.text-warning.fa-2x.me-3
+              span.display-6.fw-bold.text-dark +90 XXX XXX XX XX

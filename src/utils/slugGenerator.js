@@ -15,24 +15,24 @@ const slugGenerator = {
   },
 
   createCraneSlug: (name) => {
-    return slugGenerator.createSlug(name) + "-vinc-kiralama";
+    return slugGenerator.createSlug(name) + "-kiralama";
   },
 
   createDistrictSlug: (district) => {
-    return slugGenerator.createSlug(district) + "-vinc-kiralama";
+    return slugGenerator.createSlug(district) + "-kiralama";
   },
 
   createNeighborhoodSlug: (neighborhood, district) => {
-    return slugGenerator.createSlug(neighborhood) + "-vinc-kiralama";
+    return slugGenerator.createSlug(neighborhood) + "-kiralama";
   },
 
   createBreadcrumbSlug: (district, neighborhood) => {
     if (neighborhood) {
       return `/${slugGenerator.createSlug(district)}/${slugGenerator.createSlug(
         neighborhood
-      )}-vinc-kiralama`;
+      )}-kiralama`;
     }
-    return `/${slugGenerator.createSlug(district)}-vinc-kiralama`;
+    return `/${slugGenerator.createSlug(district)}-kiralama`;
   },
 };
 
