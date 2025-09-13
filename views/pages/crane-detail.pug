@@ -1,0 +1,126 @@
+extends ../layouts/main
+include ../partials/crane-card
+
+block content
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-8
+          h1.display-5.fw-bold.text-dark.mb-3= crane.name
+          p.lead.text-muted.mb-4= crane.description
+          
+          .crane-badges.mb-4
+            span.badge.bg-warning.me-2= crane.type
+            span.badge.bg-warning.me-2= crane.capacity
+            span.badge.bg-warning.me-2= crane.height
+            span.badge.bg-warning.me-2= crane.radius
+            if crane.availability
+              span.badge.bg-warning
+                i.fas.fa-check.me-1
+                | Mevcut
+        
+        .col-lg-4.text-center
+          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+  
+  section.py-5
+    .container
+      .row
+        .col-lg-8
+          .crane-gallery.mb-5
+            .swiper.crane-detail-swiper
+              .swiper-wrapper
+                each image in crane.images
+                  .swiper-slide
+                    img.img-fluid.rounded.shadow(src=image, alt=crane.name, loading="lazy")
+              .swiper-pagination
+              .swiper-button-next
+              .swiper-button-prev
+          
+          .crane-features.mb-5
+            h3.display-6.fw-bold.text-dark.mb-4 Özellikler
+            .row.g-3
+              each feature in crane.features
+                .col-md-6
+                  .feature-item.d-flex.align-items-center
+                    .feature-icon.bg-warning.text-dark.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                      i.fas.fa-check
+                    span= feature
+          
+          .crane-specifications.mb-5
+            h3.display-6.fw-bold.text-dark.mb-4 Teknik Özellikler
+            .row.g-3
+              .col-md-6
+                .spec-card.bg-light.p-3.rounded
+                  .spec-label.text-muted.small Kaldırma Kapasitesi
+                  .spec-value.fw-bold.text-warning= crane.capacity
+              .col-md-6
+                .spec-card.bg-light.p-3.rounded
+                  .spec-label.text-muted.small Bom Uzunluğu
+                  .spec-value.fw-bold.text-warning= crane.height
+              .col-md-6
+                .spec-card.bg-light.p-3.rounded
+                  .spec-label.text-muted.small Çalışma Yarıçapı
+                  .spec-value.fw-bold.text-warning= crane.radius
+              .col-md-6
+                .spec-card.bg-light.p-3.rounded
+                  .spec-label.text-muted.small Vinç Tipi
+                  .spec-value.fw-bold.text-warning= crane.type
+        
+        .col-lg-4
+          .features-card.bg-white.p-4.rounded.shadow.sticky-top
+            h4.fw-bold.text-dark.mb-4 Özellikler
+            .features-list
+              each feature in crane.features
+                .feature-item.d-flex.align-items-center.mb-3
+                  .feature-icon.me-3
+                    i.fas.fa-check.text-warning
+                  .feature-text= feature
+            
+            .contact-note.bg-light.p-3.rounded.mb-4
+              p.text-muted.small.mb-0
+                i.fas.fa-info-circle.me-1
+                | Detaylı bilgi ve teklif için iletişime geçin.
+            
+            .contact-actions
+              a.btn.btn-warning.btn-lg.w-100.mb-2(href="/teklif-al") Teklif Al
+              a.btn.btn-outline-warning.btn-lg.w-100(href="tel:+90XXXXXXXXXX") Hemen Ara
+  
+  section.py-5.bg-light
+    .container
+      .text-center.mb-5
+        h2.display-6.fw-bold.text-dark.mb-3
+          | Benzer 
+          span.text-warning Vinç Modelleri
+        p.lead.text-muted Diğer vinç modellerimizi de inceleyin
+      
+      .row
+        each relatedCrane in relatedCranes
+          +craneCard(relatedCrane)
+      
+      .text-center.mt-4
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") Tüm Vinçleri Gör
+  
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 #{crane.name} İçin Hemen Teklif Alın
+      p.lead.mb-4 Bu vinç modeli için detaylı bilgi ve teklif alın
+      .row.justify-content-center
+        .col-lg-8
+          .cta-form.bg-white.p-4.rounded.shadow
+            .row.g-3
+              .col-md-6
+                input.form-control(type="text", placeholder="Adınız Soyadınız")
+              .col-md-6
+                input.form-control(type="tel", placeholder="Telefon Numaranız")
+              .col-md-6
+                input.form-control(type="text", placeholder="İlçe")
+              .col-md-6
+                input.form-control(type="text", placeholder="Mahalle")
+              .col-md-6
+                input.form-control(type="text", placeholder=crane.name, readonly, value=crane.name)
+              .col-md-6
+                input.form-control(type="date", placeholder="Tarih Seçiniz")
+              .col-12
+                textarea.form-control(rows="3", placeholder="Proje detayları ve özel istekleriniz...")
+              .col-12
+                button.btn.btn-warning.btn-lg.w-100 Teklif Al

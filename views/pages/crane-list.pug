@@ -1,0 +1,134 @@
+extends ../layouts/main
+include ../partials/crane-card
+
+block content
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-8
+          h1.display-5.fw-bold.text-dark.mb-3 Vinç Modelleri
+          p.lead.text-muted.mb-4 İstanbul'da kiralık vinç modelleri. 25 ton'dan 350 ton'a kadar mobil ve sabit vinç çeşitleri.
+          
+          .crane-stats.row.g-3.mb-4
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4= cranes.length
+                .stat-label.text-muted.small Toplam Model
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4= cranes.filter(c => c.type === 'Mobil Vinç').length
+                .stat-label.text-muted.small Mobil Vinç
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4= cranes.filter(c => c.type === 'Sabit Vinç').length
+                .stat-label.text-muted.small Sabit Vinç
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4 350
+                .stat-label.text-muted.small Max Kapasite (Ton)
+        
+        .col-lg-4.text-center
+          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+  
+  section.py-5
+    .container
+      .row.mb-4
+        .col-lg-8
+          .filter-section
+            .row.g-3
+              .col-md-6
+                select.form-select#capacityFilter
+                  option(value="") Kapasiteye Göre Filtrele
+                  option(value="25") 25 Ton
+                  option(value="50") 50 Ton
+                  option(value="100") 100 Ton
+                  option(value="150") 150 Ton
+                  option(value="200") 200 Ton
+                  option(value="350") 350 Ton
+              .col-md-6
+                select.form-select#typeFilter
+                  option(value="") Tipe Göre Filtrele
+                  option(value="Mobil Vinç") Mobil Vinç
+                  option(value="Sabit Vinç") Sabit Vinç
+        .col-lg-4.text-end
+          .sort-section
+            select.form-select#sortSelect
+              option(value="name") İsme Göre Sırala
+              option(value="capacity") Kapasiteye Göre Sırala
+              option(value="price") Fiyata Göre Sırala
+      
+      .row#craneList
+        each crane in cranes
+          +craneCard(crane)
+      
+      .text-center.mt-5
+        a.btn.btn-outline-primary.btn-lg(href="/teklif-al") Teklif Al
+  
+  section.py-5.bg-light
+    .container
+      .text-center.mb-5
+        h2.display-6.fw-bold.text-dark.mb-3
+          | Vinç Kiralama 
+          span.text-warning Süreci
+        p.lead.text-muted Kolay ve hızlı kiralama süreci
+      
+      .row.g-4
+        .col-lg-3.col-md-6
+          .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .process-icon.mb-3
+              .step-number.bg-warning.text-dark.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center 1
+            h5.card-title Teklif Al
+            p.card-text.text-muted Projeniz için ücretsiz teklif alın
+        .col-lg-3.col-md-6
+          .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .process-icon.mb-3
+              .step-number.bg-warning.text-dark.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center 2
+            h5.card-title Vinç Seç
+            p.card-text.text-muted İhtiyacınıza uygun vinç modelini seçin
+        .col-lg-3.col-md-6
+          .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .process-icon.mb-3
+              .step-number.bg-warning.text-dark.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center 3
+            h5.card-title Sözleşme
+            p.card-text.text-muted Sözleşme imzalayın ve ödeme yapın
+        .col-lg-3.col-md-6
+          .process-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .process-icon.mb-3
+              .step-number.bg-warning.text-dark.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center 4
+            h5.card-title Operatörlü Teslimat
+            p.card-text.text-muted Uzman operatörümüzle birlikte vinçi teslim ediyoruz
+  
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 Hemen Teklif Alın
+      p.lead.mb-4 Projeniz için en uygun vinç modelini belirleyelim
+      .row.justify-content-center
+        .col-lg-8
+          .cta-form.bg-white.p-4.rounded.shadow
+            .row.g-3
+              .col-md-6
+                input.form-control(type="text", placeholder="Adınız Soyadınız")
+              .col-md-6
+                input.form-control(type="tel", placeholder="Telefon Numaranız")
+              .col-md-6
+                input.form-control(type="text", placeholder="İlçe")
+              .col-md-6
+                input.form-control(type="text", placeholder="Mahalle")
+              .col-md-6
+                select.form-select
+                  option(value="") Vinç Kapasitesi
+                  option(value="25") 25 Ton
+                  option(value="50") 50 Ton
+                  option(value="100") 100 Ton
+                  option(value="150") 150 Ton
+                  option(value="200") 200 Ton
+                  option(value="350") 350 Ton
+              .col-md-6
+                input.form-control(type="date", placeholder="Tarih Seçiniz")
+              .col-12
+                textarea.form-control(rows="3", placeholder="Proje detayları...")
+              .col-12
+                button.btn.btn-warning.btn-lg.w-100 Teklif Al
+
+block scripts
+  script(src="/js/crane-list.js")

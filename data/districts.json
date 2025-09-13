@@ -1,0 +1,220 @@
+{
+  "districts": [
+    {
+      "id": "beyoglu",
+      "name": "Beyoğlu",
+      "slug": "beyoglu",
+      "neighborhoods": [
+        "Taksim",
+        "Galata",
+        "Cihangir",
+        "Kasımpaşa",
+        "Karaköy",
+        "Tünel",
+        "Asmalımescit",
+        "Tepebaşı"
+      ],
+      "description": "Beyoğlu ilçesinde profesyonel vinç kiralama hizmeti. Tarihi yarımada ve modern şehir merkezinde güvenilir hizmet.",
+      "seo": {
+        "title": "Beyoğlu Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri",
+        "description": "Beyoğlu'nda vinç kiralama, mobil vinç, sabit vinç hizmetleri. Taksim, Galata, Karaköy bölgelerinde uygun fiyat, hızlı teslimat.",
+        "keywords": [
+          "beyoğlu vinç kiralama",
+          "taksim vinç",
+          "galata vinç",
+          "karaköy vinç",
+          "cihangir vinç"
+        ]
+      }
+    },
+    {
+      "id": "kadikoy",
+      "name": "Kadıköy",
+      "slug": "kadikoy",
+      "neighborhoods": [
+        "Moda",
+        "Fenerbahçe",
+        "Göztepe",
+        "Erenköy",
+        "Bostancı",
+        "Kozyatağı",
+        "Acıbadem",
+        "Rasimpaşa"
+      ],
+      "description": "Kadıköy ilçesinde Anadolu yakasının merkezi konumunda vinç kiralama hizmeti. Modern ve geleneksel yapılar için ideal.",
+      "seo": {
+        "title": "Kadıköy Vinç Kiralama - Anadolu Yakası Vinç Hizmetleri",
+        "description": "Kadıköy'de vinç kiralama, mobil vinç, sabit vinç hizmetleri. Moda, Fenerbahçe, Bostancı bölgelerinde profesyonel hizmet.",
+        "keywords": [
+          "kadıköy vinç kiralama",
+          "moda vinç",
+          "fenerbahçe vinç",
+          "bostancı vinç",
+          "göztepe vinç"
+        ]
+      }
+    },
+    {
+      "id": "sisli",
+      "name": "Şişli",
+      "slug": "sisli",
+      "neighborhoods": [
+        "Mecidiyeköy",
+        "Gayrettepe",
+        "Levent",
+        "Etiler",
+        "Nişantaşı",
+        "Harbiye",
+        "Osmanbey",
+        "Pangaltı"
+      ],
+      "description": "Şişli ilçesinde iş merkezi ve konut alanlarında vinç kiralama hizmeti. Modern binalar ve iş merkezleri için uygun.",
+      "seo": {
+        "title": "Şişli Vinç Kiralama - İş Merkezi Vinç Hizmetleri",
+        "description": "Şişli'de vinç kiralama, mobil vinç, sabit vinç hizmetleri. Mecidiyeköy, Levent, Etiler bölgelerinde güvenilir hizmet.",
+        "keywords": [
+          "şişli vinç kiralama",
+          "mecidiyeköy vinç",
+          "levent vinç",
+          "etiler vinç",
+          "gayrettepe vinç"
+        ]
+      }
+    },
+    {
+      "id": "besiktas",
+      "name": "Beşiktaş",
+      "slug": "besiktas",
+      "neighborhoods": [
+        "Bebek",
+        "Arnavutköy",
+        "Ortaköy",
+        "Kuruçeşme",
+        "Ulus",
+        "Etiler",
+        "Levent",
+        "Akaretler"
+      ],
+      "description": "Beşiktaş ilçesinde Boğaz kıyısında vinç kiralama hizmeti. Lüks konutlar ve tarihi yapılar için özel çözümler.",
+      "seo": {
+        "title": "Beşiktaş Vinç Kiralama - Boğaz Kıyısı Vinç Hizmetleri",
+        "description": "Beşiktaş'ta vinç kiralama, mobil vinç, sabit vinç hizmetleri. Bebek, Ortaköy, Arnavutköy bölgelerinde uzman hizmet.",
+        "keywords": [
+          "beşiktaş vinç kiralama",
+          "bebek vinç",
+          "ortaköy vinç",
+          "arnavutköy vinç",
+          "kuruçeşme vinç"
+        ]
+      }
+    },
+    {
+      "id": "fatih",
+      "name": "Fatih",
+      "slug": "fatih",
+      "neighborhoods": [
+        "Sultanahmet",
+        "Eminönü",
+        "Beyazıt",
+        "Laleli",
+        "Aksaray",
+        "Vefa",
+        "Fener",
+        "Balat"
+      ],
+      "description": "Fatih ilçesinde tarihi yarımadada vinç kiralama hizmeti. Tarihi yapılar ve dar sokaklar için özel vinç çözümleri.",
+      "seo": {
+        "title": "Fatih Vinç Kiralama - Tarihi Yarımada Vinç Hizmetleri",
+        "description": "Fatih'te vinç kiralama, mobil vinç, sabit vinç hizmetleri. Sultanahmet, Eminönü, Laleli bölgelerinde tarihi yapılar için uzman hizmet.",
+        "keywords": [
+          "fatih vinç kiralama",
+          "sultanahmet vinç",
+          "eminönü vinç",
+          "laleli vinç",
+          "beyazıt vinç"
+        ]
+      }
+    },
+    {
+      "id": "uskudar",
+      "name": "Üsküdar",
+      "slug": "uskudar",
+      "neighborhoods": [
+        "Çengelköy",
+        "Beylerbeyi",
+        "Kuzguncuk",
+        "Salacak",
+        "Kısıklı",
+        "Altunizade",
+        "Bulbulderesi",
+        "Mimar Sinan"
+      ],
+      "description": "Üsküdar ilçesinde Anadolu yakasında vinç kiralama hizmeti. Tarihi semtler ve modern yerleşimler için kapsamlı hizmet.",
+      "seo": {
+        "title": "Üsküdar Vinç Kiralama - Anadolu Yakası Vinç Hizmetleri",
+        "description": "Üsküdar'da vinç kiralama, mobil vinç, sabit vinç hizmetleri. Çengelköy, Beylerbeyi, Kuzguncuk bölgelerinde profesyonel hizmet.",
+        "keywords": [
+          "üsküdar vinç kiralama",
+          "çengelköy vinç",
+          "beylerbeyi vinç",
+          "kuzguncuk vinç",
+          "salacak vinç"
+        ]
+      }
+    },
+    {
+      "id": "maltepe",
+      "name": "Maltepe",
+      "slug": "maltepe",
+      "neighborhoods": [
+        "Bağlarbaşı",
+        "Fındıklı",
+        "Gülensu",
+        "Altıntepe",
+        "Zümrütevler",
+        "Bağdat Caddesi",
+        "Küçükyalı",
+        "Bostancı"
+      ],
+      "description": "Maltepe ilçesinde Anadolu yakasında vinç kiralama hizmeti. Konut projeleri ve ticari yapılar için uygun çözümler.",
+      "seo": {
+        "title": "Maltepe Vinç Kiralama - Anadolu Yakası Vinç Hizmetleri",
+        "description": "Maltepe'de vinç kiralama, mobil vinç, sabit vinç hizmetleri. Bağlarbaşı, Altıntepe, Zümrütevler bölgelerinde güvenilir hizmet.",
+        "keywords": [
+          "maltepe vinç kiralama",
+          "bağlarbaşı vinç",
+          "altıntepe vinç",
+          "zümrütevler vinç",
+          "bağdat caddesi vinç"
+        ]
+      }
+    },
+    {
+      "id": "kartal",
+      "name": "Kartal",
+      "slug": "kartal",
+      "neighborhoods": [
+        "Dragos",
+        "Soğanlık",
+        "Yakacık",
+        "Petrol İş",
+        "Orhantepe",
+        "Uğur Mumcu",
+        "Karlıktepe",
+        "Çavuşoğlu"
+      ],
+      "description": "Kartal ilçesinde sanayi ve konut alanlarında vinç kiralama hizmeti. Büyük projeler ve sanayi tesisleri için ideal.",
+      "seo": {
+        "title": "Kartal Vinç Kiralama - Sanayi ve Konut Vinç Hizmetleri",
+        "description": "Kartal'da vinç kiralama, mobil vinç, sabit vinç hizmetleri. Dragos, Soğanlık, Yakacık bölgelerinde büyük projeler için uzman hizmet.",
+        "keywords": [
+          "kartal vinç kiralama",
+          "dragos vinç",
+          "soğanlık vinç",
+          "yakacık vinç",
+          "sanayi vinç"
+        ]
+      }
+    }
+  ]
+}

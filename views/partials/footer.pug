@@ -1,0 +1,70 @@
+footer.bg-dark.text-light.py-5
+  .container
+    .row
+      .col-lg-4.mb-4
+        h5.text-gradient-orange= siteConfig.site.name
+        p.mb-3= siteConfig.site.description
+        .social-links
+          a.text-light.me-3(href="#", aria-label="Facebook")
+            i.fab.fa-facebook-f
+          a.text-light.me-3(href="#", aria-label="Twitter")
+            i.fab.fa-twitter
+          a.text-light.me-3(href="#", aria-label="Instagram")
+            i.fab.fa-instagram
+          a.text-light.me-3(href="#", aria-label="LinkedIn")
+            i.fab.fa-linkedin-in
+      
+      .col-lg-2.col-md-6.mb-4
+        h6.text-gradient-orange Hızlı Linkler
+        ul.list-unstyled
+          li.mb-2
+            a.text-light.text-decoration-none(href="/") Ana Sayfa
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vincler") Vinçler
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-beyoglu") Beyoğlu
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-kadikoy") Kadıköy
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-sisli") Şişli
+      
+      .col-lg-3.col-md-6.mb-4
+        h6.text-gradient-orange Popüler İlçeler
+        ul.list-unstyled
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-besiktas") Beşiktaş
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-fatih") Fatih
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-uskudar") Üsküdar
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-maltepe") Maltepe
+          li.mb-2
+            a.text-light.text-decoration-none(href="/kiralik-vinc-kartal") Kartal
+      
+      .col-lg-3.col-md-12.mb-4
+        h6.text-gradient-orange İletişim Bilgileri
+        .contact-info
+          .mb-2
+            i.fas.fa-phone.text-gradient-orange.me-2
+            span= siteConfig.contact.phone
+          .mb-2
+            i.fas.fa-envelope.text-gradient-orange.me-2
+            span= siteConfig.contact.email
+          .mb-2
+            i.fas.fa-map-marker-alt.text-gradient-orange.me-2
+            span= siteConfig.contact.address
+          .mb-2
+            i.fas.fa-clock.text-gradient-orange.me-2
+            span= siteConfig.contact.workingHours
+    
+    hr.my-4
+    
+    .row.align-items-center
+      .col-md-6
+        p.mb-0 © 2024 #{siteConfig.site.name}. Tüm hakları saklıdır.
+      .col-md-6.text-md-end
+        .footer-links
+          a.text-light.me-3(href="/gizlilik-politikasi") Gizlilik Politikası
+          a.text-light.me-3(href="/kullanim-kosullari") Kullanım Koşulları
+          a.text-light(href="/sitemap") Site Haritası

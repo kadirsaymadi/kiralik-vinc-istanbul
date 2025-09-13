@@ -1,0 +1,27 @@
+header.navbar.navbar-expand-lg.navbar-dark.shadow-sm
+  .container
+    a.navbar-brand.d-flex.align-items-center(href="/")
+      .logo-container
+        .logo-main İstanbul Kiralık Vinç
+    
+    button.navbar-toggler(type="button", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    
+    .collapse.navbar-collapse#navbarNav
+      ul.navbar-nav.me-auto
+        li.nav-item
+          a.nav-link(href="/") Ana Sayfa
+        li.nav-item
+          a.nav-link(href="/ilceler") İlçeler
+        li.nav-item
+          a.nav-link(href="/kiralik-vincler") Vinçler
+        li.nav-item
+          a.nav-link(href="/iletisim") İletişim
+      
+      .navbar-nav.ms-auto
+        .nav-item.d-flex.align-items-center
+          .contact-info.me-3
+            i.fas.fa-phone.text-gradient-orange.me-1
+            span.small +90 XXX XXX XX XX
+          a.btn.btn-warning(href="/teklif-al") Teklif Al
+

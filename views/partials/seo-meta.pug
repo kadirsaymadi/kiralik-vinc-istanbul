@@ -1,0 +1,18 @@
+mixin seoMeta(data)
+  if data.seo
+    title= data.seo.title
+    meta(name="description", content=data.seo.description)
+    meta(name="keywords", content=data.seo.keywords.join(', '))
+    
+    if data.canonical
+      link(rel="canonical", href=data.canonical)
+    
+    if data.ogTitle
+      meta(property="og:title", content=data.ogTitle)
+      meta(property="og:description", content=data.ogDescription)
+      meta(property="og:image", content=data.ogImage)
+      meta(property="og:url", content=data.ogUrl)
+      meta(property="og:type", content="website")
+    
+    if data.structuredData
+      script(type="application/ld+json")!= data.structuredData

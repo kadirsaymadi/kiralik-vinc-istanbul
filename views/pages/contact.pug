@@ -1,0 +1,101 @@
+extends ../layouts/main
+
+block content
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-8
+          h1.display-5.fw-bold.text-dark.mb-3 İletişim
+          p.lead.text-muted.mb-4 İstanbul vinç kiralama hizmeti için bizimle iletişime geçin. Ücretsiz teklif alın, profesyonel danışmanlık hizmeti.
+          
+          .contact-features.row.g-3.mb-4
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-phone
+                span 7/24 Destek Hattı
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-clock
+                span Hızlı Yanıt
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-calculator
+                span Ücretsiz Teklif
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-warning.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-user-tie
+                span Uzman Danışmanlık
+        
+        .col-lg-4.text-center
+          .contact-card.bg-white.p-4.rounded.shadow
+            h4.text-warning.mb-3 Hemen Ara
+            a.btn.btn-warning.btn-lg.w-100.mb-3(href="tel:+90XXXXXXXXXX")
+              i.fas.fa-phone.me-2
+              | +90 XXX XXX XX XX
+            p.small.text-muted.mb-0 7/24 Destek Hattı
+
+  section.py-5
+    .container
+      .row
+        .col-lg-6
+          .contact-info-card.bg-white.p-4.rounded.shadow
+            h4.fw-bold.text-dark.mb-4 İletişim Bilgileri
+            
+            .contact-item.mb-4
+              .contact-icon.bg-warning.text-white.rounded-circle.d-inline-flex.align-items-center.justify-content-center.me-3
+                i.fas.fa-map-marker-alt
+              .contact-details
+                h6.fw-bold.mb-1 Adres
+                p.text-muted.mb-0 İstanbul, Türkiye
+                p.text-muted.mb-0 Tüm ilçelerde hizmet
+            
+            .contact-item.mb-4
+              .contact-icon.bg-warning.text-white.rounded-circle.d-inline-flex.align-items-center.justify-content-center.me-3
+                i.fas.fa-phone
+              .contact-details
+                h6.fw-bold.mb-1 Telefon
+                p.text-muted.mb-0
+                  a.text-decoration-none(href="tel:+90XXXXXXXXXX") +90 XXX XXX XX XX
+                p.text-muted.mb-0 7/24 Destek Hattı
+            
+            .contact-item.mb-4
+              .contact-icon.bg-warning.text-white.rounded-circle.d-inline-flex.align-items-center.justify-content-center.me-3
+                i.fas.fa-envelope
+              .contact-details
+                h6.fw-bold.mb-1 E-posta
+                p.text-muted.mb-0
+                  a.text-decoration-none(href="mailto:info@example.com") info@example.com
+                p.text-muted.mb-0 Hızlı yanıt garantisi
+            
+            .contact-item.mb-4
+              .contact-icon.bg-warning.text-white.rounded-circle.d-inline-flex.align-items-center.justify-content-center.me-3
+                i.fas.fa-clock
+              .contact-details
+                h6.fw-bold.mb-1 Çalışma Saatleri
+                p.text-muted.mb-0 Pazartesi - Cuma: 08:00 - 18:00
+                p.text-muted.mb-0 Cumartesi: 09:00 - 16:00
+                p.text-muted.mb-0 Pazar: Acil durumlar için 7/24
+        
+        .col-lg-6
+          .map-card.bg-white.p-4.rounded.shadow
+            h4.fw-bold.text-dark.mb-4 Konum
+            .map-container.rounded.overflow-hidden
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.2798111083!2d28.9783589!3d41.0082382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9bd6571d469%3A0xec6b5b5c5b5c5b5c!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2str!4v1234567890123!5m2!1sen!2str", width="100%", height="300", style="border:0;", allowfullscreen="", loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 Hemen Teklif Alın
+      p.lead.mb-4 Projeniz için en uygun vinç modelini bulun
+      .row.justify-content-center
+        .col-lg-6
+          .cta-buttons
+            a.btn.btn-light.btn-lg.me-3.mb-2(href="/teklif-al")
+              i.fas.fa-calculator.me-2
+              | Ücretsiz Teklif Al
+            a.btn.btn-outline-light.btn-lg.mb-2(href="tel:+90XXXXXXXXXX")
+              i.fas.fa-phone.me-2
+              | Hemen Ara

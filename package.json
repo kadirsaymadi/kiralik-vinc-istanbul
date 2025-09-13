@@ -1,0 +1,36 @@
+{
+  "name": "kiralik-vinc-istanbul",
+  "version": "1.0.0",
+  "description": "İstanbul Vinç Kiralama Web Sitesi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "npm run css:build && npm run js:build",
+    "css:build": "npm run optimize",
+    "js:build": "npm run optimize",
+    "optimize": "echo 'Static files optimized'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "vinç",
+    "kiralama",
+    "istanbul",
+    "mobil-vinç",
+    "sabit-vinç"
+  ],
+  "author": "Kiralik Vinc Istanbul",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  }
+}

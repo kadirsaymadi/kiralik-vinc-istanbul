@@ -1,0 +1,39 @@
+extends ../layouts/main
+
+block content
+  section.py-5.bg-light.min-vh-100.d-flex.align-items-center
+    .container
+      .row.justify-content-center
+        .col-lg-8.text-center
+          .error-content
+            .error-code.display-1.fw-bold.text-warning.mb-4 404
+            h1.display-4.fw-bold.text-dark.mb-4 Sayfa Bulunamadı
+            p.lead.text-muted.mb-5
+              | Aradığınız sayfa bulunamadı. Sayfa taşınmış, silinmiş veya geçici olarak kullanılamıyor olabilir.
+            
+            .error-actions.mb-5
+              a.btn.btn-warning.btn-lg.me-3.mb-2(href="/") 
+                i.fas.fa-home.me-2
+                | Ana Sayfaya Dön
+              a.btn.btn-outline-warning.btn-lg.mb-2(href="/kiralik-vincler") 
+                i.fas.fa-truck.me-2
+                | Vinçleri Gör
+            
+            .error-suggestions
+              h5.fw-bold.text-dark.mb-3 Popüler Sayfalar
+              .row.g-3
+                .col-md-4
+                  a.text-decoration-none(href="/kiralik-vinc-beyoglu")
+                    .suggestion-card.bg-white.p-3.rounded.shadow.h-100
+                      i.fas.fa-map-marker-alt.text-warning.mb-2
+                      h6.mb-0 Beyoğlu Vinç Kiralama
+                .col-md-4
+                  a.text-decoration-none(href="/kiralik-vinc-kadikoy")
+                    .suggestion-card.bg-white.p-3.rounded.shadow.h-100
+                      i.fas.fa-map-marker-alt.text-warning.mb-2
+                      h6.mb-0 Kadıköy Vinç Kiralama
+                .col-md-4
+                  a.text-decoration-none(href="/kiralik-vinc-sisli")
+                    .suggestion-card.bg-white.p-3.rounded.shadow.h-100
+                      i.fas.fa-map-marker-alt.text-warning.mb-2
+                      h6.mb-0 Şişli Vinç Kiralama

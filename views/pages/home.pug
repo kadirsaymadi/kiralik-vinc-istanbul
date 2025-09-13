@@ -1,0 +1,165 @@
+extends ../layouts/main
+include ../partials/crane-card
+
+block content
+  include ../components/hero-section
+  
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-6(data-aos="fade-right")
+          h2.display-5.fw-bold.text-dark.mb-4
+            | İstanbul'un 
+            span.text-warning En Güvenilir
+            |  Vinç Kiralama Hizmeti
+          p.lead.text-muted.mb-4= siteConfig.site.description
+          .features-list
+            .row.g-3
+              .col-md-6
+                .feature-item.d-flex.align-items-center
+                  .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                    i.fas.fa-clock
+                  span 7/24 Hizmet
+              .col-md-6
+                .feature-item.d-flex.align-items-center
+                  .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                    i.fas.fa-shield-alt
+                  span Sigortalı Hizmet
+              .col-md-6
+                .feature-item.d-flex.align-items-center
+                  .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                    i.fas.fa-user-tie
+                  span Deneyimli Operatör
+              .col-md-6
+                .feature-item.d-flex.align-items-center
+                  .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                    i.fas.fa-rocket
+                  span Hızlı Teslimat
+        .col-lg-6(data-aos="fade-left")
+          .hero-image.text-center
+            img.img-fluid.rounded.shadow(src="/images/hero-crane.jpg", alt="İstanbul Vinç Kiralama", loading="lazy")
+  
+  section.py-5
+    .container
+      .text-center.mb-5
+        h2.display-5.fw-bold.text-dark.mb-3
+          | Öne Çıkan 
+          span.text-warning Vinç Modelleri
+        p.lead.text-muted En popüler vinç modellerimizi keşfedin
+      
+      .row
+        each crane in featuredCranes
+          +craneCard(crane)
+      
+      .text-center.mt-4
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") Tüm Vinçleri Gör
+  
+  section.py-5.bg-gradient-orange.text-white
+    .container
+      .row.align-items-center
+        .col-lg-8
+          h2.display-6.fw-bold.mb-3 İstanbul'un Tüm İlçelerinde Hizmet
+          p.lead.mb-4
+            | Beyoğlu'dan Kadıköy'e, Şişli'den Beşiktaş'a kadar İstanbul'un 39 ilçesinde 
+            | profesyonel vinç kiralama hizmeti sunuyoruz.
+        .col-lg-4.text-center
+          a.btn.btn-light.btn-lg(href="/teklif-al") Ücretsiz Teklif Al
+  
+  section.py-5
+    .container
+      .text-center.mb-5
+        h2.display-5.fw-bold.text-dark.mb-3
+          | Popüler 
+          span.text-warning İlçeler
+        p.lead.text-muted En çok tercih edilen ilçelerimiz
+      
+      .row.g-4
+        each district in popularDistricts
+          .col-lg-3.col-md-6
+            .card.h-100.shadow-sm.border-0.hover-card
+              .card-body.text-center
+                .district-icon.mb-3
+                  i.fas.fa-map-marker-alt.text-warning.fa-3x
+                h5.card-title= district.name
+                p.card-text.text-muted.small= district.description
+                .neighborhoods.mb-3
+                  each neighborhood in district.neighborhoods.slice(0, 3)
+                    span.badge.bg-light.text-dark.me-1.mb-1= neighborhood
+                  if district.neighborhoods.length > 3
+                    span.badge.bg-secondary +#{district.neighborhoods.length - 3}
+                a.btn.btn-outline-warning.btn-sm(href=`/kiralik-vinc-${district.slug}`) Vinçleri Gör
+  
+  section.py-5.bg-light
+    .container
+      .row.align-items-center
+        .col-lg-6
+          h2.display-6.fw-bold.text-dark.mb-4 Neden Bizi Tercih Etmelisiniz?
+          .advantages
+            .advantage-item.d-flex.mb-4
+              .advantage-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                i.fas.fa-medal
+              .advantage-content
+                h6.fw-bold.mb-2 15+ Yıl Deneyim
+                p.text-muted.mb-0 Sektörde uzun yıllara dayanan deneyimimizle güvenilir hizmet
+            .advantage-item.d-flex.mb-4
+              .advantage-icon.bg-success.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                i.fas.fa-tools
+              .advantage-content
+                h6.fw-bold.mb-2 Modern Vinç Filosu
+                p.text-muted.mb-0 En son teknoloji ile donatılmış modern vinç modelleri
+            .advantage-item.d-flex.mb-4
+              .advantage-icon.bg-info.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                i.fas.fa-headset
+              .advantage-content
+                h6.fw-bold.mb-2 7/24 Destek
+                p.text-muted.mb-0 Her zaman yanınızda olan profesyonel destek ekibi
+        .col-lg-6
+          .stats-grid
+            .row.g-3
+              .col-6
+                .stat-card.bg-white.p-4.rounded.shadow.text-center
+                  .stat-number.text-warning.fw-bold.display-6 500+
+                  .stat-label.text-muted Proje Tamamlandı
+              .col-6
+                .stat-card.bg-white.p-4.rounded.shadow.text-center
+                  .stat-number.text-warning.fw-bold.display-6 50+
+                  .stat-label.text-muted Vinç Modeli
+              .col-6
+                .stat-card.bg-white.p-4.rounded.shadow.text-center
+                  .stat-number.text-warning.fw-bold.display-6 39
+                  .stat-label.text-muted İlçede Hizmet
+              .col-6
+                .stat-card.bg-white.p-4.rounded.shadow.text-center
+                  .stat-number.text-warning.fw-bold.display-6 24/7
+                  .stat-label.text-muted Hizmet Saati
+  
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 Hemen Teklif Alın
+      p.lead.mb-4 Projeniz için en uygun vinç modelini belirleyelim
+      .row.justify-content-center
+        .col-lg-8
+          .cta-form.bg-white.p-4.rounded.shadow
+            .row.g-3
+              .col-md-6
+                input.form-control(type="text", placeholder="Adınız Soyadınız")
+              .col-md-6
+                input.form-control(type="tel", placeholder="Telefon Numaranız")
+              .col-md-6
+                select.form-select
+                  option(value="") İlçe Seçiniz
+                  each district in popularDistricts
+                    option(value=district.slug)= district.name
+              .col-md-6
+                select.form-select
+                  option(value="") Vinç Kapasitesi
+                  option(value="25") 25 Ton
+                  option(value="50") 50 Ton
+                  option(value="100") 100 Ton
+                  option(value="150") 150 Ton
+                  option(value="200") 200 Ton
+                  option(value="350") 350 Ton
+              .col-12
+                textarea.form-control(rows="3", placeholder="Proje detayları...")
+              .col-12
+                button.btn.btn-warning.btn-lg.w-100 Teklif Al
