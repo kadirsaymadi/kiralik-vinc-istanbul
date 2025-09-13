@@ -520,7 +520,7 @@ const equipmentController = {
   },
 
   platformDetail: (req, res) => {
-    const platformSlug = req.params.platform;
+    const platformSlug = req.params.platform.replace(/-kiralama$/, "");
     const platform = equipmentData.equipment.find(
       (equipment) =>
         equipment.availability &&
@@ -605,7 +605,7 @@ const equipmentController = {
   },
 
   forkliftDetail: (req, res) => {
-    const forkliftSlug = req.params.forklift;
+    const forkliftSlug = req.params.forklift.replace(/-kiralama$/, "");
     const forklift = equipmentData.equipment.find(
       (equipment) =>
         equipment.availability &&
