@@ -11,9 +11,9 @@ const appConfig = {
 
   // İletişim Bilgileri
   contact: {
-    phone: "+90 541 414 34 21",
-    phoneDisplay: "+90 541 414 34 21",
-    phoneLink: "tel:+905414143421",
+    phone: "+90 111 111 11 11",
+    phoneDisplay: "+90 111 111 11 11",
+    phoneLink: "tel:+901111111111",
     email: "info@kiralikvincistanbul.com",
     address: "İstanbul, Türkiye",
     workingHours: "7/24 Hizmet",
