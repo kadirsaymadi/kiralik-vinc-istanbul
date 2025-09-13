@@ -1,220 +1,547 @@
 {
   "districts": [
     {
-      "id": "beyoglu",
-      "name": "Beyoğlu",
-      "slug": "beyoglu",
-      "neighborhoods": [
-        "Taksim",
-        "Galata",
-        "Cihangir",
-        "Kasımpaşa",
-        "Karaköy",
-        "Tünel",
-        "Asmalımescit",
-        "Tepebaşı"
-      ],
-      "description": "Beyoğlu ilçesinde profesyonel vinç kiralama hizmeti. Tarihi yarımada ve modern şehir merkezinde güvenilir hizmet.",
+      "id": "adalar",
+      "name": "Adalar",
+      "slug": "adalar",
+      "code": "01",
+      "description": "Adalar ilcesinde vinc kiralama hizmeti. Buyukada, Heybeliada ve diger adalarda profesyonel vinc hizmetleri.",
       "seo": {
-        "title": "Beyoğlu Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri",
-        "description": "Beyoğlu'nda vinç kiralama, mobil vinç, sabit vinç hizmetleri. Taksim, Galata, Karaköy bölgelerinde uygun fiyat, hızlı teslimat.",
+        "title": "Adalar Vinc Kiralama - Buyukada Heybeliada Vinc Hizmetleri",
+        "description": "Adalar'da vinc kiralama hizmeti. Buyukada, Heybeliada, Burgazada ve Kinaliada'da mobil ve sabit vinc kiralama.",
         "keywords": [
-          "beyoğlu vinç kiralama",
-          "taksim vinç",
-          "galata vinç",
-          "karaköy vinç",
-          "cihangir vinç"
+          "adalar vinc kiralama",
+          "buyukada vinc",
+          "heybeliada vinc",
+          "burgazada vinc",
+          "kinaliada vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Buyukada Maden Mahallesi",
+        "Buyukada Nizam Mahallesi",
+        "Burgazada Mahallesi",
+        "Heybeliada Mahallesi",
+        "Kinaliada Mahallesi",
+        "Sedefadasi Mahallesi"
+      ]
     },
     {
-      "id": "kadikoy",
-      "name": "Kadıköy",
-      "slug": "kadikoy",
-      "neighborhoods": [
-        "Moda",
-        "Fenerbahçe",
-        "Göztepe",
-        "Erenköy",
-        "Bostancı",
-        "Kozyatağı",
-        "Acıbadem",
-        "Rasimpaşa"
-      ],
-      "description": "Kadıköy ilçesinde Anadolu yakasının merkezi konumunda vinç kiralama hizmeti. Modern ve geleneksel yapılar için ideal.",
+      "id": "arnavutkoy",
+      "name": "Arnavutkoy",
+      "slug": "arnavutkoy",
+      "code": "02",
+      "description": "Arnavutkoy ilcesinde vinc kiralama hizmeti. Avrupa yakasinda genis alanlarda profesyonel vinc hizmetleri.",
       "seo": {
-        "title": "Kadıköy Vinç Kiralama - Anadolu Yakası Vinç Hizmetleri",
-        "description": "Kadıköy'de vinç kiralama, mobil vinç, sabit vinç hizmetleri. Moda, Fenerbahçe, Bostancı bölgelerinde profesyonel hizmet.",
+        "title": "Arnavutkoy Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Arnavutkoy'de vinc kiralama hizmeti. Anadolu, Arnavutkoy, Bolluca ve diger mahallelerde mobil ve sabit vinc kiralama.",
         "keywords": [
-          "kadıköy vinç kiralama",
-          "moda vinç",
-          "fenerbahçe vinç",
-          "bostancı vinç",
-          "göztepe vinç"
+          "arnavutkoy vinc kiralama",
+          "arnavutkoy vinc",
+          "anadolu mahalle vinc",
+          "bolluca vinc",
+          "avrupa yakasi vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Anadolu Mahallesi",
+        "Arnavutkoy Mahallesi",
+        "Baklali Mahallesi",
+        "Balaban Mahallesi",
+        "Bolluca Mahallesi",
+        "Boyalik Mahallesi",
+        "Deliklikaya Mahallesi",
+        "Durusu Mahallesi",
+        "Hacimasli Mahallesi",
+        "Hastane Mahallesi",
+        "İmrahor Mahallesi",
+        "İslice Mahallesi",
+        "Karaburun Mahallesi",
+        "Mavikent Mahallesi",
+        "Mehmet Akif Mahallesi",
+        "Merkez Mahallesi",
+        "Nakkas Mahallesi",
+        "Ornekkoy Mahallesi",
+        "Sazlibosna Mahallesi",
+        "Sazlik Mahallesi",
+        "Tasoluk Mahallesi",
+        "Tayakadin Mahallesi",
+        "Yassioren Mahallesi",
+        "Yesilbayir Mahallesi"
+      ]
     },
     {
-      "id": "sisli",
-      "name": "Şişli",
-      "slug": "sisli",
-      "neighborhoods": [
-        "Mecidiyeköy",
-        "Gayrettepe",
-        "Levent",
-        "Etiler",
-        "Nişantaşı",
-        "Harbiye",
-        "Osmanbey",
-        "Pangaltı"
-      ],
-      "description": "Şişli ilçesinde iş merkezi ve konut alanlarında vinç kiralama hizmeti. Modern binalar ve iş merkezleri için uygun.",
+      "id": "atasehir",
+      "name": "Atasehir",
+      "slug": "atasehir",
+      "code": "03",
+      "description": "Atasehir ilcesinde vinc kiralama hizmeti. Anadolu yakasinda modern konut projeleri icin profesyonel vinc hizmetleri.",
       "seo": {
-        "title": "Şişli Vinç Kiralama - İş Merkezi Vinç Hizmetleri",
-        "description": "Şişli'de vinç kiralama, mobil vinç, sabit vinç hizmetleri. Mecidiyeköy, Levent, Etiler bölgelerinde güvenilir hizmet.",
+        "title": "Atasehir Vinc Kiralama - Anadolu Yakasi Vinc Hizmetleri",
+        "description": "Atasehir'de vinc kiralama hizmeti. Barbaros, Esatpasa, İcerenkoy ve diger mahallelerde mobil ve sabit vinc kiralama.",
         "keywords": [
-          "şişli vinç kiralama",
-          "mecidiyeköy vinç",
-          "levent vinç",
-          "etiler vinç",
-          "gayrettepe vinç"
+          "atasehir vinc kiralama",
+          "atasehir vinc",
+          "barbaros mahalle vinc",
+          "esatpasa vinc",
+          "icerenkoy vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Barbaros Mahallesi",
+        "Esatpasa Mahallesi",
+        "Ferhatpasa Mahallesi",
+        "İcerenkoy Mahallesi",
+        "İnonu Mahallesi",
+        "Kayisdagi Mahallesi",
+        "Kucukbakkalkoy Mahallesi",
+        "Mustafa Kemal Mahallesi",
+        "Ornek Mahallesi",
+        "Yenisahra Mahallesi"
+      ]
+    },
+    {
+      "id": "avcilar",
+      "name": "Avcilar",
+      "slug": "avcilar",
+      "code": "04",
+      "description": "Avcilar ilcesinde vinc kiralama hizmeti. Avrupa yakasinda konut ve ticari projeler icin profesyonel vinc hizmetleri.",
+      "seo": {
+        "title": "Avcilar Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Avcilar'da vinc kiralama hizmeti. Ambarli, Cihangir, Denizkoskler ve diger mahallelerde mobil ve sabit vinc kiralama.",
+        "keywords": [
+          "avcilar vinc kiralama",
+          "avcilar vinc",
+          "ambarli mahalle vinc",
+          "cihangir avcilar vinc",
+          "denizkoskler vinc"
+        ]
+      },
+      "neighborhoods": [
+        "Ambarli Mahallesi",
+        "Cihangir Mahallesi",
+        "Denizkoskler Mahallesi",
+        "Firuzkoy Mahallesi",
+        "Gumuspala Mahallesi",
+        "Merkez Mahallesi",
+        "Mustafa Kemal Pasa Mahallesi",
+        "Ozyurtlar Mahallesi",
+        "Tahtakale Mahallesi",
+        "Universite Mahallesi",
+        "Yesilkent Mahallesi"
+      ]
+    },
+    {
+      "id": "bagcilar",
+      "name": "Bagcilar",
+      "slug": "bagcilar",
+      "code": "05",
+      "description": "Bagcilar ilcesinde vinc kiralama hizmeti. Avrupa yakasinda yogun nufuslu bolgelerde profesyonel vinc hizmetleri.",
+      "seo": {
+        "title": "Bagcilar Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Bagcilar'da vinc kiralama hizmeti. 15 Temmuz, Baglar, Demirkapi ve diger mahallelerde mobil ve sabit vinc kiralama.",
+        "keywords": [
+          "bagcilar vinc kiralama",
+          "bagcilar vinc",
+          "15 temmuz mahalle vinc",
+          "baglar mahalle vinc",
+          "demirkapi vinc"
+        ]
+      },
+      "neighborhoods": [
+        "15 Temmuz Mahallesi",
+        "Baglar Mahallesi",
+        "Demirkapi Mahallesi",
+        "Evren Mahallesi",
+        "Fatih Mahallesi",
+        "Goztepe Mahallesi",
+        "Gunesli Mahallesi",
+        "Hurriyet Mahallesi",
+        "İnonu Mahallesi",
+        "Kemalpasa Mahallesi",
+        "Kirazli Mahallesi",
+        "Mahmutbey Mahallesi",
+        "Merkez Mahallesi",
+        "Sancaktepe Mahallesi",
+        "Sirinevler Mahallesi",
+        "Yeni Mahalle",
+        "Yildiztepe Mahallesi"
+      ]
+    },
+    {
+      "id": "bahcelievler",
+      "name": "Bahcelievler",
+      "slug": "bahcelievler",
+      "code": "06",
+      "description": "Bahcelievler ilcesinde vinc kiralama hizmeti. Avrupa yakasinda konut projeleri icin profesyonel vinc hizmetleri.",
+      "seo": {
+        "title": "Bahcelievler Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Bahcelievler'de vinc kiralama hizmeti. Bahcelievler, Cumhuriyet, Fevzicakmak ve diger mahallelerde mobil ve sabit vinc kiralama.",
+        "keywords": [
+          "bahcelievler vinc kiralama",
+          "bahcelievler vinc",
+          "cumhuriyet mahalle vinc",
+          "fevzicakmak vinc",
+          "hurriyet bahcelievler vinc"
+        ]
+      },
+      "neighborhoods": [
+        "Bahcelievler Mahallesi",
+        "Cumhuriyet Mahallesi",
+        "Fevzicakmak Mahallesi",
+        "Hurriyet Mahallesi",
+        "Kocasinan Mahallesi",
+        "Sirinevler Mahallesi",
+        "Siyavuspasa Mahallesi",
+        "Soganli Mahallesi",
+        "Yenibosna Merkez Mahallesi",
+        "Yenibosna Bahcelievler Mahallesi",
+        "Zafer Mahallesi"
+      ]
+    },
+    {
+      "id": "bakirkoy",
+      "name": "Bakirkoy",
+      "slug": "bakirkoy",
+      "code": "07",
+      "description": "Bakirkoy ilcesinde vinc kiralama hizmeti. Avrupa yakasinda tarihi ve modern bolgelerde profesyonel vinc hizmetleri.",
+      "seo": {
+        "title": "Bakirkoy Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Bakirkoy'de vinc kiralama hizmeti. Atakoy, Basinkoy, Cevizlik ve diger mahallelerde mobil ve sabit vinc kiralama.",
+        "keywords": [
+          "bakirkoy vinc kiralama",
+          "bakirkoy vinc",
+          "atakoy mahalle vinc",
+          "basinkoy vinc",
+          "cevizlik vinc"
+        ]
+      },
+      "neighborhoods": [
+        "Atakoy 1. Kisim Mahallesi",
+        "Atakoy 2-5-6. Kisim Mahallesi",
+        "Atakoy 3-4-11. Kisim Mahallesi",
+        "Atakoy 7-8-9-10. Kisim Mahallesi",
+        "Basinkoy Mahallesi",
+        "Cevizlik Mahallesi",
+        "Kartaltepe Mahallesi",
+        "Osmaniye Mahallesi",
+        "Senlikkoy Mahallesi",
+        "Yesilkoy Mahallesi",
+        "Yesilyurt Mahallesi",
+        "Zuhuratbaba Mahallesi"
+      ]
+    },
+    {
+      "id": "basaksehir",
+      "name": "Basaksehir",
+      "slug": "basaksehir",
+      "code": "08",
+      "description": "Basaksehir ilcesinde vinc kiralama hizmeti. Avrupa yakasinda yeni konut projeleri icin profesyonel vinc hizmetleri.",
+      "seo": {
+        "title": "Basaksehir Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Basaksehir'de vinc kiralama hizmeti. Altinsehir, Bahcesehir, Basak ve diger mahallelerde mobil ve sabit vinc kiralama.",
+        "keywords": [
+          "basaksehir vinc kiralama",
+          "basaksehir vinc",
+          "altinsehir mahalle vinc",
+          "bahcesehir vinc",
+          "basak mahalle vinc"
+        ]
+      },
+      "neighborhoods": [
+        "Altinsehir Mahallesi",
+        "Bahcesehir 1. Kisim Mahallesi",
+        "Bahcesehir 2. Kisim Mahallesi",
+        "Basak Mahallesi",
+        "Basaksehir Mahallesi",
+        "Guvercintepe Mahallesi",
+        "İkitelli OSB Mahallesi",
+        "Kayabasi Mahallesi",
+        "Metrokent Mahallesi",
+        "Samlar Mahallesi",
+        "Sahintepe Mahallesi",
+        "Ziya Gokalp Mahallesi"
+      ]
+    },
+    {
+      "id": "bayrampasa",
+      "name": "Bayrampasa",
+      "slug": "bayrampasa",
+      "code": "09",
+      "description": "Bayrampasa ilcesinde vinc kiralama hizmeti. Avrupa yakasinda ticari ve konut projeleri icin profesyonel vinc hizmetleri.",
+      "seo": {
+        "title": "Bayrampasa Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Bayrampasa'da vinc kiralama hizmeti. Altintepsi, Cevatpasa, Kocatepe ve diger mahallelerde mobil ve sabit vinc kiralama.",
+        "keywords": [
+          "bayrampasa vinc kiralama",
+          "bayrampasa vinc",
+          "altintepsi mahalle vinc",
+          "cevatpasa vinc",
+          "kocatepe vinc"
+        ]
+      },
+      "neighborhoods": [
+        "Altintepsi Mahallesi",
+        "Cevatpasa Mahallesi",
+        "Kocatepe Mahallesi",
+        "Muratpasa Mahallesi",
+        "Ortamahalle",
+        "Terazidere Mahallesi",
+        "Vatan Mahallesi",
+        "Yenidogan Mahallesi"
+      ]
     },
     {
       "id": "besiktas",
-      "name": "Beşiktaş",
+      "name": "Besiktas",
       "slug": "besiktas",
-      "neighborhoods": [
-        "Bebek",
-        "Arnavutköy",
-        "Ortaköy",
-        "Kuruçeşme",
-        "Ulus",
-        "Etiler",
-        "Levent",
-        "Akaretler"
-      ],
-      "description": "Beşiktaş ilçesinde Boğaz kıyısında vinç kiralama hizmeti. Lüks konutlar ve tarihi yapılar için özel çözümler.",
+      "code": "10",
+      "description": "Besiktas ilcesinde vinc kiralama hizmeti. Bogaz kiyisinda luks konutlar ve tarihi yapilar icin ozel vinc cozumleri.",
       "seo": {
-        "title": "Beşiktaş Vinç Kiralama - Boğaz Kıyısı Vinç Hizmetleri",
-        "description": "Beşiktaş'ta vinç kiralama, mobil vinç, sabit vinç hizmetleri. Bebek, Ortaköy, Arnavutköy bölgelerinde uzman hizmet.",
+        "title": "Besiktas Vinc Kiralama - Bogaz Kiyisi Vinc Hizmetleri",
+        "description": "Besiktas'ta vinc kiralama hizmeti. Bebek, Ortakoy, Arnavutkoy ve diger mahallelerde mobil ve sabit vinc kiralama.",
         "keywords": [
-          "beşiktaş vinç kiralama",
-          "bebek vinç",
-          "ortaköy vinç",
-          "arnavutköy vinç",
-          "kuruçeşme vinç"
+          "besiktas vinc kiralama",
+          "besiktas vinc",
+          "bebek mahalle vinc",
+          "ortakoy vinc",
+          "arnavutkoy besiktas vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Abbasaga Mahallesi",
+        "Arnavutkoy Mahallesi",
+        "Bebek Mahallesi",
+        "Etiler Mahallesi",
+        "Gayrettepe Mahallesi",
+        "Konaklar Mahallesi",
+        "Koyici Mahallesi",
+        "Kurucesme Mahallesi",
+        "Levent Mahallesi",
+        "Mecidiye Mahallesi",
+        "Muradiye Mahallesi",
+        "Nisbetiye Mahallesi",
+        "Ortakoy Mahallesi",
+        "Sinanpasa Mahallesi",
+        "Turkali Mahallesi",
+        "Ulus Mahallesi",
+        "Visnezade Mahallesi",
+        "Yildiz Mahallesi"
+      ]
     },
     {
-      "id": "fatih",
-      "name": "Fatih",
-      "slug": "fatih",
-      "neighborhoods": [
-        "Sultanahmet",
-        "Eminönü",
-        "Beyazıt",
-        "Laleli",
-        "Aksaray",
-        "Vefa",
-        "Fener",
-        "Balat"
-      ],
-      "description": "Fatih ilçesinde tarihi yarımadada vinç kiralama hizmeti. Tarihi yapılar ve dar sokaklar için özel vinç çözümleri.",
+      "id": "beykoz",
+      "name": "Beykoz",
+      "slug": "beykoz",
+      "code": "11",
+      "description": "Beykoz ilcesinde vinc kiralama hizmeti. Anadolu yakasinda Bogaz kiyisinda konut projeleri icin profesyonel vinc hizmetleri.",
       "seo": {
-        "title": "Fatih Vinç Kiralama - Tarihi Yarımada Vinç Hizmetleri",
-        "description": "Fatih'te vinç kiralama, mobil vinç, sabit vinç hizmetleri. Sultanahmet, Eminönü, Laleli bölgelerinde tarihi yapılar için uzman hizmet.",
+        "title": "Beykoz Vinc Kiralama - Anadolu Yakasi Vinc Hizmetleri",
+        "description": "Beykoz'da vinc kiralama hizmeti. Acarkent, Anadolu Feneri, Anadoluhisari ve diger mahallelerde mobil ve sabit vinc kiralama.",
         "keywords": [
-          "fatih vinç kiralama",
-          "sultanahmet vinç",
-          "eminönü vinç",
-          "laleli vinç",
-          "beyazıt vinç"
+          "beykoz vinc kiralama",
+          "beykoz vinc",
+          "acarkent mahalle vinc",
+          "anadolu feneri vinc",
+          "anadoluhisari vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Acarkent Mahallesi",
+        "Anadolu Feneri Mahallesi",
+        "Anadoluhisari Mahallesi",
+        "Anadolu Kavagi Mahallesi",
+        "Baklaci Mahallesi",
+        "Bozhane Mahallesi",
+        "Cubuklu Mahallesi",
+        "Dereseki Mahallesi",
+        "Elmali Mahallesi",
+        "Fatih Mahallesi",
+        "Goksu Mahallesi",
+        "Gorele Mahallesi",
+        "Goztepe Mahallesi",
+        "İncirkoy Mahallesi",
+        "Kanlica Mahallesi",
+        "Kavacik Mahallesi",
+        "Kisirkaya Mahallesi",
+        "Merkez Mahallesi",
+        "Ortacesme Mahallesi",
+        "Pasabahce Mahallesi",
+        "Polonezkoy Mahallesi",
+        "Poyrazkoy Mahallesi",
+        "Riva Mahallesi",
+        "Soguksu Mahallesi",
+        "Tokatkoy Mahallesi",
+        "Yalikoy Mahallesi",
+        "Yenikoy Mahallesi"
+      ]
     },
     {
-      "id": "uskudar",
-      "name": "Üsküdar",
-      "slug": "uskudar",
-      "neighborhoods": [
-        "Çengelköy",
-        "Beylerbeyi",
-        "Kuzguncuk",
-        "Salacak",
-        "Kısıklı",
-        "Altunizade",
-        "Bulbulderesi",
-        "Mimar Sinan"
-      ],
-      "description": "Üsküdar ilçesinde Anadolu yakasında vinç kiralama hizmeti. Tarihi semtler ve modern yerleşimler için kapsamlı hizmet.",
+      "id": "beylikduzu",
+      "name": "Beylikduzu",
+      "slug": "beylikduzu",
+      "code": "12",
+      "description": "Beylikduzu ilcesinde vinc kiralama hizmeti. Avrupa yakasinda yeni konut projeleri icin profesyonel vinc hizmetleri.",
       "seo": {
-        "title": "Üsküdar Vinç Kiralama - Anadolu Yakası Vinç Hizmetleri",
-        "description": "Üsküdar'da vinç kiralama, mobil vinç, sabit vinç hizmetleri. Çengelköy, Beylerbeyi, Kuzguncuk bölgelerinde profesyonel hizmet.",
+        "title": "Beylikduzu Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Beylikduzu'nde vinc kiralama hizmeti. Adnan Kahveci, Baris, Buyuksehir ve diger mahallelerde mobil ve sabit vinc kiralama.",
         "keywords": [
-          "üsküdar vinç kiralama",
-          "çengelköy vinç",
-          "beylerbeyi vinç",
-          "kuzguncuk vinç",
-          "salacak vinç"
+          "beylikduzu vinc kiralama",
+          "beylikduzu vinc",
+          "adnan kahveci mahalle vinc",
+          "baris mahalle vinc",
+          "buyuksehir vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Adnan Kahveci Mahallesi",
+        "Baris Mahallesi",
+        "Buyuksehir Mahallesi",
+        "Cumhuriyet Mahallesi",
+        "Dereagzi Mahallesi",
+        "Gurpinar Mahallesi",
+        "Kavakli Mahallesi",
+        "Kultur Mahallesi",
+        "Marmara Mahallesi",
+        "Sahil Mahallesi",
+        "Yakuplu Mahallesi"
+      ]
     },
     {
-      "id": "maltepe",
-      "name": "Maltepe",
-      "slug": "maltepe",
-      "neighborhoods": [
-        "Bağlarbaşı",
-        "Fındıklı",
-        "Gülensu",
-        "Altıntepe",
-        "Zümrütevler",
-        "Bağdat Caddesi",
-        "Küçükyalı",
-        "Bostancı"
-      ],
-      "description": "Maltepe ilçesinde Anadolu yakasında vinç kiralama hizmeti. Konut projeleri ve ticari yapılar için uygun çözümler.",
+      "id": "beyoglu",
+      "name": "Beyoglu",
+      "slug": "beyoglu",
+      "code": "13",
+      "description": "Beyoglu ilcesinde vinc kiralama hizmeti. Tarihi yarimada ve modern sehir merkezinde guvenilir hizmet.",
       "seo": {
-        "title": "Maltepe Vinç Kiralama - Anadolu Yakası Vinç Hizmetleri",
-        "description": "Maltepe'de vinç kiralama, mobil vinç, sabit vinç hizmetleri. Bağlarbaşı, Altıntepe, Zümrütevler bölgelerinde güvenilir hizmet.",
+        "title": "Beyoglu Vinc Kiralama - Mobil ve Sabit Vinc Hizmetleri",
+        "description": "Beyoglu'nda vinc kiralama, mobil vinc, sabit vinc hizmetleri. Taksim, Galata, Karakoy bolgelerinde uygun fiyat, hizli teslimat.",
         "keywords": [
-          "maltepe vinç kiralama",
-          "bağlarbaşı vinç",
-          "altıntepe vinç",
-          "zümrütevler vinç",
-          "bağdat caddesi vinç"
+          "beyoglu vinc kiralama",
+          "taksim vinc",
+          "galata vinc",
+          "karakoy vinc",
+          "cihangir vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Bedrettin Mahallesi",
+        "Bereketzade Mahallesi",
+        "Bulbul Mahallesi",
+        "Camiikebir Mahallesi",
+        "Cihangir Mahallesi",
+        "Cukur Mahallesi",
+        "Evliya Celebi Mahallesi",
+        "Fetihtepe Mahallesi",
+        "Firuzaga Mahallesi",
+        "Galipdede Mahallesi",
+        "Gumussuyu Mahallesi",
+        "Haciahmet Mahallesi",
+        "Haskoy Mahallesi",
+        "Huseyinaga Mahallesi",
+        "Kamehattin Mahallesi",
+        "Kaptan-i Derya Mahallesi",
+        "Karakoy Mahallesi",
+        "Katip Mustafa Celebi Mahallesi",
+        "Kececi Piri Mahallesi",
+        "Kemankes Karamustafa Pasa Mahallesi",
+        "Kilicali Pasa Mahallesi",
+        "Kulaksiz Mahallesi",
+        "Kuloglu Mahallesi",
+        "Kurkcu Cesmesi Mahallesi",
+        "Mueyyetzade Mahallesi",
+        "Omer Avni Mahallesi",
+        "Piri Pasa Mahallesi",
+        "Piyalepasa Mahallesi",
+        "Sahkulu Mahallesi",
+        "Sishane Mahallesi",
+        "Sururi Mahallesi",
+        "Seker Ahmed Pasa Mahallesi",
+        "Tomtom Mahallesi",
+        "Yenisehir Mahallesi"
+      ]
     },
     {
-      "id": "kartal",
-      "name": "Kartal",
-      "slug": "kartal",
-      "neighborhoods": [
-        "Dragos",
-        "Soğanlık",
-        "Yakacık",
-        "Petrol İş",
-        "Orhantepe",
-        "Uğur Mumcu",
-        "Karlıktepe",
-        "Çavuşoğlu"
-      ],
-      "description": "Kartal ilçesinde sanayi ve konut alanlarında vinç kiralama hizmeti. Büyük projeler ve sanayi tesisleri için ideal.",
+      "id": "buyukcekmece",
+      "name": "Buyukcekmece",
+      "slug": "buyukcekmece",
+      "code": "14",
+      "description": "Buyukcekmece ilcesinde vinc kiralama hizmeti. Avrupa yakasinda deniz kiyisinda konut projeleri icin profesyonel vinc hizmetleri.",
       "seo": {
-        "title": "Kartal Vinç Kiralama - Sanayi ve Konut Vinç Hizmetleri",
-        "description": "Kartal'da vinç kiralama, mobil vinç, sabit vinç hizmetleri. Dragos, Soğanlık, Yakacık bölgelerinde büyük projeler için uzman hizmet.",
+        "title": "Buyukcekmece Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Buyukcekmece'de vinc kiralama hizmeti. Albayrak, Alkent 2000, Bahcelievler ve diger mahallelerde mobil ve sabit vinc kiralama.",
         "keywords": [
-          "kartal vinç kiralama",
-          "dragos vinç",
-          "soğanlık vinç",
-          "yakacık vinç",
-          "sanayi vinç"
+          "buyukcekmece vinc kiralama",
+          "buyukcekmece vinc",
+          "albayrak mahalle vinc",
+          "alkent 2000 vinc",
+          "bahcelievler buyukcekmece vinc"
         ]
-      }
+      },
+      "neighborhoods": [
+        "Albayrak Mahallesi",
+        "Alkent 2000 Mahallesi",
+        "Bahcelievler Mahallesi",
+        "Batikoy Mahallesi",
+        "Buyukcekmece Mahallesi",
+        "Celaliye Mahallesi",
+        "Cumhuriyet Mahallesi",
+        "Dizdariye Mahallesi",
+        "Eskice Mahallesi",
+        "Fatih Mahallesi",
+        "Guzelce Mahallesi",
+        "Hurriyet Mahallesi",
+        "İnecik Mahallesi",
+        "Kamiloba Mahallesi",
+        "Karaagac Mahallesi",
+        "Kumburgaz Mahallesi",
+        "Mimarsinan Mahallesi",
+        "Muratbey Mahallesi",
+        "Pinartepe Mahallesi",
+        "Turkoba Mahallesi",
+        "Ulus Mahallesi",
+        "Yakuplu Mahallesi"
+      ]
+    },
+    {
+      "id": "catalca",
+      "name": "Catalca",
+      "slug": "catalca",
+      "code": "15",
+      "description": "Catalca ilcesinde vinc kiralama hizmeti. Avrupa yakasinda genis alanlarda konut ve tarim projeleri icin profesyonel vinc hizmetleri.",
+      "seo": {
+        "title": "Catalca Vinc Kiralama - Avrupa Yakasi Vinc Hizmetleri",
+        "description": "Catalca'da vinc kiralama hizmeti. Akalan, Belgrat Ormani, Boyalik ve diger mahallelerde mobil ve sabit vinc kiralama.",
+        "keywords": [
+          "catalca vinc kiralama",
+          "catalca vinc",
+          "akalan mahalle vinc",
+          "belgrat ormani vinc",
+          "boyalik vinc"
+        ]
+      },
+      "neighborhoods": [
+        "Akalan Mahallesi",
+        "Belgrat Ormani Mahallesi",
+        "Boyalik Mahallesi",
+        "Canakca Mahallesi",
+        "Catalca Mahallesi",
+        "Dagyenice Mahallesi",
+        "Ferhatpasa Mahallesi",
+        "Gokceali Mahallesi",
+        "Hisarbeyli Mahallesi",
+        "İhsaniye Mahallesi",
+        "İnecik Mahallesi",
+        "Kaleici Mahallesi",
+        "Kestanelik Mahallesi",
+        "Kizilcakoy Mahallesi",
+        "Muratbey Mahallesi",
+        "Ovayenice Mahallesi",
+        "Subasi Mahallesi",
+        "Urunlu Mahallesi",
+        "Yazlik Mahallesi",
+        "Yalikoy Mahallesi"
+      ]
     }
   ]
 }

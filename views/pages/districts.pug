@@ -6,7 +6,7 @@ block content
       .text-center.mb-5
         h1.display-4.fw-bold.text-dark.mb-3
           | İstanbul 
-          span.text-warning İlçeleri
+          span.text-warning Hizmet Bölgeleri
         p.lead.text-muted İstanbul'un tüm ilçelerinde profesyonel vinç kiralama hizmeti
       
       .row.g-4
@@ -20,12 +20,15 @@ block content
                 p.card-text.text-muted= district.description
               
               .district-neighborhoods.mb-4
-                h6.text-warning.mb-3 Mahalleler:
+                h6.text-warning.mb-3 Mahalleler (#{district.neighborhoods.length}):
                 .neighborhoods-list
-                  each neighborhood in district.neighborhoods.slice(0, 4)
-                    span.badge.bg-light.text-dark.me-1.mb-1= neighborhood
-                  if district.neighborhoods.length > 4
-                    span.badge.bg-secondary +#{district.neighborhoods.length - 4}
+                  each neighborhood in district.neighborhoods.slice(0, 6)
+                    - const turkishChars = {'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'I': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U'}
+                    - const convertedName = neighborhood.replace(/[çÇğĞıIöÖşŞüÜ]/g, (char) => turkishChars[char] || char)
+                    - const neighborhoodSlug = convertedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '').replace('-mahallesi', '')
+                    a.badge.bg-light.text-dark.me-1.mb-1.text-decoration-none(href=`/kiralik-vinc-${district.slug}/${neighborhoodSlug}`)= neighborhood
+                  if district.neighborhoods.length > 6
+                    span.badge.bg-secondary +#{district.neighborhoods.length - 6}
               
               .district-actions
                 a.btn.btn-warning.btn-sm.me-2(href=`/kiralik-vinc-${district.slug}`) Vinçleri Gör
@@ -44,7 +47,7 @@ block content
                 .stat-label.text-muted.small İlçe
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h3 50+
+                .stat-number.text-warning.fw-bold.h3= districts.reduce((total, district) => total + district.neighborhoods.length, 0)
                 .stat-label.text-muted.small Mahalle
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center

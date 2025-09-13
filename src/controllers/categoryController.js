@@ -9,9 +9,6 @@ const cranesData = JSON.parse(
 const districtsData = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../../data/districts.json"), "utf8")
 );
-const neighborhoodsData = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "../../data/neighborhoods.json"), "utf8")
-);
 
 const categoryController = {
   district: (req, res) => {
@@ -29,9 +26,7 @@ const categoryController = {
       });
     }
 
-    const districtNeighborhoods = neighborhoodsData.neighborhoods.filter(
-      (n) => n.district === district.name
-    );
+    const districtNeighborhoods = district.neighborhoods;
     const availableCranes = cranesData.cranes.filter(
       (crane) => crane.availability
     );
@@ -84,11 +79,45 @@ const categoryController = {
     const district = districtsData.districts.find(
       (d) => d.slug === districtSlug
     );
-    const neighborhood = neighborhoodsData.neighborhoods.find(
-      (n) => n.slug === neighborhoodSlug && n.district === district?.name
-    );
+    if (!district) {
+      return res.status(404).render("pages/404", {
+        title: "İlçe Bulunamadı - İstanbul Vinç Kiralama",
+        description: "Aradığınız ilçe bulunamadı.",
+        currentPath: req.path,
+        districts: districtsData.districts,
+      });
+    }
 
-    if (!district || !neighborhood) {
+    const neighborhood = district.neighborhoods.find((n) => {
+      // Türkçe karakterleri İngilizce karakterlere çevir
+      const turkishChars = {
+        ç: "c",
+        Ç: "C",
+        ğ: "g",
+        Ğ: "G",
+        ı: "i",
+        I: "I",
+        ö: "o",
+        Ö: "O",
+        ş: "s",
+        Ş: "S",
+        ü: "u",
+        Ü: "U",
+      };
+
+      const convertedName = n.replace(
+        /[çÇğĞıIöÖşŞüÜ]/g,
+        (char) => turkishChars[char] || char
+      );
+      const slug = convertedName
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9-]/g, "")
+        .replace("-mahallesi", "");
+      return slug === neighborhoodSlug;
+    });
+
+    if (!neighborhood) {
       return res.status(404).render("pages/404", {
         title: "Mahalle Bulunamadı - İstanbul Vinç Kiralama",
         description: "Aradığınız mahalle bulunamadı.",
@@ -102,15 +131,27 @@ const categoryController = {
     );
 
     const seoData = {
-      seo: neighborhood.seo,
-      canonical: `/kiralik-vinc-${district.slug}/${neighborhood.slug}`,
-      ogUrl: `/kiralik-vinc-${district.slug}/${neighborhood.slug}`,
+      seo: {
+        title: `${neighborhood} Vinç Kiralama - ${district.name} İstanbul`,
+        description: `${district.name} ilçesinde ${neighborhood} mahallesinde vinç kiralama hizmeti. Mobil ve sabit vinç kiralama, profesyonel operatörlü hizmet.`,
+        keywords: [
+          `${neighborhood.toLowerCase()} vinç kiralama`,
+          `${district.name.toLowerCase()} vinç`,
+          `${neighborhood.toLowerCase()} mahalle vinç`,
+          `${district.name.toLowerCase()} ${neighborhood.toLowerCase()} vinç`,
+        ],
+      },
+      canonical: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
+      ogUrl: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
     const structuredData = seoHelper.generateStructuredData("Service", {
-      name: `${neighborhood.name} Vinç Kiralama`,
-      description: neighborhood.description,
+      name: `${neighborhood} Vinç Kiralama`,
+      description: `${district.name} ilçesinde ${neighborhood} mahallesinde profesyonel vinç kiralama hizmeti`,
+      url: `${process.env.SITE_URL || "http://localhost:3000"}/kiralik-vinc-${
+        district.slug
+      }/${neighborhoodSlug}`,
     });
 
     const breadcrumbs = [
@@ -120,12 +161,12 @@ const categoryController = {
         url: `/kiralik-vinc-${district.slug}`,
       },
       {
-        name: `${neighborhood.name} Vinç Kiralama`,
-        url: `/kiralik-vinc-${district.slug}/${neighborhood.slug}`,
+        name: `${neighborhood} Vinç Kiralama`,
+        url: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
       },
     ];
 
-    res.render("pages/neighborhood", {
+    res.render("pages/neighborhood-detail", {
       title: metaTags.title,
       description: metaTags.description,
       keywords: metaTags.keywords,
@@ -142,7 +183,7 @@ const categoryController = {
       neighborhood,
       availableCranes,
       districts: districtsData.districts,
-      currentPath: `/kiralik-vinc-${district.slug}/${neighborhood.slug}`,
+      currentPath: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
     });
   },
 };

@@ -97,7 +97,7 @@ const homeController = {
   districts: (req, res) => {
     const seoData = {
       seo: {
-        title: "İstanbul İlçeleri - Vinç Kiralama Hizmetleri",
+        title: "İstanbul Hizmet Bölgeleri - Vinç Kiralama Hizmetleri",
         description:
           "İstanbul'un tüm ilçelerinde profesyonel vinç kiralama hizmeti. Beyoğlu, Kadıköy, Şişli ve diğer ilçelerde hızlı teslimat.",
         keywords: [
@@ -108,8 +108,8 @@ const homeController = {
           "beşiktaş vinç kiralama",
         ],
       },
-      canonical: "/ilceler",
-      ogUrl: "/ilceler",
+      canonical: "/hizmet-bolgeleri",
+      ogUrl: "/hizmet-bolgeleri",
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
@@ -117,12 +117,12 @@ const homeController = {
       name: "İstanbul İlçeleri Vinç Kiralama",
       description:
         "İstanbul'un tüm ilçelerinde profesyonel vinç kiralama hizmeti",
-      url: `${appConfig.site.url}/ilceler`,
+      url: `${appConfig.site.url}/hizmet-bolgeleri`,
     });
 
     const breadcrumbs = [
       { name: "Ana Sayfa", url: "/" },
-      { name: "İlçeler", url: "/ilceler" },
+      { name: "Hizmet Bölgeleri", url: "/hizmet-bolgeleri" },
     ];
 
     res.render("pages/districts", {
@@ -139,7 +139,7 @@ const homeController = {
         seoHelper.generateBreadcrumbSchema(breadcrumbs)
       ),
       districts: districtsData.districts,
-      currentPath: "/ilceler",
+      currentPath: "/hizmet-bolgeleri",
     });
   },
 };

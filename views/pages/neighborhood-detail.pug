@@ -1,0 +1,123 @@
+extends ../layouts/main
+
+block content
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-8
+          h1.display-5.fw-bold.text-dark.mb-3= neighborhood
+          p.lead.text-muted.mb-4 #{district.name} ilçesinde #{neighborhood} mahallesinde profesyonel vinç kiralama hizmeti
+          
+          .neighborhood-features.row.g-3.mb-4
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-map-marker-alt
+                span= `${district.name} - ${neighborhood}`
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-truck
+                span Hızlı Teslimat
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-clock
+                span 7/24 Hizmet
+            .col-md-6
+              .feature-item.d-flex.align-items-center
+                .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
+                  i.fas.fa-user-tie
+                span Deneyimli Operatör
+        
+        .col-lg-4.text-center
+          .contact-card.bg-white.p-4.rounded.shadow
+            h4.text-warning.mb-3 Hemen Ara
+            a.btn.btn-warning.btn-lg.w-100.mb-3(href="tel:+90XXXXXXXXXX")
+              i.fas.fa-phone.me-2
+              | +90 XXX XXX XX XX
+            p.small.text-muted.mb-0 7/24 Destek Hattı
+
+  section.py-5
+    .container
+      .text-center.mb-5
+        h2.display-6.fw-bold.text-dark.mb-3
+          | #{neighborhood} Mahallesinde 
+          span.text-warning Mevcut Vinçler
+        p.lead.text-muted Mahallenizde kullanabileceğiniz vinç modelleri
+      
+      .row.g-4
+        each crane in availableCranes.slice(0, 6)
+          .col-lg-4.col-md-6
+            .card.h-100.shadow-sm
+              .card-body.d-flex.flex-column
+                .text-center.mb-3
+                  .crane-icon.bg-gradient-orange.text-white.rounded-circle.mx-auto.d-flex.align-items-center.justify-content-center.mb-3(style="width: 60px; height: 60px;")
+                    i.fas.fa-truck.fa-2x
+                  h5.card-title.text-dark= crane.name
+                  p.card-text.text-muted.small= crane.description
+                
+                .crane-specs.mb-3
+                  .row.g-2
+                    .col-6
+                      .spec-item.text-center.p-2.bg-light.rounded
+                        .spec-label.small.text-muted Kapasite
+                        .spec-value.fw-bold.text-warning= crane.capacity
+                    .col-6
+                      .spec-item.text-center.p-2.bg-light.rounded
+                        .spec-label.small.text-muted Tip
+                        .spec-value.fw-bold.text-warning= crane.type
+                
+                .mt-auto
+                  a.btn.btn-warning.w-100(href=`/vinc/${crane.slug}`) Detayları Gör
+      
+      .text-center.mt-4
+        a.btn.btn-outline-warning.btn-lg(href="/kiralik-vincler") Tüm Vinçleri Gör
+
+  section.py-5.bg-light
+    .container
+      .text-center.mb-5
+        h2.display-6.fw-bold.text-dark.mb-3
+          | #{neighborhood} Mahallesinde 
+          span.text-warning Hizmet Alanlarımız
+        p.lead.text-muted Mahallenizdeki projeleriniz için kapsamlı hizmet
+      
+      .row.g-4
+        .col-lg-3.col-md-6
+          .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .service-icon.mb-3
+              i.fas.fa-building.text-warning.fa-3x
+            h5.card-title İnşaat Projeleri
+            p.card-text.text-muted Küçük ve büyük ölçekli inşaat projeleri için vinç hizmeti
+        .col-lg-3.col-md-6
+          .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .service-icon.mb-3
+              i.fas.fa-home.text-warning.fa-3x
+            h5.card-title Konut Projeleri
+            p.card-text.text-muted Villa, apartman ve konut projeleri için özel vinç çözümleri
+        .col-lg-3.col-md-6
+          .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .service-icon.mb-3
+              i.fas.fa-industry.text-warning.fa-3x
+            h5.card-title Sanayi Projeleri
+            p.card-text.text-muted Fabrika ve sanayi tesisleri için ağır vinç hizmetleri
+        .col-lg-3.col-md-6
+          .service-card.bg-white.p-4.rounded.shadow.text-center.h-100
+            .service-icon.mb-3
+              i.fas.fa-tools.text-warning.fa-3x
+            h5.card-title Bakım Onarım
+            p.card-text.text-muted Bina bakım ve onarım işleri için vinç kiralama hizmeti
+
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 #{neighborhood} İçin Hemen Teklif Alın
+      p.lead.mb-4 Mahallenizdeki projeniz için en uygun vinç modelini belirleyelim
+      .row.justify-content-center
+        .col-lg-6
+          .cta-buttons
+            a.btn.btn-light.btn-lg.me-3.mb-2(href="/teklif-al")
+              i.fas.fa-calculator.me-2
+              | Ücretsiz Teklif Al
+            a.btn.btn-outline-light.btn-lg.mb-2(href="tel:+90XXXXXXXXXX")
+              i.fas.fa-phone.me-2
+              | Hemen Ara

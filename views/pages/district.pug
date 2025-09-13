@@ -54,9 +54,12 @@ block content
               .card-body.text-center
                 .neighborhood-icon.mb-3
                   i.fas.fa-home.text-warning.fa-3x
-                h5.card-title= neighborhood.name
-                p.card-text.text-muted.small= neighborhood.description
-                a.btn.btn-outline-warning.btn-sm(href=`/kiralik-vinc-${district.slug}/${neighborhood.slug}`) Vinçleri Gör
+                h5.card-title= neighborhood
+                p.card-text.text-muted.small #{district.name} ilçesinde #{neighborhood} mahallesinde vinç kiralama hizmeti
+                - const turkishChars = {'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'I': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U'}
+                - const convertedName = neighborhood.replace(/[çÇğĞıIöÖşŞüÜ]/g, (char) => turkishChars[char] || char)
+                - const neighborhoodSlug = convertedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '').replace('-mahallesi', '')
+                a.btn.btn-outline-warning.btn-sm(href=`/kiralik-vinc-${district.slug}/${neighborhoodSlug}`) Vinçleri Gör
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
@@ -76,7 +79,10 @@ block content
                 select.form-select
                   option(value="") Mahalle Seçiniz
                   each neighborhood in neighborhoods
-                    option(value=neighborhood.slug)= neighborhood.name
+                    - const turkishChars = {'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'I': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U'}
+                    - const convertedName = neighborhood.replace(/[çÇğĞıIöÖşŞüÜ]/g, (char) => turkishChars[char] || char)
+                    - const neighborhoodSlug = convertedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '').replace('-mahallesi', '')
+                    option(value=neighborhoodSlug)= neighborhood
               .col-md-6
                 select.form-select
                   option(value="") Vinç Kapasitesi
