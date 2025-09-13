@@ -1,0 +1,115 @@
+extends ../layouts/main
+
+block content
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-8
+          h1.display-5.fw-bold.text-dark.mb-3= `${neighborhood} Forklift Kiralama`
+          p.lead.text-muted.mb-4= `${district.name} ilçesi ${neighborhood} mahallesinde profesyonel forklift kiralama hizmeti.`
+          .forklift-stats.row.g-3.mb-4
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4= forklifts.length
+                .stat-label.text-muted.small Toplam Model
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4= forklifts.filter(f => f.type === 'Elektrikli Forklift').length
+                .stat-label.text-muted.small Elektrikli Forklift
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4= forklifts.filter(f => f.type === 'Dizel Forklift').length
+                .stat-label.text-muted.small Dizel Forklift
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4 7
+                .stat-label.text-muted.small Max Kapasite (Ton)
+        .col-lg-4.text-center
+          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+
+  section.py-5
+    .container
+      .row#forkliftList
+        each forklift in forklifts
+          .col-lg-4.col-md-6.mb-4
+            .card.h-100.shadow-sm.border-0.hover-card
+              .position-relative
+                .swiper.forklift-swiper
+                  .swiper-wrapper
+                    each image in forklift.images
+                      .swiper-slide
+                        img.card-img-top(src=image, alt=forklift.name, loading="lazy")
+                  .swiper-pagination
+                  .swiper-button-next
+                  .swiper-button-prev
+                .badge.bg-warning.position-absolute.top-0.end-0.m-2
+                  i.fas.fa-check.me-1
+                  | Mevcut
+              .card-body.d-flex.flex-column
+                h5.card-title.text-warning= forklift.name
+                .forklift-specs.mb-3
+                  .row.g-2
+                    .col-6
+                      .spec-item
+                        i.fas.fa-weight-hanging.text-warning.me-1
+                        span.small= forklift.capacity
+                    .col-6
+                      .spec-item
+                        i.fas.fa-arrow-up.text-warning.me-1
+                        span.small= forklift.height
+                    .col-6
+                      .spec-item
+                        i.fas.fa-cog.text-warning.me-1
+                        span.small= forklift.type
+                p.card-text.text-muted.small.flex-grow-1= forklift.description
+                .features.mb-3
+                  h6.text-warning.mb-2 Özellikler:
+                  ul.list-unstyled.small
+                    each feature in forklift.features.slice(0, 3)
+                      li
+                        i.fas.fa-check.text-warning.me-1
+                        = feature
+                .card-actions.mt-auto
+                  a.btn.btn-outline-warning.btn-sm.me-2(href=`/kiralik-forkliftler/${forklift.id}-forklift-kiralama`) Detay
+                  a.btn.btn-warning.btn-sm(href="/teklif-al") Teklif Al
+
+      .text-center.mt-5
+        a.btn.btn-outline-warning.btn-lg(href="/teklif-al") Teklif Al
+
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 Hemen Teklif Alın
+      p.lead.mb-4= `${neighborhood} mahallesindeki projeniz için en uygun forklift modelini belirleyelim`
+      .row.justify-content-center
+        .col-lg-8
+          .cta-form.bg-white.p-4.rounded.shadow
+            .row.g-3
+              .col-md-6
+                input.form-control(type="text", placeholder="Adınız Soyadınız")
+              .col-md-6
+                input.form-control(type="tel", placeholder="Telefon Numaranız")
+              .col-md-6
+                input.form-control(type="text", value=district.name, readonly)
+              .col-md-6
+                input.form-control(type="text", value=neighborhood, readonly)
+              .col-md-6
+                select.form-select
+                  option(value="") Forklift Kapasitesi
+                  option(value="1.5") 1.5 Ton
+                  option(value="2") 2 Ton
+                  option(value="2.5") 2.5 Ton
+                  option(value="3") 3 Ton
+                  option(value="3.5") 3.5 Ton
+                  option(value="4") 4 Ton
+                  option(value="4.5") 4.5 Ton
+                  option(value="5") 5 Ton
+                  option(value="5.5") 5.5 Ton
+                  option(value="6") 6 Ton
+                  option(value="6.5") 6.5 Ton
+                  option(value="7") 7 Ton
+              .col-md-6
+                input.form-control(type="date", placeholder="Tarih Seçiniz")
+              .col-12
+                textarea.form-control(rows="3", placeholder="Proje detayları...")
+              .col-12
+                button.btn.btn-warning.btn-lg.w-100 Teklif Al

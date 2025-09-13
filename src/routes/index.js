@@ -2,9 +2,12 @@ const express = require("express");
 const path = require("path");
 const router = express.Router();
 const homeController = require("../controllers/homeController");
+const equipmentController = require("../controllers/equipmentController");
 
 router.get("/", homeController.index);
 router.get("/hizmet-bolgeleri", homeController.districts);
+router.get("/kiralik-sepetli-platformlar", equipmentController.platforms);
+router.get("/kiralik-forkliftler", equipmentController.forklifts);
 router.get("/iletisim", homeController.contact);
 router.get("/teklif-al", homeController.contact);
 router.get("/sitemap.xml", (req, res) => {

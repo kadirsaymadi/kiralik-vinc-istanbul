@@ -1,0 +1,163 @@
+extends ../layouts/main
+
+block content
+  section.py-5.bg-light
+    .container
+      .row.align-items-center.mb-5
+        .col-lg-8
+          h1.display-5.fw-bold.text-dark.mb-3= `${district.name} Sepetli Platform Kiralama`
+          p.lead.text-muted.mb-4= `${district.name} ilçesinde profesyonel sepetli platform kiralama hizmeti. 10 metre'den 100 metre'ye kadar sepetli platform çeşitleri.`
+          .platform-stats.row.g-3.mb-4
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4= platforms.length
+                .stat-label.text-muted.small Toplam Model
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4 10-50m
+                .stat-label.text-muted.small Orta Yükseklik
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4 55-100m
+                .stat-label.text-muted.small Yüksek Yükseklik
+            .col-md-3
+              .stat-card.bg-white.p-3.rounded.shadow.text-center
+                .stat-number.text-warning.fw-bold.h4 230
+                .stat-label.text-muted.small Platform Kapasitesi (kg)
+        .col-lg-4.text-center
+          a.btn.btn-warning.btn-lg(href="/teklif-al") Teklif Al
+
+  section.py-5
+    .container
+      .row.mb-4
+        .col-lg-8
+          .filter-section
+            .row.g-3
+              .col-md-6
+                select.form-select#heightFilter
+                  option(value="") Yüksekliğe Göre Filtrele
+                  option(value="10") 10 Metre
+                  option(value="20") 20 Metre
+                  option(value="30") 30 Metre
+                  option(value="40") 40 Metre
+                  option(value="50") 50 Metre
+                  option(value="60") 60 Metre
+                  option(value="70") 70 Metre
+                  option(value="80") 80 Metre
+                  option(value="90") 90 Metre
+                  option(value="100") 100 Metre
+              .col-md-6
+                select.form-select#typeFilter
+                  option(value="") Tipe Göre Filtrele
+                  option(value="Sepetli Platform") Sepetli Platform
+        .col-lg-4.text-end
+          .sort-section
+            select.form-select#sortSelect
+              option(value="name") İsme Göre Sırala
+              option(value="height") Yüksekliğe Göre Sırala
+
+      .row#platformList
+        each platform in platforms
+          .col-lg-4.col-md-6.mb-4
+            .card.h-100.shadow-sm.border-0.hover-card
+              .position-relative
+                .swiper.platform-swiper
+                  .swiper-wrapper
+                    each image in platform.images
+                      .swiper-slide
+                        img.card-img-top(src=image, alt=platform.name, loading="lazy")
+                  .swiper-pagination
+                  .swiper-button-next
+                  .swiper-button-prev
+                .badge.bg-warning.position-absolute.top-0.end-0.m-2
+                  i.fas.fa-check.me-1
+                  | Mevcut
+              .card-body.d-flex.flex-column
+                h5.card-title.text-warning= platform.name
+                .platform-specs.mb-3
+                  .row.g-2
+                    .col-6
+                      .spec-item
+                        i.fas.fa-arrow-up.text-warning.me-1
+                        span.small= platform.height
+                    .col-6
+                      .spec-item
+                        i.fas.fa-weight-hanging.text-warning.me-1
+                        span.small= platform.capacity
+                    .col-6
+                      .spec-item
+                        i.fas.fa-cog.text-warning.me-1
+                        span.small= platform.type
+                p.card-text.text-muted.small.flex-grow-1= platform.description
+                .features.mb-3
+                  h6.text-warning.mb-2 Özellikler:
+                  ul.list-unstyled.small
+                    each feature in platform.features.slice(0, 3)
+                      li
+                        i.fas.fa-check.text-warning.me-1
+                        = feature
+                .card-actions.mt-auto
+                  a.btn.btn-outline-warning.btn-sm.me-2(href=`/kiralik-sepetli-platformlar/${platform.id}-sepetli-platform-kiralama`) Detay
+                  a.btn.btn-warning.btn-sm(href="/teklif-al") Teklif Al
+
+      .text-center.mt-5
+        a.btn.btn-outline-warning.btn-lg(href="/teklif-al") Teklif Al
+
+  section.py-5.bg-light
+    .container
+      .text-center.mb-5
+        h2.display-6.fw-bold.text-dark.mb-3= `${district.name} Mahalleleri`
+        p.lead.text-muted= `${district.name} ilçesindeki mahallelerde sepetli platform kiralama hizmeti`
+      
+      .row.g-4
+        each neighborhood in district.neighborhoods.slice(0, 12)
+          .col-lg-3.col-md-4.col-sm-6
+            .card.h-100.shadow-sm.border-0.hover-card
+              .card-body.text-center
+                .neighborhood-icon.mb-3
+                  i.fas.fa-home.text-warning.fa-3x
+                h5.card-title= neighborhood
+                p.card-text.text-muted.small= `${district.name} ilçesinde ${neighborhood} mahallesinde sepetli platform kiralama hizmeti`
+                - const turkishChars = {'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'I': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U'}
+                - const convertedName = neighborhood.replace(/[çÇğĞıIöÖşŞüÜ]/g, (char) => turkishChars[char] || char)
+                - const neighborhoodSlug = convertedName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '').replace('-mahallesi', '')
+                a.btn.btn-outline-warning.btn-sm(href=`/kiralik-sepetli-platform-${district.slug}/${neighborhoodSlug}`) Platformları Gör
+
+  section.py-5.bg-gradient-orange.text-white
+    .container.text-center
+      h2.display-6.fw-bold.mb-4 Hemen Teklif Alın
+      p.lead.mb-4= `${district.name} ilçesindeki projeniz için en uygun sepetli platform modelini belirleyelim`
+      .row.justify-content-center
+        .col-lg-8
+          .cta-form.bg-white.p-4.rounded.shadow
+            .row.g-3
+              .col-md-6
+                input.form-control(type="text", placeholder="Adınız Soyadınız")
+              .col-md-6
+                input.form-control(type="tel", placeholder="Telefon Numaranız")
+              .col-md-6
+                input.form-control(type="text", value=district.name, readonly)
+              .col-md-6
+                select.form-select
+                  option(value="") Mahalle Seçin
+                  each neighborhood in district.neighborhoods
+                    option(value=neighborhood)= neighborhood
+              .col-md-6
+                select.form-select
+                  option(value="") Platform Yüksekliği
+                  option(value="10") 10 Metre
+                  option(value="20") 20 Metre
+                  option(value="30") 30 Metre
+                  option(value="40") 40 Metre
+                  option(value="50") 50 Metre
+                  option(value="60") 60 Metre
+                  option(value="70") 70 Metre
+                  option(value="80") 80 Metre
+                  option(value="90") 90 Metre
+                  option(value="100") 100 Metre
+              .col-md-6
+                input.form-control(type="date", placeholder="Tarih Seçiniz")
+              .col-12
+                textarea.form-control(rows="3", placeholder="Proje detayları...")
+              .col-12
+                button.btn.btn-warning.btn-lg.w-100 Teklif Al

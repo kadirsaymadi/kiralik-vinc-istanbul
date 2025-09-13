@@ -7,7 +7,7 @@ block content
         h1.display-4.fw-bold.text-dark.mb-3
           | İstanbul 
           span.text-warning Hizmet Bölgeleri
-        p.lead.text-muted İstanbul'un tüm ilçelerinde profesyonel vinç kiralama hizmeti
+        p.lead.text-muted İstanbul'un tüm ilçelerinde profesyonel vinç, sepetli platform ve forklift kiralama hizmeti
       
       .row.g-4
         each district in districts
@@ -31,13 +31,16 @@ block content
                     span.badge.bg-secondary +#{district.neighborhoods.length - 6}
               
               .district-actions
-                a.btn.btn-warning.btn-sm.me-2(href=`/kiralik-vinc-${district.slug}`) Vinçleri Gör
-                a.btn.btn-outline-warning.btn-sm(href="/teklif-al") Teklif Al
+                .btn-group.w-100.mb-2(role="group")
+                  a.btn.btn-warning.btn-sm(href=`/kiralik-vinc-${district.slug}`) Vinçler
+                  a.btn.btn-warning.btn-sm(href=`/kiralik-sepetli-platform-${district.slug}`) Platformlar
+                  a.btn.btn-warning.btn-sm(href=`/kiralik-forklift-${district.slug}`) Forkliftler
+                a.btn.btn-outline-warning.btn-sm.w-100(href="/teklif-al") Teklif Al
   
   section.py-5.bg-gradient-orange.text-white
     .container.text-center
       h2.display-6.fw-bold.mb-4 Tüm İlçelerde Hizmet
-      p.lead.mb-4 İstanbul'un her ilçesinde profesyonel vinç kiralama hizmeti sunuyoruz
+      p.lead.mb-4 İstanbul'un her ilçesinde profesyonel vinç, sepetli platform ve forklift kiralama hizmeti sunuyoruz
       .row.justify-content-center
         .col-lg-8
           .stats-row.row.g-4
@@ -64,7 +67,7 @@ block content
         h2.display-6.fw-bold.text-dark.mb-3
           | Neden 
           span.text-warning Bizimle Çalışmalısınız?
-        p.lead.text-muted İstanbul'un her köşesinde güvenilir vinç kiralama hizmeti
+        p.lead.text-muted İstanbul'un her köşesinde güvenilir vinç, sepetli platform ve forklift kiralama hizmeti
       
       .row.g-4
         .col-lg-3.col-md-6
@@ -95,7 +98,7 @@ block content
   section.py-5.bg-light
     .container.text-center
       h2.display-6.fw-bold.text-dark.mb-4 Hemen Teklif Alın
-      p.lead.mb-4 İlçenizdeki projeniz için en uygun vinç modelini belirleyelim
+      p.lead.mb-4 İlçenizdeki projeniz için en uygun makina modelini belirleyelim
       .row.justify-content-center
         .col-lg-8
           .cta-form.bg-white.p-4.rounded.shadow
@@ -111,18 +114,21 @@ block content
                     option(value=district.name)= district.name
               .col-md-6
                 select.form-select
-                  option(value="") Vinç Tipi Seçin
-                  option(value="Mobil Vinç") Mobil Vinç
-                  option(value="Sabit Vinç") Sabit Vinç
+                  option(value="") Makina Tipi Seçin
+                  option(value="Vinç") Vinç
+                  option(value="Sepetli Platform") Sepetli Platform
+                  option(value="Forklift") Forklift
               .col-md-6
                 select.form-select
-                  option(value="") Kapasite Seçin
-                  option(value="25") 25 Ton
-                  option(value="50") 50 Ton
-                  option(value="100") 100 Ton
-                  option(value="150") 150 Ton
-                  option(value="200") 200 Ton
-                  option(value="350") 350 Ton
+                  option(value="") Kapasite/Yükseklik Seçin
+                  option(value="5-25 ton") 5-25 Ton Vinç
+                  option(value="30-50 ton") 30-50 Ton Vinç
+                  option(value="60-100 ton") 60-100 Ton Vinç
+                  option(value="10-30m") 10-30 Metre Platform
+                  option(value="35-60m") 35-60 Metre Platform
+                  option(value="65-100m") 65-100 Metre Platform
+                  option(value="1.5-3 ton") 1.5-3 Ton Forklift
+                  option(value="3.5-7 ton") 3.5-7 Ton Forklift
               .col-md-6
                 input.form-control(type="date", placeholder="Tarih Seçiniz")
               .col-12
