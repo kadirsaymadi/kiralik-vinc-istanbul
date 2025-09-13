@@ -23,12 +23,12 @@ const homeController = {
         description: appConfig.seo.defaultDescription,
         keywords: appConfig.seo.defaultKeywords,
       },
-      canonical: "/",
-      ogUrl: "/",
+      canonical: seoHelper.generateCanonicalUrl("/"),
+      ogUrl: seoHelper.generateCanonicalUrl("/"),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
-    const structuredData = seoHelper.generateStructuredData("Service", {
+    const structuredData = seoHelper.generateStructuredData("WebSite", {
       name: appConfig.site.name,
       description: appConfig.site.description,
     });
@@ -69,8 +69,8 @@ const homeController = {
           "vinç modelleri",
         ],
       },
-      canonical: "/kiralik-vincler",
-      ogUrl: "/kiralik-vincler",
+      canonical: seoHelper.generateCanonicalUrl("/kiralik-vincler"),
+      ogUrl: seoHelper.generateCanonicalUrl("/kiralik-vincler"),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
@@ -117,8 +117,8 @@ const homeController = {
           "vinç kiralama adres",
         ],
       },
-      canonical: "/iletisim",
-      ogUrl: "/iletisim",
+      canonical: seoHelper.generateCanonicalUrl("/iletisim"),
+      ogUrl: seoHelper.generateCanonicalUrl("/iletisim"),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
@@ -165,8 +165,8 @@ const homeController = {
           "beşiktaş vinç kiralama",
         ],
       },
-      canonical: "/hizmet-bolgeleri",
-      ogUrl: "/hizmet-bolgeleri",
+      canonical: seoHelper.generateCanonicalUrl("/hizmet-bolgeleri"),
+      ogUrl: seoHelper.generateCanonicalUrl("/hizmet-bolgeleri"),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
@@ -199,6 +199,139 @@ const homeController = {
       currentPath: "/hizmet-bolgeleri",
       siteConfig: appConfig,
     });
+  },
+
+  sitemap: (req, res) => {
+    const baseUrl = "https://kiralikvincistanbul.com";
+    const currentDate = new Date().toISOString().split("T")[0];
+
+    // Ana sayfalar
+    const mainPages = [
+      { url: "/", priority: "1.0", changefreq: "daily" },
+      { url: "/hizmet-bolgeleri", priority: "0.9", changefreq: "weekly" },
+      { url: "/kiralik-vincler", priority: "0.9", changefreq: "weekly" },
+      {
+        url: "/kiralik-sepetli-platformlar",
+        priority: "0.9",
+        changefreq: "weekly",
+      },
+      { url: "/kiralik-forkliftler", priority: "0.9", changefreq: "weekly" },
+      { url: "/iletisim", priority: "0.8", changefreq: "monthly" },
+    ];
+
+    // Vinç detay sayfaları
+    const cranePages = equipmentData.equipment
+      .filter((eq) => eq.category === "vinç")
+      .map((crane) => ({
+        url: `/vinc/${crane.slug}`,
+        priority: "0.7",
+        changefreq: "monthly",
+      }));
+
+    // Platform detay sayfaları
+    const platformPages = equipmentData.equipment
+      .filter((eq) => eq.category === "sepetli-platform")
+      .map((platform) => ({
+        url: `/kiralik-sepetli-platformlar/${platform.id}-kiralama`,
+        priority: "0.7",
+        changefreq: "monthly",
+      }));
+
+    // Forklift detay sayfaları
+    const forkliftPages = equipmentData.equipment
+      .filter((eq) => eq.category === "forklift")
+      .map((forklift) => ({
+        url: `/kiralik-forkliftler/${forklift.id}-kiralama`,
+        priority: "0.7",
+        changefreq: "monthly",
+      }));
+
+    // İlçe sayfaları
+    const districtPages = districtsData.districts.map((district) => ({
+      url: `/kiralik-vinc-${district.slug}`,
+      priority: "0.6",
+      changefreq: "monthly",
+    }));
+
+    // İlçe platform sayfaları
+    const districtPlatformPages = districtsData.districts.map((district) => ({
+      url: `/kiralik-sepetli-platform-${district.slug}`,
+      priority: "0.6",
+      changefreq: "monthly",
+    }));
+
+    // İlçe forklift sayfaları
+    const districtForkliftPages = districtsData.districts.map((district) => ({
+      url: `/kiralik-forklift-${district.slug}`,
+      priority: "0.6",
+      changefreq: "monthly",
+    }));
+
+    // Mahalle sayfaları
+    const neighborhoodPages = [];
+    districtsData.districts.forEach((district) => {
+      district.neighborhoods.forEach((neighborhood) => {
+        const turkishChars = {
+          ç: "c",
+          Ç: "C",
+          ğ: "g",
+          Ğ: "G",
+          ı: "i",
+          I: "I",
+          ö: "o",
+          Ö: "O",
+          ş: "s",
+          Ş: "S",
+          ü: "u",
+          Ü: "U",
+        };
+        const convertedName = neighborhood.replace(
+          /[çÇğĞıIöÖşŞüÜ]/g,
+          (char) => turkishChars[char] || char
+        );
+        const neighborhoodSlug = convertedName
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/[^a-z0-9-]/g, "")
+          .replace("-mahallesi", "");
+
+        neighborhoodPages.push({
+          url: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
+          priority: "0.5",
+          changefreq: "monthly",
+        });
+      });
+    });
+
+    // Tüm sayfaları birleştir
+    const allPages = [
+      ...mainPages,
+      ...cranePages,
+      ...platformPages,
+      ...forkliftPages,
+      ...districtPages,
+      ...districtPlatformPages,
+      ...districtForkliftPages,
+      ...neighborhoodPages,
+    ];
+
+    // XML sitemap oluştur
+    let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
+    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+    allPages.forEach((page) => {
+      sitemap += "  <url>\n";
+      sitemap += `    <loc>${baseUrl}${page.url}</loc>\n`;
+      sitemap += `    <lastmod>${currentDate}</lastmod>\n`;
+      sitemap += `    <changefreq>${page.changefreq}</changefreq>\n`;
+      sitemap += `    <priority>${page.priority}</priority>\n`;
+      sitemap += "  </url>\n";
+    });
+
+    sitemap += "</urlset>";
+
+    res.set("Content-Type", "text/xml");
+    res.send(sitemap);
   },
 };
 

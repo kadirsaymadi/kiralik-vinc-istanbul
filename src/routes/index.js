@@ -3,10 +3,12 @@ const path = require("path");
 const router = express.Router();
 const homeController = require("../controllers/homeController");
 const equipmentController = require("../controllers/equipmentController");
+const craneController = require("../controllers/craneController");
 
 router.get("/", homeController.index);
 router.get("/hizmet-bolgeleri", homeController.districts);
 router.get("/kiralik-vincler", homeController.craneList);
+router.get("/vinc/:crane", craneController.detail);
 router.get("/kiralik-sepetli-platformlar", equipmentController.platforms);
 router.get(
   "/kiralik-sepetli-platformlar/:platform",
@@ -19,9 +21,6 @@ router.get(
 );
 router.get("/iletisim", homeController.contact);
 router.get("/teklif-al", homeController.contact);
-router.get("/sitemap.xml", (req, res) => {
-  res.set("Content-Type", "text/xml");
-  res.sendFile(path.join(__dirname, "../../public/sitemap.xml"));
-});
+router.get("/sitemap.xml", homeController.sitemap);
 
 module.exports = router;

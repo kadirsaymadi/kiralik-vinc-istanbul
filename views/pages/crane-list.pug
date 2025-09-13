@@ -32,31 +32,6 @@ block content
   
   section.py-5
     .container
-      .row.mb-4
-        .col-lg-8
-          .filter-section
-            .row.g-3
-              .col-md-6
-                select.form-select#capacityFilter
-                  option(value="") Kapasiteye Göre Filtrele
-                  option(value="25") 25 Ton
-                  option(value="50") 50 Ton
-                  option(value="100") 100 Ton
-                  option(value="150") 150 Ton
-                  option(value="200") 200 Ton
-                  option(value="350") 350 Ton
-              .col-md-6
-                select.form-select#typeFilter
-                  option(value="") #{siteConfig.texts.filterByType}
-                  option(value="Mobil Vinç") #{siteConfig.texts.mobileCrane}
-                  option(value="Sabit Vinç") #{siteConfig.texts.fixedCrane}
-        .col-lg-4.text-end
-          .sort-section
-            select.form-select#sortSelect
-              option(value="name") İsme Göre Sırala
-              option(value="capacity") Kapasiteye Göre Sırala
-              option(value="price") Fiyata Göre Sırala
-      
       .row#craneList
         each crane in cranes
           +craneCard(crane)

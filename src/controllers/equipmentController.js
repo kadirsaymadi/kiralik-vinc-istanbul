@@ -30,8 +30,8 @@ const equipmentController = {
           "istanbul sepetli platform kiralama",
         ],
       },
-      canonical: "/kiralik-sepetli-platformlar",
-      ogUrl: "/kiralik-sepetli-platformlar",
+      canonical: seoHelper.generateCanonicalUrl("/kiralik-sepetli-platformlar"),
+      ogUrl: seoHelper.generateCanonicalUrl("/kiralik-sepetli-platformlar"),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);

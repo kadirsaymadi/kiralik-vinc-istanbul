@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const seoHelper = require("../utils/seoHelper");
 const slugGenerator = require("../utils/slugGenerator");
+const appConfig = require("../config/appConfig");
 
 const equipmentData = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../../data/cranes.json"), "utf8")
@@ -33,8 +34,10 @@ const categoryController = {
 
     const seoData = {
       seo: district.seo,
-      canonical: `/kiralik-vinc-${district.slug}`,
-      ogUrl: `/kiralik-vinc-${district.slug}`,
+      canonical: seoHelper.generateCanonicalUrl(
+        `/kiralik-vinc-${district.slug}`
+      ),
+      ogUrl: seoHelper.generateCanonicalUrl(`/kiralik-vinc-${district.slug}`),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
@@ -69,6 +72,7 @@ const categoryController = {
       availableCranes,
       districts: districtsData.districts,
       currentPath: `/kiralik-vinc-${district.slug}`,
+      siteConfig: appConfig,
     });
   },
 
@@ -141,8 +145,12 @@ const categoryController = {
           `${district.name.toLowerCase()} ${neighborhood.toLowerCase()} vinç`,
         ],
       },
-      canonical: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
-      ogUrl: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
+      canonical: seoHelper.generateCanonicalUrl(
+        `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`
+      ),
+      ogUrl: seoHelper.generateCanonicalUrl(
+        `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`
+      ),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
@@ -184,6 +192,7 @@ const categoryController = {
       availableCranes,
       districts: districtsData.districts,
       currentPath: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
+      siteConfig: appConfig,
     });
   },
 };

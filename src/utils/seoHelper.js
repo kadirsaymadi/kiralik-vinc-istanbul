@@ -81,16 +81,139 @@ const seoHelper = {
 
       case "Organization":
         return {
-          ...baseSchema,
+          "@context": "https://schema.org",
           "@type": "Organization",
           name: "İstanbul Vinç Kiralama",
           url: "https://kiralikvincistanbul.com",
           logo: "https://kiralikvincistanbul.com/images/logo.png",
+          description:
+            "İstanbul'da profesyonel vinç, sepetli platform ve forklift kiralama hizmeti",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "İstanbul",
+            addressCountry: "TR",
+          },
           contactPoint: {
             "@type": "ContactPoint",
             telephone: "+90-541-414-3421",
             contactType: "customer service",
             availableLanguage: "Turkish",
+            areaServed: "TR",
+            hoursAvailable: "24/7",
+          },
+          sameAs: [
+            "https://www.facebook.com/kiralikvincistanbul",
+            "https://www.instagram.com/kiralikvincistanbul",
+            "https://www.linkedin.com/company/kiralikvincistanbul",
+          ],
+          serviceArea: {
+            "@type": "GeoCircle",
+            geoMidpoint: {
+              "@type": "GeoCoordinates",
+              latitude: 41.0082,
+              longitude: 28.9784,
+            },
+            geoRadius: "50000",
+          },
+        };
+
+      case "ContactPage":
+        return {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          name: "İletişim - İstanbul Vinç Kiralama",
+          description:
+            "İstanbul vinç kiralama hizmeti için bizimle iletişime geçin",
+          url: "https://kiralikvincistanbul.com/iletisim",
+          mainEntity: {
+            "@type": "Organization",
+            name: "İstanbul Vinç Kiralama",
+            telephone: "+90-541-414-3421",
+            email: "info@kiralikvincistanbul.com",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "İstanbul",
+              addressCountry: "TR",
+            },
+          },
+        };
+
+      case "LocalBusiness":
+        return {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "İstanbul Vinç Kiralama",
+          description:
+            "İstanbul'da profesyonel vinç, sepetli platform ve forklift kiralama hizmeti",
+          url: "https://kiralikvincistanbul.com",
+          telephone: "+90-541-414-3421",
+          email: "info@kiralikvincistanbul.com",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "İstanbul",
+            addressCountry: "TR",
+          },
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: 41.0082,
+            longitude: 28.9784,
+          },
+          openingHours: "Mo-Su 00:00-23:59",
+          serviceArea: {
+            "@type": "City",
+            name: "İstanbul",
+          },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Vinç Kiralama Hizmetleri",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Mobil Vinç Kiralama",
+                  description: "25 ton'dan 350 ton'a kadar mobil vinç kiralama",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Sepetli Platform Kiralama",
+                  description:
+                    "10 metre'den 100 metre'ye kadar sepetli platform kiralama",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Forklift Kiralama",
+                  description: "1.5 ton'dan 7 ton'a kadar forklift kiralama",
+                },
+              },
+            ],
+          },
+        };
+
+      case "WebSite":
+        return {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "İstanbul Vinç Kiralama",
+          url: "https://kiralikvincistanbul.com",
+          description:
+            "İstanbul'da profesyonel vinç, sepetli platform ve forklift kiralama hizmeti",
+          publisher: {
+            "@type": "Organization",
+            name: "İstanbul Vinç Kiralama",
+            url: "https://kiralikvincistanbul.com",
+          },
+          potentialAction: {
+            "@type": "SearchAction",
+            target:
+              "https://kiralikvincistanbul.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string",
           },
         };
 

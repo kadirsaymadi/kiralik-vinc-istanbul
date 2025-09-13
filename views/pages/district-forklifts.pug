@@ -29,36 +29,6 @@ block content
 
   section.py-5
     .container
-      .row.mb-4
-        .col-lg-8
-          .filter-section
-            .row.g-3
-              .col-md-6
-                select.form-select#capacityFilter
-                  option(value="") Kapasiteye Göre Filtrele
-                  option(value="1.5") 1.5 Ton
-                  option(value="2") 2 Ton
-                  option(value="2.5") 2.5 Ton
-                  option(value="3") 3 Ton
-                  option(value="3.5") 3.5 Ton
-                  option(value="4") 4 Ton
-                  option(value="4.5") 4.5 Ton
-                  option(value="5") 5 Ton
-                  option(value="5.5") 5.5 Ton
-                  option(value="6") 6 Ton
-                  option(value="6.5") 6.5 Ton
-                  option(value="7") 7 Ton
-              .col-md-6
-                select.form-select#typeFilter
-                  option(value="") #{siteConfig.texts.filterByType}
-                  option(value="Elektrikli Forklift") #{siteConfig.texts.electricForklift}
-                  option(value="Dizel Forklift") #{siteConfig.texts.dieselForklift}
-        .col-lg-4.text-end
-          .sort-section
-            select.form-select#sortSelect
-              option(value="name") İsme Göre Sırala
-              option(value="capacity") Kapasiteye Göre Sırala
-
       .row#forkliftList
         each forklift in forklifts
           .col-lg-4.col-md-6.mb-4

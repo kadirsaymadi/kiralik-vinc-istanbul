@@ -222,7 +222,6 @@ const appConfig = {
     serviceHours: "Hizmet",
     satisfaction: "Memnuniyet",
     neighborhoods: "Mahalleler",
-    filterByType: "Tipe Göre Filtrele",
     mobileCrane: "Mobil Vinç",
     fixedCrane: "Sabit Vinç",
     electricForklift: "Elektrikli Forklift",

@@ -29,33 +29,7 @@ block content
 
   section.py-5
     .container
-      .row.mb-4
-        .col-lg-8
-          .filter-section
-            .row.g-3
-              .col-md-6
-                select.form-select#heightFilter
-                  option(value="") Yüksekliğe Göre Filtrele
-                  option(value="10") 10 Metre
-                  option(value="20") 20 Metre
-                  option(value="30") 30 Metre
-                  option(value="40") 40 Metre
-                  option(value="50") 50 Metre
-                  option(value="60") 60 Metre
-                  option(value="70") 70 Metre
-                  option(value="80") 80 Metre
-                  option(value="90") 90 Metre
-                  option(value="100") 100 Metre
-              .col-md-6
-                select.form-select#typeFilter
-                  option(value="") #{siteConfig.texts.filterByType}
-                  option(value="Sepetli Platform") #{siteConfig.texts.aerialPlatform}
-        .col-lg-4.text-end
-          .sort-section
-            select.form-select#sortSelect
-              option(value="name") İsme Göre Sırala
-              option(value="height") Yüksekliğe Göre Sırala
-
+      
       .row#platformList
         each platform in platforms
           .col-lg-4.col-md-6.mb-4

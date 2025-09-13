@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const seoHelper = require("../utils/seoHelper");
+const appConfig = require("../config/appConfig");
 
 const equipmentData = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../../data/cranes.json"), "utf8")
@@ -12,9 +13,7 @@ const districtsData = JSON.parse(
 const craneController = {
   detail: (req, res) => {
     const craneSlug = req.params.crane;
-    const crane = equipmentData.equipment.find(
-      (c) => c.id === craneSlug.replace("-kiralama", "")
-    );
+    const crane = equipmentData.equipment.find((c) => c.id === craneSlug);
 
     if (!crane) {
       return res.status(404).render("pages/404", {
@@ -33,8 +32,8 @@ const craneController = {
 
     const seoData = {
       seo: crane.seo,
-      canonical: `/kiralik-vincler/${craneSlug}`,
-      ogUrl: `/kiralik-vincler/${craneSlug}`,
+      canonical: seoHelper.generateCanonicalUrl(`/vinc/${craneSlug}`),
+      ogUrl: seoHelper.generateCanonicalUrl(`/vinc/${craneSlug}`),
       ogImage: crane.images[0] || "/images/og-image.jpg",
     };
 
@@ -50,7 +49,7 @@ const craneController = {
     const breadcrumbs = [
       { name: "Ana Sayfa", url: "/" },
       { name: "Vinçler", url: "/kiralik-vincler" },
-      { name: crane.name, url: `/kiralik-vincler/${craneSlug}` },
+      { name: crane.name, url: `/vinc/${craneSlug}` },
     ];
 
     res.render("pages/crane-detail", {
@@ -69,7 +68,8 @@ const craneController = {
       crane,
       relatedCranes,
       districts: districtsData.districts,
-      currentPath: `/kiralik-vincler/${craneSlug}`,
+      currentPath: `/vinc/${craneSlug}`,
+      siteConfig: appConfig,
     });
   },
 
@@ -91,8 +91,8 @@ const craneController = {
           "istanbul vinç kiralama",
         ],
       },
-      canonical: "/kiralik-vincler",
-      ogUrl: "/kiralik-vincler",
+      canonical: seoHelper.generateCanonicalUrl("/kiralik-vincler"),
+      ogUrl: seoHelper.generateCanonicalUrl("/kiralik-vincler"),
     };
 
     const metaTags = seoHelper.generateMetaTags(seoData);
@@ -122,6 +122,7 @@ const craneController = {
       cranes: availableCranes,
       districts: districtsData.districts,
       currentPath: "/kiralik-vincler",
+      siteConfig: appConfig,
     });
   },
 };

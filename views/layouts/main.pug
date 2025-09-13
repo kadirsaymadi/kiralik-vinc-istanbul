@@ -4,6 +4,14 @@ html(lang="tr")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(name="robots", content="index, follow")
+    meta(name="googlebot", content="index, follow")
+    meta(name="bingbot", content="index, follow")
+    meta(name="author", content="İstanbul Vinç Kiralama")
+    meta(name="language", content="tr")
+    meta(name="geo.region", content="TR-34")
+    meta(name="geo.placename", content="İstanbul")
+    meta(name="geo.position", content="41.0082;28.9784")
+    meta(name="ICBM", content="41.0082, 28.9784")
     // Cache control kaldırıldı - CSS yükleme sorunu çözüldü
     
     title= title || 'İstanbul Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri'
@@ -18,11 +26,18 @@ html(lang="tr")
     meta(property="og:url", content=ogUrl || fullUrl)
     meta(property="og:type", content="website")
     meta(property="og:locale", content="tr_TR")
+    meta(property="og:site_name", content="İstanbul Vinç Kiralama")
+    meta(property="og:image:width", content="1200")
+    meta(property="og:image:height", content="630")
+    meta(property="og:image:alt", content="İstanbul Vinç Kiralama Hizmetleri")
     
     meta(name="twitter:card", content="summary_large_image")
     meta(name="twitter:title", content=ogTitle || title)
     meta(name="twitter:description", content=ogDescription || description)
     meta(name="twitter:image", content=ogImage || '/images/og-image.jpg')
+    meta(name="twitter:image:alt", content="İstanbul Vinç Kiralama Hizmetleri")
+    meta(name="twitter:site", content="@kiralikvincistanbul")
+    meta(name="twitter:creator", content="@kiralikvincistanbul")
     
     link(rel="icon", type="image/x-icon", href="/images/favicon.ico")
     link(rel="apple-touch-icon", href="/images/apple-touch-icon.png")
@@ -172,6 +187,35 @@ html(lang="tr")
     
     if breadcrumbSchema
       script(type="application/ld+json")!= breadcrumbSchema
+    
+    // Global Organization Schema
+    script(type="application/ld+json").
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "İstanbul Vinç Kiralama",
+        "url": "https://kiralikvincistanbul.com",
+        "logo": "https://kiralikvincistanbul.com/images/logo.png",
+        "description": "İstanbul'da profesyonel vinç, sepetli platform ve forklift kiralama hizmeti",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "İstanbul",
+          "addressCountry": "TR"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+90-541-414-3421",
+          "contactType": "customer service",
+          "availableLanguage": "Turkish",
+          "areaServed": "TR",
+          "hoursAvailable": "24/7"
+        },
+        "sameAs": [
+          "https://www.facebook.com/kiralikvincistanbul",
+          "https://www.instagram.com/kiralikvincistanbul",
+          "https://www.linkedin.com/company/kiralikvincistanbul"
+        ]
+      }
 
   body
     include ../partials/header
