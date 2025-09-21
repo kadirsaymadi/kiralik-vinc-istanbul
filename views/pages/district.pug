@@ -15,15 +15,9 @@ block content
                 .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
                   i.fas.fa-map-marker-alt
                 span #{district.neighborhoods.length} #{siteConfig.texts.neighborhoodCount}de #{siteConfig.texts.serviceHours}
-            .col-md-6
-              .feature-item.d-flex.align-items-center
-                .feature-icon.bg-gradient-orange.text-white.rounded-circle.me-3.d-flex.align-items-center.justify-content-center
-                  i.fas.fa-truck
-                span #{siteConfig.texts.availableCranes}
         
         .col-lg-4.text-center
           a.btn.btn-warning.btn-lg(href="/iletisim") #{siteConfig.texts.getQuote}
-  
   section.py-5
     .container
       .text-center.mb-5
@@ -31,7 +25,6 @@ block content
           | #{district.name} İlçesinde 
           span.text-warning #{siteConfig.texts.availableCranes}
         p.lead.text-muted #{siteConfig.texts.otherCranes}
-      
       .row
         each crane in availableCranes
           +craneCard(crane)

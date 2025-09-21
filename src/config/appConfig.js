@@ -262,7 +262,7 @@ const appConfig = {
     projectsCompleted: "Proje Tamamlandı",
     craneModels: "Vinç Modeli",
     districtsServed: "İlçede Hizmet",
-    serviceHours: "Hizmet Saati",
+    serviceHours: "7/24 Hizmet",
 
     // Ekipmanlar
     aerialPlatforms: "Sepetli Platformlar",
