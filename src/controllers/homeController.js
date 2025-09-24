@@ -220,82 +220,86 @@ const homeController = {
       { url: "/teklif-al", priority: "0.8", changefreq: "monthly" },
     ];
 
-    // Vinç detay sayfaları
+    // Vinç detay sayfaları - /vinc/:crane route'u
     const cranePages = equipmentData.equipment
       .filter((eq) => eq.category === "vinç")
       .map((crane) => ({
-        url: `/vinc/${crane.id}`,
+        url: `/vinc/${crane.slug || crane.id}`,
         priority: "0.7",
         changefreq: "monthly",
       }));
 
-    // Platform detay sayfaları
+    // Platform detay sayfaları - /kiralik-sepetli-platformlar/:platform route'u
     const platformPages = equipmentData.equipment
       .filter((eq) => eq.category === "sepetli-platform")
       .map((platform) => ({
-        url: `/kiralik-sepetli-platformlar/${platform.id}`,
+        url: `/kiralik-sepetli-platformlar/${platform.slug || platform.id}`,
         priority: "0.7",
         changefreq: "monthly",
       }));
 
-    // Forklift detay sayfaları
+    // Forklift detay sayfaları - /kiralik-forkliftler/:forklift route'u
     const forkliftPages = equipmentData.equipment
       .filter((eq) => eq.category === "forklift")
       .map((forklift) => ({
-        url: `/kiralik-forkliftler/${forklift.id}`,
+        url: `/kiralik-forkliftler/${forklift.slug || forklift.id}`,
         priority: "0.7",
         changefreq: "monthly",
       }));
 
-    // İlçe sayfaları - Vinç
+    // İlçe sayfaları - Vinç (/kiralik-vinc-:district route'u)
     const districtCranePages = districtsData.districts.map((district) => ({
       url: `/kiralik-vinc-${district.slug}`,
       priority: "0.8",
       changefreq: "weekly",
     }));
 
-    // İlçe sayfaları - Platform
+    // İlçe sayfaları - Platform (/kiralik-sepetli-platform-:district route'u)
     const districtPlatformPages = districtsData.districts.map((district) => ({
       url: `/kiralik-sepetli-platform-${district.slug}`,
       priority: "0.7",
       changefreq: "weekly",
     }));
 
-    // İlçe sayfaları - Forklift
+    // İlçe sayfaları - Forklift (/kiralik-forklift-:district route'u)
     const districtForkliftPages = districtsData.districts.map((district) => ({
       url: `/kiralik-forklift-${district.slug}`,
       priority: "0.7",
       changefreq: "weekly",
     }));
 
-    // Mahalle sayfaları - Vinç
+    // Mahalle sayfaları için slug oluşturma fonksiyonu
+    const createSlug = (text) => {
+      const turkishChars = {
+        ç: "c",
+        Ç: "C",
+        ğ: "g",
+        Ğ: "G",
+        ı: "i",
+        I: "I",
+        ö: "o",
+        Ö: "O",
+        ş: "s",
+        Ş: "S",
+        ü: "u",
+        Ü: "U",
+      };
+      const convertedName = text.replace(
+        /[çÇğĞıIöÖşŞüÜ]/g,
+        (char) => turkishChars[char] || char
+      );
+      return convertedName
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/[^a-z0-9-]/g, "")
+        .replace("-mahallesi", "");
+    };
+
+    // Mahalle sayfaları - Vinç (/kiralik-vinc-:district/:neighborhood route'u)
     const neighborhoodCranePages = [];
     districtsData.districts.forEach((district) => {
       district.neighborhoods.forEach((neighborhood) => {
-        const turkishChars = {
-          ç: "c",
-          Ç: "C",
-          ğ: "g",
-          Ğ: "G",
-          ı: "i",
-          I: "I",
-          ö: "o",
-          Ö: "O",
-          ş: "s",
-          Ş: "S",
-          ü: "u",
-          Ü: "U",
-        };
-        const convertedName = neighborhood.replace(
-          /[çÇğĞıIöÖşŞüÜ]/g,
-          (char) => turkishChars[char] || char
-        );
-        const neighborhoodSlug = convertedName
-          .toLowerCase()
-          .replace(/\s+/g, "-")
-          .replace(/[^a-z0-9-]/g, "")
-          .replace("-mahallesi", "");
-
+        const neighborhoodSlug = createSlug(neighborhood);
         neighborhoodCranePages.push({
           url: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
           priority: "0.6",
@@ -304,34 +308,11 @@ const homeController = {
       });
     });
 
-    // Mahalle sayfaları - Platform
+    // Mahalle sayfaları - Platform (/kiralik-sepetli-platform-:district/:neighborhood route'u)
     const neighborhoodPlatformPages = [];
     districtsData.districts.forEach((district) => {
       district.neighborhoods.forEach((neighborhood) => {
-        const turkishChars = {
-          ç: "c",
-          Ç: "C",
-          ğ: "g",
-          Ğ: "G",
-          ı: "i",
-          I: "I",
-          ö: "o",
-          Ö: "O",
-          ş: "s",
-          Ş: "S",
-          ü: "u",
-          Ü: "U",
-        };
-        const convertedName = neighborhood.replace(
-          /[çÇğĞıIöÖşŞüÜ]/g,
-          (char) => turkishChars[char] || char
-        );
-        const neighborhoodSlug = convertedName
-          .toLowerCase()
-          .replace(/\s+/g, "-")
-          .replace(/[^a-z0-9-]/g, "")
-          .replace("-mahallesi", "");
-
+        const neighborhoodSlug = createSlug(neighborhood);
         neighborhoodPlatformPages.push({
           url: `/kiralik-sepetli-platform-${district.slug}/${neighborhoodSlug}`,
           priority: "0.5",
@@ -340,34 +321,11 @@ const homeController = {
       });
     });
 
-    // Mahalle sayfaları - Forklift
+    // Mahalle sayfaları - Forklift (/kiralik-forklift-:district/:neighborhood route'u)
     const neighborhoodForkliftPages = [];
     districtsData.districts.forEach((district) => {
       district.neighborhoods.forEach((neighborhood) => {
-        const turkishChars = {
-          ç: "c",
-          Ç: "C",
-          ğ: "g",
-          Ğ: "G",
-          ı: "i",
-          I: "I",
-          ö: "o",
-          Ö: "O",
-          ş: "s",
-          Ş: "S",
-          ü: "u",
-          Ü: "U",
-        };
-        const convertedName = neighborhood.replace(
-          /[çÇğĞıIöÖşŞüÜ]/g,
-          (char) => turkishChars[char] || char
-        );
-        const neighborhoodSlug = convertedName
-          .toLowerCase()
-          .replace(/\s+/g, "-")
-          .replace(/[^a-z0-9-]/g, "")
-          .replace("-mahallesi", "");
-
+        const neighborhoodSlug = createSlug(neighborhood);
         neighborhoodForkliftPages.push({
           url: `/kiralik-forklift-${district.slug}/${neighborhoodSlug}`,
           priority: "0.5",
