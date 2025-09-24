@@ -1,0 +1,16 @@
+Bu klasör vinç görselleri için ayrılmıştır.
+
+Örnek görseller:
+- hero-crane.jpg (Ana sayfa hero görseli)
+- logo.png (Site logosu)
+- og-image.jpg (Open Graph görseli)
+- favicon.ico (Site ikonu)
+- apple-touch-icon.png (Apple touch ikonu)
+
+Vinç görselleri için önerilen boyutlar:
+- Hero görseli: 1920x1080px
+- Vinç kartları: 800x600px
+- Logo: 200x100px
+- Favicon: 32x32px
+
+Görseller Unsplash veya benzeri ücretsiz stok fotoğraf sitelerinden alınabilir.

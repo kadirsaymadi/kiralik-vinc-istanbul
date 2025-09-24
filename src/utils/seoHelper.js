@@ -95,7 +95,7 @@ const seoHelper = {
           },
           contactPoint: {
             "@type": "ContactPoint",
-            telephone: "+90-541-414-3421",
+            telephone: "+90-532-315-99-51",
             contactType: "customer service",
             availableLanguage: "Turkish",
             areaServed: "TR",
@@ -128,8 +128,8 @@ const seoHelper = {
           mainEntity: {
             "@type": "Organization",
             name: "İstanbul Vinç Kiralama",
-            telephone: "+90-541-414-3421",
-            email: "info@kiralikvincistanbul.com",
+            telephone: "+90-532-315-99-51",
+            email: "kadirsaymadi@gmail.com",
             address: {
               "@type": "PostalAddress",
               addressLocality: "İstanbul",
@@ -146,8 +146,8 @@ const seoHelper = {
           description:
             "İstanbul'da profesyonel vinç, sepetli platform ve forklift kiralama hizmeti",
           url: "https://kiralikvincistanbul.com",
-          telephone: "+90-541-414-3421",
-          email: "info@kiralikvincistanbul.com",
+          telephone: "+90-532-315-99-51",
+          email: "kadirsaymadi@gmail.com",
           address: {
             "@type": "PostalAddress",
             addressLocality: "İstanbul",

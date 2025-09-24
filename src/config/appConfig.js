@@ -11,10 +11,10 @@ const appConfig = {
 
   // İletişim Bilgileri
   contact: {
-    phone: "+90 111 111 11 11",
-    phoneDisplay: "+90 111 111 11 11",
-    phoneLink: "tel:+901111111111",
-    email: "info@kiralikvincistanbul.com",
+    phone: "+90-532-315-99-51",
+    phoneDisplay: "+90-532-315-99-51",
+    phoneLink: "tel:+905323159951",
+    email: "kadirsaymadi@gmail.com",
     address: "İstanbul, Türkiye",
     workingHours: "7/24 Hizmet",
   },
