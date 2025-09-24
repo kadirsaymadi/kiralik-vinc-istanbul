@@ -27,14 +27,7 @@ block content
       .row
         .col-lg-8
           .crane-gallery.mb-5
-            .swiper.crane-detail-swiper
-              .swiper-wrapper
-                each image in crane.images
-                  .swiper-slide
-                    img.img-fluid.rounded.shadow(src=image, alt=crane.name, loading="lazy")
-              .swiper-pagination
-              .swiper-button-next
-              .swiper-button-prev
+            img.img-fluid.rounded.shadow(src=crane.images, alt=crane.name, loading="lazy")
           
           .crane-features.mb-5
             h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.features}

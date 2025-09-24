@@ -27,14 +27,7 @@ block content
       .row
         .col-12.col-lg-8.mb-5.mb-lg-0
           .forklift-gallery.mb-5
-            .swiper.crane-detail-swiper
-              .swiper-wrapper
-                each image in forklift.images
-                  .swiper-slide
-                    img.img-fluid.rounded.shadow(src=image, alt=forklift.name, loading="lazy")
-              .swiper-pagination
-              .swiper-button-next
-              .swiper-button-prev
+            img.img-fluid.rounded.shadow(src=forklift.images, alt=forklift.name, loading="lazy")
           
           .forklift-features.mb-4.mb-md-5
             h3.display-6.fw-bold.text-dark.mb-4 #{siteConfig.texts.features}
@@ -172,5 +165,3 @@ block content
               i.fas.fa-phone.text-warning.fa-2x.me-3
               span.display-6.fw-bold.text-dark #{siteConfig.contact.phoneDisplay}
 
-block scripts
-  script(src="/js/slider.js")

@@ -2,14 +2,7 @@ mixin craneCard(crane)
   .col-lg-4.col-md-6.mb-4
     .card.h-100.shadow-sm.border-0.hover-card
       .position-relative
-        .swiper.crane-swiper
-          .swiper-wrapper
-            each image in crane.images
-              .swiper-slide
-                img.card-img-top(src=image, alt=crane.name, loading="lazy")
-          .swiper-pagination
-          .swiper-button-next
-          .swiper-button-prev
+        img.card-img-top(src=crane.images, alt=crane.name, loading="lazy")
         .badge.bg-warning.position-absolute.top-0.end-0.m-2
           i.fas.fa-check.me-1
           | Mevcut
