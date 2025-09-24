@@ -1,13 +1,26 @@
 FROM node:18-alpine
 
+# Güvenlik için non-root user oluştur
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+
 WORKDIR /app
 
+# Package dosyalarını kopyala ve bağımlılıkları yükle
 COPY package*.json ./
+RUN npm ci --only=production && npm cache clean --force
 
-RUN npm ci --only=production
+# Uygulama dosyalarını kopyala
+COPY --chown=nextjs:nodejs . .
 
-COPY . .
+# Port'u 2021 olarak expose et
+EXPOSE 2021
 
-EXPOSE 3000
+# Non-root user ile çalıştır
+USER nextjs
+
+# Health check ekle
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD node -e "require('http').get('http://localhost:2021', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"
 
 CMD ["npm", "start"]

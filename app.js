@@ -10,7 +10,7 @@ const craneRoutes = require("./src/routes/cranes");
 const seoMiddleware = require("./src/middleware/seoMiddleware");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 2021;
 
 app.use(
   helmet({
@@ -76,7 +76,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server çalışıyor: http://localhost:${PORT}`);
   console.log(`📱 Vinç kiralama sitesi hazır!`);
+  console.log(`🐳 Docker container'da çalışıyor`);
 });

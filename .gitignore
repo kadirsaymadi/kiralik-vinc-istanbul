@@ -72,6 +72,7 @@ dist
 # Storybook build outputs
 .out
 .storybook-out
+package-lock.json
 
 # Temporary folders
 tmp/
