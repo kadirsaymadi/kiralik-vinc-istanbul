@@ -205,7 +205,7 @@ const homeController = {
     const baseUrl = "https://kiralikvincistanbul.com";
     const currentDate = new Date().toISOString().split("T")[0];
 
-    // Ana sayfalar
+    // Ana sayfalar - En yüksek öncelik
     const mainPages = [
       { url: "/", priority: "1.0", changefreq: "daily" },
       { url: "/hizmet-bolgeleri", priority: "0.9", changefreq: "weekly" },
@@ -217,13 +217,14 @@ const homeController = {
       },
       { url: "/kiralik-forkliftler", priority: "0.9", changefreq: "weekly" },
       { url: "/iletisim", priority: "0.8", changefreq: "monthly" },
+      { url: "/teklif-al", priority: "0.8", changefreq: "monthly" },
     ];
 
     // Vinç detay sayfaları
     const cranePages = equipmentData.equipment
       .filter((eq) => eq.category === "vinç")
       .map((crane) => ({
-        url: `/vinc/${crane.slug}`,
+        url: `/vinc/${crane.id}`,
         priority: "0.7",
         changefreq: "monthly",
       }));
@@ -232,7 +233,7 @@ const homeController = {
     const platformPages = equipmentData.equipment
       .filter((eq) => eq.category === "sepetli-platform")
       .map((platform) => ({
-        url: `/kiralik-sepetli-platformlar/${platform.id}-kiralama`,
+        url: `/kiralik-sepetli-platformlar/${platform.id}`,
         priority: "0.7",
         changefreq: "monthly",
       }));
@@ -241,34 +242,34 @@ const homeController = {
     const forkliftPages = equipmentData.equipment
       .filter((eq) => eq.category === "forklift")
       .map((forklift) => ({
-        url: `/kiralik-forkliftler/${forklift.id}-kiralama`,
+        url: `/kiralik-forkliftler/${forklift.id}`,
         priority: "0.7",
         changefreq: "monthly",
       }));
 
-    // İlçe sayfaları
-    const districtPages = districtsData.districts.map((district) => ({
+    // İlçe sayfaları - Vinç
+    const districtCranePages = districtsData.districts.map((district) => ({
       url: `/kiralik-vinc-${district.slug}`,
-      priority: "0.6",
-      changefreq: "monthly",
+      priority: "0.8",
+      changefreq: "weekly",
     }));
 
-    // İlçe platform sayfaları
+    // İlçe sayfaları - Platform
     const districtPlatformPages = districtsData.districts.map((district) => ({
       url: `/kiralik-sepetli-platform-${district.slug}`,
-      priority: "0.6",
-      changefreq: "monthly",
+      priority: "0.7",
+      changefreq: "weekly",
     }));
 
-    // İlçe forklift sayfaları
+    // İlçe sayfaları - Forklift
     const districtForkliftPages = districtsData.districts.map((district) => ({
       url: `/kiralik-forklift-${district.slug}`,
-      priority: "0.6",
-      changefreq: "monthly",
+      priority: "0.7",
+      changefreq: "weekly",
     }));
 
-    // Mahalle sayfaları
-    const neighborhoodPages = [];
+    // Mahalle sayfaları - Vinç
+    const neighborhoodCranePages = [];
     districtsData.districts.forEach((district) => {
       district.neighborhoods.forEach((neighborhood) => {
         const turkishChars = {
@@ -295,29 +296,105 @@ const homeController = {
           .replace(/[^a-z0-9-]/g, "")
           .replace("-mahallesi", "");
 
-        neighborhoodPages.push({
+        neighborhoodCranePages.push({
           url: `/kiralik-vinc-${district.slug}/${neighborhoodSlug}`,
+          priority: "0.6",
+          changefreq: "monthly",
+        });
+      });
+    });
+
+    // Mahalle sayfaları - Platform
+    const neighborhoodPlatformPages = [];
+    districtsData.districts.forEach((district) => {
+      district.neighborhoods.forEach((neighborhood) => {
+        const turkishChars = {
+          ç: "c",
+          Ç: "C",
+          ğ: "g",
+          Ğ: "G",
+          ı: "i",
+          I: "I",
+          ö: "o",
+          Ö: "O",
+          ş: "s",
+          Ş: "S",
+          ü: "u",
+          Ü: "U",
+        };
+        const convertedName = neighborhood.replace(
+          /[çÇğĞıIöÖşŞüÜ]/g,
+          (char) => turkishChars[char] || char
+        );
+        const neighborhoodSlug = convertedName
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/[^a-z0-9-]/g, "")
+          .replace("-mahallesi", "");
+
+        neighborhoodPlatformPages.push({
+          url: `/kiralik-sepetli-platform-${district.slug}/${neighborhoodSlug}`,
           priority: "0.5",
           changefreq: "monthly",
         });
       });
     });
 
-    // Tüm sayfaları birleştir
+    // Mahalle sayfaları - Forklift
+    const neighborhoodForkliftPages = [];
+    districtsData.districts.forEach((district) => {
+      district.neighborhoods.forEach((neighborhood) => {
+        const turkishChars = {
+          ç: "c",
+          Ç: "C",
+          ğ: "g",
+          Ğ: "G",
+          ı: "i",
+          I: "I",
+          ö: "o",
+          Ö: "O",
+          ş: "s",
+          Ş: "S",
+          ü: "u",
+          Ü: "U",
+        };
+        const convertedName = neighborhood.replace(
+          /[çÇğĞıIöÖşŞüÜ]/g,
+          (char) => turkishChars[char] || char
+        );
+        const neighborhoodSlug = convertedName
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/[^a-z0-9-]/g, "")
+          .replace("-mahallesi", "");
+
+        neighborhoodForkliftPages.push({
+          url: `/kiralik-forklift-${district.slug}/${neighborhoodSlug}`,
+          priority: "0.5",
+          changefreq: "monthly",
+        });
+      });
+    });
+
+    // Tüm sayfaları birleştir ve sırala
     const allPages = [
       ...mainPages,
       ...cranePages,
       ...platformPages,
       ...forkliftPages,
-      ...districtPages,
+      ...districtCranePages,
       ...districtPlatformPages,
       ...districtForkliftPages,
-      ...neighborhoodPages,
+      ...neighborhoodCranePages,
+      ...neighborhoodPlatformPages,
+      ...neighborhoodForkliftPages,
     ];
 
     // XML sitemap oluştur
     let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" ';
+    sitemap += 'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" ';
+    sitemap += 'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n';
 
     allPages.forEach((page) => {
       sitemap += "  <url>\n";
@@ -330,7 +407,8 @@ const homeController = {
 
     sitemap += "</urlset>";
 
-    res.set("Content-Type", "text/xml");
+    res.set("Content-Type", "text/xml; charset=utf-8");
+    res.set("Cache-Control", "public, max-age=86400"); // 24 saat cache
     res.send(sitemap);
   },
 };

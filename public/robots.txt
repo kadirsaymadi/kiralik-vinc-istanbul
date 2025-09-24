@@ -1,38 +1,36 @@
 User-agent: *
 Allow: /
 
-# Ana sayfalar
+# Ana sayfalar - Yüksek öncelik
 Allow: /hizmet-bolgeleri
 Allow: /kiralik-vincler
 Allow: /kiralik-sepetli-platformlar
 Allow: /kiralik-forkliftler
 Allow: /iletisim
+Allow: /teklif-al
 
-# Vinç detay sayfaları
+# Ekipman detay sayfaları
 Allow: /vinc/
-
-# Platform detay sayfaları
 Allow: /kiralik-sepetli-platformlar/
-
-# Forklift detay sayfaları
 Allow: /kiralik-forkliftler/
 
-# İlçe sayfaları
+# İlçe sayfaları - Tüm kategoriler
 Allow: /kiralik-vinc-
 Allow: /kiralik-sepetli-platform-
 Allow: /kiralik-forklift-
 
-# Mahalle sayfaları
-Allow: /*/
+# Mahalle sayfaları - Tüm kategoriler
+Allow: /kiralik-vinc-*/
+Allow: /kiralik-sepetli-platform-*/
+Allow: /kiralik-forklift-*/
 
-# Engellenen dosyalar
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /*.json$
-Disallow: /src/
-Disallow: /node_modules/
 
-# Sitemap
+# Crawl delay (isteğe bağlı - ağır yüklenmeyi önlemek için)
+Crawl-delay: 1
+
+# Sitemap - Dinamik sitemap
 Sitemap: https://kiralikvincistanbul.com/sitemap.xml
+
+# Host bilgisi (Google için)
+Host: https://kiralikvincistanbul.com
 

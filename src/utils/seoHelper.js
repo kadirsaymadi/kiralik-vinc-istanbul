@@ -7,15 +7,25 @@ const seoHelper = {
 
   generateMetaTags: (data) => {
     const defaultTitle =
-      "İstanbul Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri";
+      "İstanbul Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri | 7/24 Hizmet";
     const defaultDescription =
-      "İstanbul'da profesyonel vinç kiralama hizmeti. Mobil ve sabit vinç kiralama, uygun fiyat, hızlı teslimat, deneyimli operatörler.";
+      "İstanbul'da profesyonel vinç kiralama hizmeti. 5 ton'dan 100 ton'a kadar mobil vinç, sepetli platform ve forklift kiralama. Uygun fiyat, hızlı teslimat, deneyimli operatörler. 7/24 hizmet.";
     const defaultKeywords = [
-      "vinç kiralama",
+      "vinç kiralama istanbul",
+      "mobil vinç kiralama",
+      "sabit vinç kiralama",
+      "sepetli platform kiralama",
+      "forklift kiralama",
+      "vinç operatörü",
+      "istanbul vinç hizmetleri",
+      "vinç kiralama fiyatları",
       "istanbul vinç",
+      "vinç kiralama",
+      "kiralık vinç",
       "mobil vinç",
       "sabit vinç",
-      "vinç operatörü",
+      "vinç operatörlü",
+      "7/24 vinç kiralama",
     ];
 
     return {

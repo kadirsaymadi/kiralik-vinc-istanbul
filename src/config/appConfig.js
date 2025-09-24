@@ -21,16 +21,33 @@ const appConfig = {
 
   // SEO Varsayılan Değerleri
   seo: {
-    defaultTitle: "İstanbul Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri",
+    defaultTitle:
+      "İstanbul Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri | 7/24 Hizmet",
     defaultDescription:
-      "İstanbul'da profesyonel vinç kiralama hizmeti. 25 ton'dan 350 ton'a kadar mobil ve sabit vinç kiralama. Uygun fiyat, hızlı teslimat, deneyimli operatörler. 7/24 hizmet.",
+      "İstanbul'da profesyonel vinç kiralama hizmeti. 5 ton'dan 100 ton'a kadar mobil vinç, sepetli platform ve forklift kiralama. Uygun fiyat, hızlı teslimat, deneyimli operatörler. 7/24 hizmet. Tüm ilçelerde.",
     defaultKeywords: [
       "vinç kiralama istanbul",
-      "mobil vinç",
-      "sabit vinç",
+      "mobil vinç kiralama",
+      "sabit vinç kiralama",
+      "sepetli platform kiralama",
+      "forklift kiralama",
       "vinç operatörü",
       "istanbul vinç hizmetleri",
       "vinç kiralama fiyatları",
+      "istanbul vinç",
+      "vinç kiralama",
+      "kiralık vinç",
+      "mobil vinç",
+      "sabit vinç",
+      "vinç operatörlü",
+      "7/24 vinç kiralama",
+      "istanbul ilçeleri vinç",
+      "beyoğlu vinç",
+      "kadıköy vinç",
+      "şişli vinç",
+      "beşiktaş vinç",
+      "fatih vinç",
+      "üsküdar vinç",
     ],
   },
 

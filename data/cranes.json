@@ -2,6 +2,7 @@
   "equipment": [
     {
       "id": "5-tonluk-vinc",
+      "slug": "5-tonluk-vinc",
       "name": "5 Tonluk Kiralık Vinç",
       "type": "Mobil Vinç",
       "category": "vinç",
@@ -16,19 +17,19 @@
         "Şehir içi uyumlu",
         "Hızlı kurulum"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/5-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "5-ton", "şehir-içi"],
       "seo": {
-        "title": "5 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 5 tonluk mobil vinç kiralama hizmeti. Küçük projeler için ideal, profesyonel operatörlü.",
+        "title": "5 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat | Uygun Fiyat",
+        "description": "İstanbul'da 5 tonluk mobil vinç kiralama hizmeti. Küçük projeler için ideal, profesyonel operatörlü, uygun fiyat. Hemen teklif alın. Hemen teklif alın.",
         "keywords": [
-          "5 ton vinç",
-          "mobil vinç kiralama",
-          "istanbul vinç",
-          "küçük proje vinç"
+          "5 ton vinç kiralama",
+          "5 tonluk mobil vinç",
+          "istanbul 5 ton vinç",
+          "küçük proje vinç",
+          "5 ton vinç fiyat",
+          "mobil vinç kiralama istanbul"
         ]
       }
     },
@@ -48,21 +49,20 @@
         "Güvenilir performans",
         "Kolay operasyon"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/10-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "10-ton", "orta-proje"],
       "seo": {
-        "title": "10 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 10 tonluk mobil vinç kiralama hizmeti. Orta ölçekli projeler için ideal.",
+        "title": "10 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 10 tonluk mobil vinç kiralama hizmeti. Orta ölçekli projeler için ideal. Hemen teklif alın.",
         "keywords": [
           "10 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "orta proje vinç"
         ]
-      }
+      },
+      "slug": "10-tonluk-vinc"
     },
     {
       "id": "15-tonluk-vinc",
@@ -80,21 +80,20 @@
         "Güvenilir çözüm",
         "Modern teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/15-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "15-ton", "orta-büyük"],
       "seo": {
-        "title": "15 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 15 tonluk mobil vinç kiralama hizmeti. Orta-büyük projeler için güçlü çözüm.",
+        "title": "15 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 15 tonluk mobil vinç kiralama hizmeti. Orta-büyük projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "15 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "orta büyük proje vinç"
         ]
-      }
+      },
+      "slug": "15-tonluk-vinc"
     },
     {
       "id": "20-tonluk-vinc",
@@ -112,21 +111,20 @@
         "Uzun bom uzunluğu",
         "Güçlü motor"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/20-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "20-ton", "büyük-proje"],
       "seo": {
-        "title": "20 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 20 tonluk mobil vinç kiralama hizmeti. Büyük projeler için güçlü çözüm.",
+        "title": "20 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 20 tonluk mobil vinç kiralama hizmeti. Büyük projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "20 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "büyük proje vinç"
         ]
-      }
+      },
+      "slug": "20-tonluk-vinc"
     },
     {
       "id": "25-tonluk-vinc",
@@ -144,21 +142,20 @@
         "Profesyonel çözüm",
         "Gelişmiş teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/25-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "25-ton", "endüstriyel"],
       "seo": {
-        "title": "25 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 25 tonluk mobil vinç kiralama hizmeti. Endüstriyel projeler için ideal.",
+        "title": "25 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 25 tonluk mobil vinç kiralama hizmeti. Endüstriyel projeler için ideal. Hemen teklif alın.",
         "keywords": [
           "25 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "endüstriyel proje vinç"
         ]
-      }
+      },
+      "slug": "25-tonluk-vinc"
     },
     {
       "id": "30-tonluk-vinc",
@@ -176,21 +173,20 @@
         "Yüksek performans",
         "Güvenilir operasyon"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/30-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "30-ton", "ağır-yük"],
       "seo": {
-        "title": "30 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 30 tonluk mobil vinç kiralama hizmeti. Ağır yükler için güçlü çözüm.",
+        "title": "30 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 30 tonluk mobil vinç kiralama hizmeti. Ağır yükler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "30 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "ağır yük vinç"
         ]
-      }
+      },
+      "slug": "30-tonluk-vinc"
     },
     {
       "id": "35-tonluk-vinc",
@@ -208,21 +204,20 @@
         "Uzun erişim",
         "Güçlü motor sistemi"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/35-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "35-ton", "endüstriyel"],
       "seo": {
-        "title": "35 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 35 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel projeler için güçlü çözüm.",
+        "title": "35 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 35 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "35 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "büyük endüstriyel proje vinç"
         ]
-      }
+      },
+      "slug": "35-tonluk-vinc"
     },
     {
       "id": "40-tonluk-vinc",
@@ -240,21 +235,20 @@
         "Profesyonel çözüm",
         "En son teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/40-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "40-ton", "mega-proje"],
       "seo": {
-        "title": "40 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 40 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
+        "title": "40 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 40 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "40 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "mega proje vinç"
         ]
-      }
+      },
+      "slug": "40-tonluk-vinc"
     },
     {
       "id": "45-tonluk-vinc",
@@ -272,21 +266,20 @@
         "Yüksek performans",
         "Güvenilir çözüm"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/45-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "45-ton", "büyük-inşaat"],
       "seo": {
-        "title": "45 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 45 tonluk mobil vinç kiralama hizmeti. Büyük inşaat projeleri için güçlü çözüm.",
+        "title": "45 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 45 tonluk mobil vinç kiralama hizmeti. Büyük inşaat projeleri için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "45 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "büyük inşaat proje vinç"
         ]
-      }
+      },
+      "slug": "45-tonluk-vinc"
     },
     {
       "id": "50-tonluk-vinc",
@@ -304,21 +297,20 @@
         "Uzun bom uzunluğu",
         "Güçlü motor sistemi"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/50-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "50-ton", "endüstriyel-mega"],
       "seo": {
-        "title": "50 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 50 tonluk mobil vinç kiralama hizmeti. Endüstriyel mega projeler için güçlü çözüm.",
+        "title": "50 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 50 tonluk mobil vinç kiralama hizmeti. Endüstriyel mega projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "50 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "endüstriyel mega proje vinç"
         ]
-      }
+      },
+      "slug": "50-tonluk-vinc"
     },
     {
       "id": "55-tonluk-vinc",
@@ -336,21 +328,20 @@
         "Profesyonel çözüm",
         "Gelişmiş teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/55-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "55-ton", "endüstriyel-tesis"],
       "seo": {
-        "title": "55 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 55 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel tesisler için güçlü çözüm.",
+        "title": "55 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 55 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel tesisler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "55 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "büyük endüstriyel tesis vinç"
         ]
-      }
+      },
+      "slug": "55-tonluk-vinc"
     },
     {
       "id": "60-tonluk-vinc",
@@ -368,21 +359,20 @@
         "Uzun erişim mesafesi",
         "En son teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/60-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "60-ton", "mega-endüstriyel"],
       "seo": {
-        "title": "60 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 60 tonluk mobil vinç kiralama hizmeti. Mega endüstriyel projeler için güçlü çözüm.",
+        "title": "60 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 60 tonluk mobil vinç kiralama hizmeti. Mega endüstriyel projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "60 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "mega endüstriyel proje vinç"
         ]
-      }
+      },
+      "slug": "60-tonluk-vinc"
     },
     {
       "id": "65-tonluk-vinc",
@@ -400,21 +390,20 @@
         "Yüksek performans",
         "Güvenilir çözüm"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/65-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "65-ton", "büyük-inşaat-endüstriyel"],
       "seo": {
-        "title": "65 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 65 tonluk mobil vinç kiralama hizmeti. Büyük inşaat ve endüstriyel projeler için güçlü çözüm.",
+        "title": "65 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 65 tonluk mobil vinç kiralama hizmeti. Büyük inşaat ve endüstriyel projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "65 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "büyük inşaat endüstriyel proje vinç"
         ]
-      }
+      },
+      "slug": "65-tonluk-vinc"
     },
     {
       "id": "70-tonluk-vinc",
@@ -432,21 +421,20 @@
         "Uzun bom uzunluğu",
         "Güçlü motor sistemi"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/70-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "70-ton", "mega-proje"],
       "seo": {
-        "title": "70 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 70 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
+        "title": "70 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 70 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "70 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "mega proje vinç"
         ]
-      }
+      },
+      "slug": "70-tonluk-vinc"
     },
     {
       "id": "75-tonluk-vinc",
@@ -464,21 +452,20 @@
         "Profesyonel çözüm",
         "Gelişmiş teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/75-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "75-ton", "endüstriyel-mega"],
       "seo": {
-        "title": "75 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 75 tonluk mobil vinç kiralama hizmeti. Endüstriyel mega projeler için güçlü çözüm.",
+        "title": "75 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 75 tonluk mobil vinç kiralama hizmeti. Endüstriyel mega projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "75 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "endüstriyel mega proje vinç"
         ]
-      }
+      },
+      "slug": "75-tonluk-vinc"
     },
     {
       "id": "80-tonluk-vinc",
@@ -496,21 +483,20 @@
         "Uzun erişim mesafesi",
         "En son teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/80-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "80-ton", "endüstriyel-tesis"],
       "seo": {
-        "title": "80 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 80 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel tesisler için güçlü çözüm.",
+        "title": "80 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 80 tonluk mobil vinç kiralama hizmeti. Büyük endüstriyel tesisler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "80 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "büyük endüstriyel tesis vinç"
         ]
-      }
+      },
+      "slug": "80-tonluk-vinc"
     },
     {
       "id": "85-tonluk-vinc",
@@ -528,21 +514,20 @@
         "Yüksek performans",
         "Güvenilir çözüm"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/85-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "85-ton", "mega-endüstriyel"],
       "seo": {
-        "title": "85 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 85 tonluk mobil vinç kiralama hizmeti. Mega endüstriyel projeler için güçlü çözüm.",
+        "title": "85 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 85 tonluk mobil vinç kiralama hizmeti. Mega endüstriyel projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "85 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "mega endüstriyel proje vinç"
         ]
-      }
+      },
+      "slug": "85-tonluk-vinc"
     },
     {
       "id": "90-tonluk-vinc",
@@ -560,21 +545,20 @@
         "Uzun bom uzunluğu",
         "Güçlü motor sistemi"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/90-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "90-ton", "büyük-inşaat-endüstriyel"],
       "seo": {
-        "title": "90 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 90 tonluk mobil vinç kiralama hizmeti. Büyük inşaat ve endüstriyel projeler için güçlü çözüm.",
+        "title": "90 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 90 tonluk mobil vinç kiralama hizmeti. Büyük inşaat ve endüstriyel projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "90 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "büyük inşaat endüstriyel proje vinç"
         ]
-      }
+      },
+      "slug": "90-tonluk-vinc"
     },
     {
       "id": "95-tonluk-vinc",
@@ -592,21 +576,20 @@
         "Profesyonel çözüm",
         "Gelişmiş teknoloji"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/95-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "95-ton", "mega-proje"],
       "seo": {
-        "title": "95 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 95 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
+        "title": "95 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 95 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "95 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "mega proje vinç"
         ]
-      }
+      },
+      "slug": "95-tonluk-vinc"
     },
     {
       "id": "100-tonluk-vinc",
@@ -624,21 +607,20 @@
         "En son teknoloji",
         "Maksimum güvenlik"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-vinc/100-tonluk-vinc.webp"],
       "availability": true,
       "tags": ["mobil", "100-ton", "mega-proje"],
       "seo": {
-        "title": "100 Tonluk Mobil Vinç Kiralama İstanbul",
-        "description": "İstanbul'da 100 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm.",
+        "title": "100 Tonluk Mobil Vinç Kiralama İstanbul | Uygun Fiyat",
+        "description": "İstanbul'da 100 tonluk mobil vinç kiralama hizmeti. Mega projeler için güçlü çözüm. Hemen teklif alın.",
         "keywords": [
           "100 ton vinç",
           "mobil vinç kiralama",
           "istanbul vinç",
           "mega proje vinç"
         ]
-      }
+      },
+      "slug": "100-tonluk-vinc"
     },
     {
       "id": "1-5-tonluk-forklift",
@@ -655,9 +637,7 @@
         "Sessiz çalışma",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/1-5-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "elektrikli", "1.5-ton"],
       "seo": {
@@ -669,7 +649,8 @@
           "istanbul forklift kiralama",
           "küçük depo forklift"
         ]
-      }
+      },
+      "slug": "1-5-tonluk-forklift"
     },
     {
       "id": "2-tonluk-forklift",
@@ -686,9 +667,7 @@
         "Sessiz çalışma",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/2-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "elektrikli", "2-ton"],
       "seo": {
@@ -700,7 +679,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "2-tonluk-forklift"
     },
     {
       "id": "2-5-tonluk-forklift",
@@ -717,9 +697,7 @@
         "Sessiz çalışma",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/2-5-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "elektrikli", "2.5-ton"],
       "seo": {
@@ -731,7 +709,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "2-5-tonluk-forklift"
     },
     {
       "id": "3-tonluk-forklift",
@@ -748,9 +727,7 @@
         "Sessiz çalışma",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/3-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "elektrikli", "3-ton"],
       "seo": {
@@ -762,7 +739,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "3-tonluk-forklift"
     },
     {
       "id": "3-5-tonluk-forklift",
@@ -779,9 +757,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/3-5-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "3.5-ton"],
       "seo": {
@@ -793,7 +769,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "3-5-tonluk-forklift"
     },
     {
       "id": "4-tonluk-forklift",
@@ -810,9 +787,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/4-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "4-ton"],
       "seo": {
@@ -824,7 +799,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "4-tonluk-forklift"
     },
     {
       "id": "4-5-tonluk-forklift",
@@ -841,9 +817,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/4-5-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "4.5-ton"],
       "seo": {
@@ -855,7 +829,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "4-5-tonluk-forklift"
     },
     {
       "id": "5-tonluk-forklift",
@@ -872,9 +847,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/5-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "5-ton"],
       "seo": {
@@ -886,7 +859,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "5-tonluk-forklift"
     },
     {
       "id": "5-5-tonluk-forklift",
@@ -903,9 +877,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/5-5-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "5.5-ton"],
       "seo": {
@@ -917,7 +889,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "5-5-tonluk-forklift"
     },
     {
       "id": "6-tonluk-forklift",
@@ -934,9 +907,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/6-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "6-ton"],
       "seo": {
@@ -948,7 +919,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "6-tonluk-forklift"
     },
     {
       "id": "6-5-tonluk-forklift",
@@ -965,9 +937,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/6-5-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "6.5-ton"],
       "seo": {
@@ -979,7 +949,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "6-5-tonluk-forklift"
     },
     {
       "id": "7-tonluk-forklift",
@@ -996,9 +967,7 @@
         "Yüksek güç",
         "Düşük bakım maliyeti"
       ],
-      "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-      ],
+      "images": ["/istanbul-kiralik/kiralik-forklift/7-tonluk-forklift.webp"],
       "availability": true,
       "tags": ["forklift", "dizel", "7-ton"],
       "seo": {
@@ -1010,7 +979,8 @@
           "istanbul forklift kiralama",
           "depo forklift"
         ]
-      }
+      },
+      "slug": "7-tonluk-forklift"
     },
     {
       "id": "10-metre-sepetli-platform",
@@ -1028,7 +998,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/10-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "10m", "yüksek-erişim"],
@@ -1041,7 +1011,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "10-metre-sepetli-platform"
     },
     {
       "id": "15-metre-sepetli-platform",
@@ -1059,7 +1030,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/15-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "15m", "yüksek-erişim"],
@@ -1072,7 +1043,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "15-metre-sepetli-platform"
     },
     {
       "id": "20-metre-sepetli-platform",
@@ -1090,7 +1062,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/20-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "20m", "yüksek-erişim"],
@@ -1103,7 +1075,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "20-metre-sepetli-platform"
     },
     {
       "id": "25-metre-sepetli-platform",
@@ -1121,7 +1094,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/25-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "25m", "yüksek-erişim"],
@@ -1134,7 +1107,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "25-metre-sepetli-platform"
     },
     {
       "id": "30-metre-sepetli-platform",
@@ -1152,7 +1126,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/30-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "30m", "yüksek-erişim"],
@@ -1165,7 +1139,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "30-metre-sepetli-platform"
     },
     {
       "id": "35-metre-sepetli-platform",
@@ -1183,7 +1158,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/35-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "35m", "yüksek-erişim"],
@@ -1196,7 +1171,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "35-metre-sepetli-platform"
     },
     {
       "id": "40-metre-sepetli-platform",
@@ -1214,7 +1190,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/40-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "40m", "yüksek-erişim"],
@@ -1227,7 +1203,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "40-metre-sepetli-platform"
     },
     {
       "id": "45-metre-sepetli-platform",
@@ -1245,7 +1222,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/45-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "45m", "yüksek-erişim"],
@@ -1258,7 +1235,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "45-metre-sepetli-platform"
     },
     {
       "id": "50-metre-sepetli-platform",
@@ -1276,7 +1254,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/50-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "50m", "yüksek-erişim"],
@@ -1289,7 +1267,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "50-metre-sepetli-platform"
     },
     {
       "id": "55-metre-sepetli-platform",
@@ -1307,7 +1286,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/55-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "55m", "yüksek-erişim"],
@@ -1320,7 +1299,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "55-metre-sepetli-platform"
     },
     {
       "id": "60-metre-sepetli-platform",
@@ -1338,7 +1318,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/60-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "60m", "yüksek-erişim"],
@@ -1351,7 +1331,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "60-metre-sepetli-platform"
     },
     {
       "id": "65-metre-sepetli-platform",
@@ -1369,7 +1350,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/65-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "65m", "yüksek-erişim"],
@@ -1382,7 +1363,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "65-metre-sepetli-platform"
     },
     {
       "id": "70-metre-sepetli-platform",
@@ -1400,7 +1382,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/70-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "70m", "yüksek-erişim"],
@@ -1413,7 +1395,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "70-metre-sepetli-platform"
     },
     {
       "id": "75-metre-sepetli-platform",
@@ -1431,7 +1414,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/75-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "75m", "yüksek-erişim"],
@@ -1444,7 +1427,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "75-metre-sepetli-platform"
     },
     {
       "id": "80-metre-sepetli-platform",
@@ -1462,7 +1446,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/80-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "80m", "yüksek-erişim"],
@@ -1475,7 +1459,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "80-metre-sepetli-platform"
     },
     {
       "id": "85-metre-sepetli-platform",
@@ -1493,7 +1478,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/85-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "85m", "yüksek-erişim"],
@@ -1506,7 +1491,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "85-metre-sepetli-platform"
     },
     {
       "id": "90-metre-sepetli-platform",
@@ -1524,7 +1510,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/90-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "90m", "yüksek-erişim"],
@@ -1537,7 +1523,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "90-metre-sepetli-platform"
     },
     {
       "id": "95-metre-sepetli-platform",
@@ -1555,7 +1542,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/95-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "95m", "yüksek-erişim"],
@@ -1568,7 +1555,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "95-metre-sepetli-platform"
     },
     {
       "id": "100-metre-sepetli-platform",
@@ -1586,7 +1574,7 @@
         "Modern teknoloji"
       ],
       "images": [
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+        "/istanbul-kiralik/kiralik-sepetli-platform/100-metre-sepetli-platform.webp"
       ],
       "availability": true,
       "tags": ["sepetli-platform", "100m", "yüksek-erişim"],
@@ -1599,7 +1587,8 @@
           "istanbul platform kiralama",
           "yüksek erişim"
         ]
-      }
+      },
+      "slug": "100-metre-sepetli-platform"
     }
   ]
 }
