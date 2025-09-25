@@ -22,6 +22,24 @@
   box-sizing: border-box;
 }
 
+/* Deprecated API hatasını tamamen önlemek için güçlü font boyutu kuralları */
+html {
+  font-size: 16px !important;
+}
+
+body, html {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+/* Tüm başlık elementleri için mutlak font boyutları */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
 body {
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
@@ -32,83 +50,83 @@ body {
 }
 
 /* Başlık elementleri için açık font boyutları - deprecated API hatasını önler */
-h1, .h1 {
+h1, .h1, section h1, .container h1, .row h1 {
   font-size: 2.5rem !important;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
 }
 
-h2, .h2 {
+h2, .h2, section h2, .container h2, .row h2 {
   font-size: 2rem !important;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0.875rem;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 0.875rem !important;
 }
 
-h3, .h3 {
+h3, .h3, section h3, .container h3, .row h3 {
   font-size: 1.125rem !important;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0.75rem;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  margin-bottom: 0.75rem !important;
 }
 
-h4, .h4 {
+h4, .h4, section h4, .container h4, .row h4 {
   font-size: 1.5rem !important;
-  font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 0.625rem;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.625rem !important;
 }
 
-h5, .h5 {
+h5, .h5, section h5, .container h5, .row h5 {
   font-size: 1.25rem !important;
-  font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 0.5rem !important;
 }
 
-h6, .h6 {
+h6, .h6, section h6, .container h6, .row h6 {
   font-size: 1rem !important;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.5rem !important;
 }
 
-/* Display sınıfları için de açık boyutlar */
-.display-1 {
+/* Display sınıfları için de açık boyutlar - deprecated API hatasını önler */
+.display-1, h1.display-1, .h1.display-1 {
   font-size: 5rem !important;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
 }
 
-.display-2 {
+.display-2, h1.display-2, .h1.display-2 {
   font-size: 4.5rem !important;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
 }
 
-.display-3 {
+.display-3, h1.display-3, .h1.display-3 {
   font-size: 4rem !important;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
 }
 
-.display-4 {
+.display-4, h1.display-4, .h1.display-4 {
   font-size: 3.5rem !important;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
 }
 
-.display-5 {
+.display-5, h1.display-5, .h1.display-5 {
   font-size: 3rem !important;
-  font-weight: 700;
-  line-height: 1.1;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
 }
 
-.display-6 {
+.display-6, h2.display-6, .h2.display-6 {
   font-size: 2.5rem !important;
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
 }
 
 .bg-gradient-primary {
@@ -788,43 +806,43 @@ h6, .h6 {
   }
 
   /* Responsive font boyutları - deprecated API hatasını önler */
-  h1, .h1 {
+  h1, .h1, section h1, .container h1, .row h1 {
     font-size: 2rem !important;
   }
 
-  h2, .h2 {
+  h2, .h2, section h2, .container h2, .row h2 {
     font-size: 1.75rem !important;
   }
 
-  h3, .h3 {
+  h3, .h3, section h3, .container h3, .row h3 {
     font-size: 1.5rem !important;
   }
 
-  h4, .h4 {
+  h4, .h4, section h4, .container h4, .row h4 {
     font-size: 1.25rem !important;
   }
 
-  .display-1 {
+  .display-1, h1.display-1, .h1.display-1 {
     font-size: 3.5rem !important;
   }
 
-  .display-2 {
+  .display-2, h1.display-2, .h1.display-2 {
     font-size: 3rem !important;
   }
 
-  .display-3 {
+  .display-3, h1.display-3, .h1.display-3 {
     font-size: 2.75rem !important;
   }
 
-  .display-4 {
+  .display-4, h1.display-4, .h1.display-4 {
     font-size: 2.5rem !important;
   }
 
-  .display-5 {
+  .display-5, h1.display-5, .h1.display-5 {
     font-size: 2.25rem !important;
   }
 
-  .display-6 {
+  .display-6, h2.display-6, .h2.display-6 {
     font-size: 2rem !important;
   }
 
@@ -847,44 +865,44 @@ h6, .h6 {
     padding-right: 15px;
   }
 
-  /* Mobil için daha küçük font boyutları */
-  h1, .h1 {
+  /* Mobil için daha küçük font boyutları - deprecated API hatasını önler */
+  h1, .h1, section h1, .container h1, .row h1 {
     font-size: 1.75rem !important;
   }
 
-  h2, .h2 {
+  h2, .h2, section h2, .container h2, .row h2 {
     font-size: 1.5rem !important;
   }
 
-  h3, .h3 {
+  h3, .h3, section h3, .container h3, .row h3 {
     font-size: 1.25rem !important;
   }
 
-  h4, .h4 {
+  h4, .h4, section h4, .container h4, .row h4 {
     font-size: 1.125rem !important;
   }
 
-  .display-1 {
+  .display-1, h1.display-1, .h1.display-1 {
     font-size: 3rem !important;
   }
 
-  .display-2 {
+  .display-2, h1.display-2, .h1.display-2 {
     font-size: 2.75rem !important;
   }
 
-  .display-3 {
+  .display-3, h1.display-3, .h1.display-3 {
     font-size: 2.5rem !important;
   }
 
-  .display-4 {
+  .display-4, h1.display-4, .h1.display-4 {
     font-size: 2.25rem !important;
   }
 
-  .display-5 {
+  .display-5, h1.display-5, .h1.display-5 {
     font-size: 2rem !important;
   }
 
-  .display-6 {
+  .display-6, h2.display-6, .h2.display-6 {
     font-size: 1.75rem !important;
   }
 
