@@ -33,6 +33,11 @@ app.use(
           "https://fonts.googleapis.com",
           "https://images.unsplash.com",
         ],
+        frameSrc: [
+          "'self'",
+          "https://www.google.com",
+          "https://maps.google.com",
+        ],
       },
     },
   })
