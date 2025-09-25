@@ -20,7 +20,7 @@ block content
                 p.card-text.text-muted= district.description
               
               .district-neighborhoods.mb-4
-                h6.text-warning.mb-3 #{siteConfig.texts.neighborhoods} (#{district.neighborhoods.length}):
+                h3.text-warning.mb-3 #{siteConfig.texts.neighborhoods} (#{district.neighborhoods.length}):
                 .neighborhoods-list
                   each neighborhood in district.neighborhoods.slice(0, 6)
                     - const turkishChars = {'ç': 'c', 'Ç': 'C', 'ğ': 'g', 'Ğ': 'G', 'ı': 'i', 'I': 'I', 'ö': 'o', 'Ö': 'O', 'ş': 's', 'Ş': 'S', 'ü': 'u', 'Ü': 'U'}

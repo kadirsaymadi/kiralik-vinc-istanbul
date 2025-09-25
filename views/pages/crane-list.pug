@@ -12,19 +12,19 @@ block content
           .crane-stats.row.g-3.mb-4
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4= cranes.length
+                .stat-number.text-warning.fw-bold.h3= cranes.length
                 .stat-label.text-muted.small #{siteConfig.texts.craneModels}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4= cranes.filter(c => c.type === 'Mobil Vinç').length
+                .stat-number.text-warning.fw-bold.h3= cranes.filter(c => c.type === 'Mobil Vinç').length
                 .stat-label.text-muted.small #{siteConfig.texts.mobileCrane}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4= cranes.filter(c => c.type === 'Sabit Vinç').length
+                .stat-number.text-warning.fw-bold.h3= cranes.filter(c => c.type === 'Sabit Vinç').length
                 .stat-label.text-muted.small #{siteConfig.texts.fixedCrane}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4 350
+                .stat-number.text-warning.fw-bold.h3 350
                 .stat-label.text-muted.small Max Kapasite (Ton)
         
         .col-lg-4.text-center

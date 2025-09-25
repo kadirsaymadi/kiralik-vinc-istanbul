@@ -189,7 +189,8 @@ const appConfig = {
 
     // Bölümler
     featuredCranesTitle: "Öne Çıkan Vinç Modelleri",
-    featuredCranesSubtitle: "En popüler vinç modellerimizi keşfedin",
+    featuredCranesSubtitle:
+      "İstanbul'un en popüler vinç kiralık modellerimizi keşfedin.",
     otherEquipmentTitle: "Diğer Ekipmanlarımız",
     otherEquipmentSubtitle:
       "Vinçlerin yanında sepetli platform ve forklift kiralama hizmetleri",

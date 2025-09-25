@@ -10,19 +10,19 @@ block content
           .platform-stats.row.g-3.mb-4
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4= platforms.length
+                .stat-number.text-warning.fw-bold.h3= platforms.length
                 .stat-label.text-muted.small #{siteConfig.texts.craneModels}
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4 10-50m
+                .stat-number.text-warning.fw-bold.h3 10-50m
                 .stat-label.text-muted.small Orta Yükseklik
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4 55-100m
+                .stat-number.text-warning.fw-bold.h3 55-100m
                 .stat-label.text-muted.small Yüksek Yükseklik
             .col-md-3
               .stat-card.bg-white.p-3.rounded.shadow.text-center
-                .stat-number.text-warning.fw-bold.h4 230
+                .stat-number.text-warning.fw-bold.h3 230
                 .stat-label.text-muted.small Platform Kapasitesi (kg)
         .col-lg-4.text-center
           a.btn.btn-warning.btn-lg(href="/iletisim") #{siteConfig.texts.getQuote}
@@ -56,7 +56,7 @@ block content
                         span.small= platform.type
                 p.card-text.text-muted.small.flex-grow-1= platform.description
                 .features.mb-3
-                  h6.text-warning.mb-2 #{siteConfig.texts.features}:
+                  h3.text-warning.mb-2 #{siteConfig.texts.features}:
                   ul.list-unstyled.small
                     each feature in platform.features.slice(0, 3)
                       li
