@@ -537,6 +537,30 @@ h6 { font-size: 1rem; }
   object-fit: cover;
 }
 
+/* Card görselleri için sabit yükseklik */
+.card-img-top {
+  height: 250px;
+  object-fit: contain;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+/* Crane detail sayfası için ana görsel */
+.crane-gallery img {
+  height: 400px;
+  object-fit: contain;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+/* Hero section görselleri */
+.hero-image img {
+  height: 400px;
+  object-fit: contain;
+  width: 100%;
+  background-color: transparent;
+}
+
 .swiper-pagination-bullet {
   background: var(--accent-color);
 }
@@ -730,6 +754,24 @@ h6 { font-size: 1rem; }
 
   .crane-detail-swiper {
     height: 300px;
+  }
+
+  /* Mobil için card görselleri */
+  .card-img-top {
+    height: 200px;
+    object-fit: contain;
+  }
+
+  /* Mobil için crane detail görselleri */
+  .crane-gallery img {
+    height: 300px;
+    object-fit: contain;
+  }
+
+  /* Mobil için hero görselleri */
+  .hero-image img {
+    height: 300px;
+    object-fit: contain;
   }
 }
 
