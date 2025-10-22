@@ -62,8 +62,21 @@ const seoHelper = {
     switch (type) {
       case "Service":
         return {
-          ...baseSchema,
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: data.name || "İstanbul Vinç Kiralama",
+          description:
+            data.description || "İstanbul'da profesyonel vinç kiralama hizmeti",
+          areaServed: {
+            "@type": "City",
+            name: "İstanbul",
+          },
           serviceType: "Vinç Kiralama",
+          provider: {
+            "@type": "Organization",
+            name: "İstanbul Vinç Kiralama",
+            url: "https://kiralikvincistanbul.com",
+          },
           offers: {
             "@type": "Offer",
             priceCurrency: "TRY",
@@ -73,19 +86,22 @@ const seoHelper = {
 
       case "Product":
         return {
-          ...baseSchema,
+          "@context": "https://schema.org",
           "@type": "Product",
           name: data.name,
           description: data.description,
-          brand: data.brand || "Vinç",
+          brand: {
+            "@type": "Brand",
+            name: data.brand || "Vinç",
+          },
           category: data.category || "Vinç Kiralama",
           offers: {
             "@type": "Offer",
-            price: data.price,
             priceCurrency: "TRY",
             availability: data.availability
               ? "https://schema.org/InStock"
               : "https://schema.org/OutOfStock",
+            ...(data.price && { price: data.price }),
           },
         };
 
@@ -131,8 +147,9 @@ const seoHelper = {
         return {
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          name: "İletişim - İstanbul Vinç Kiralama",
+          name: data.name || "İletişim - İstanbul Vinç Kiralama",
           description:
+            data.description ||
             "İstanbul vinç kiralama hizmeti için bizimle iletişime geçin",
           url: "https://kiralikvincistanbul.com/iletisim",
           mainEntity: {
@@ -210,9 +227,10 @@ const seoHelper = {
         return {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "İstanbul Vinç Kiralama",
+          name: data.name || "İstanbul Vinç Kiralama",
           url: "https://kiralikvincistanbul.com",
           description:
+            data.description ||
             "İstanbul'da profesyonel vinç, sepetli platform ve forklift kiralama hizmeti",
           publisher: {
             "@type": "Organization",
@@ -221,8 +239,11 @@ const seoHelper = {
           },
           potentialAction: {
             "@type": "SearchAction",
-            target:
-              "https://kiralikvincistanbul.com/search?q={search_term_string}",
+            target: {
+              "@type": "EntryPoint",
+              urlTemplate:
+                "https://kiralikvincistanbul.com/search?q={search_term_string}",
+            },
             "query-input": "required name=search_term_string",
           },
         };
@@ -233,6 +254,7 @@ const seoHelper = {
   },
 
   generateBreadcrumbSchema: (breadcrumbs) => {
+    const baseUrl = "https://kiralikvincistanbul.com";
     return {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -240,7 +262,7 @@ const seoHelper = {
         "@type": "ListItem",
         position: index + 1,
         name: item.name,
-        item: item.url,
+        item: `${baseUrl}${item.url}`,
       })),
     };
   },

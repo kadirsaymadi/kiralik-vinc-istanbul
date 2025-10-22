@@ -566,15 +566,9 @@ const equipmentController = {
     const structuredData = seoHelper.generateStructuredData("Product", {
       name: platform.name,
       description: platform.description,
-      brand: {
-        "@type": "Brand",
-        name: "İstanbul Vinç Kiralama",
-      },
-      offers: {
-        "@type": "Offer",
-        availability: "https://schema.org/InStock",
-        priceCurrency: "TRY",
-      },
+      brand: "İstanbul Vinç Kiralama",
+      category: "Sepetli Platform Kiralama",
+      availability: platform.availability,
     });
 
     const breadcrumbs = [
@@ -651,15 +645,9 @@ const equipmentController = {
     const structuredData = seoHelper.generateStructuredData("Product", {
       name: forklift.name,
       description: forklift.description,
-      brand: {
-        "@type": "Brand",
-        name: "İstanbul Vinç Kiralama",
-      },
-      offers: {
-        "@type": "Offer",
-        availability: "https://schema.org/InStock",
-        priceCurrency: "TRY",
-      },
+      brand: "İstanbul Vinç Kiralama",
+      category: "Forklift Kiralama",
+      availability: forklift.availability,
     });
 
     const breadcrumbs = [

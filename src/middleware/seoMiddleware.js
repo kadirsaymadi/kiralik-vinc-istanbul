@@ -42,7 +42,10 @@ const seoMiddleware = (req, res, next) => {
       telephone: appConfig.contact.phone,
       contactType: "customer service",
       availableLanguage: "Turkish",
-      areaServed: "TR",
+      areaServed: {
+        "@type": "Country",
+        name: "TR",
+      },
       hoursAvailable: "24/7",
     },
     sameAs: [
