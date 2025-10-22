@@ -151,6 +151,53 @@ const homeController = {
     });
   },
 
+  contactForOffer: (req, res) => {
+    const seoData = {
+      seo: {
+        title: "Teklif Al - İstanbul Vinç Kiralama | Ücretsiz Fiyat Teklifi",
+        description:
+          "İstanbul vinç kiralama hizmeti için ücretsiz teklif alın. Profesyonel danışmanlık ve hızlı fiyat hesaplama.",
+        keywords: [
+          "vinç kiralama teklif",
+          "istanbul vinç fiyat",
+          "ücretsiz vinç teklifi",
+          "vinç kiralama danışmanlık",
+        ],
+      },
+      canonical: seoHelper.generateCanonicalUrl("/teklif-al"),
+      ogUrl: seoHelper.generateCanonicalUrl("/teklif-al"),
+    };
+
+    const metaTags = seoHelper.generateMetaTags(seoData);
+    const structuredData = seoHelper.generateStructuredData("ContactPage", {
+      name: "İstanbul Vinç Kiralama Teklif",
+      description: "Vinç kiralama hizmeti için ücretsiz teklif alma",
+    });
+
+    const breadcrumbs = [
+      { name: "Ana Sayfa", url: "/" },
+      { name: "Teklif Al", url: "/teklif-al" },
+    ];
+
+    res.render("pages/contact", {
+      title: metaTags.title,
+      description: metaTags.description,
+      keywords: metaTags.keywords,
+      canonical: metaTags.canonical,
+      ogTitle: metaTags.ogTitle,
+      ogDescription: metaTags.ogDescription,
+      ogImage: metaTags.ogImage,
+      ogUrl: metaTags.ogUrl,
+      structuredData: JSON.stringify(structuredData),
+      breadcrumbSchema: JSON.stringify(
+        seoHelper.generateBreadcrumbSchema(breadcrumbs)
+      ),
+      districts: districtsData.districts,
+      currentPath: "/teklif-al",
+      siteConfig: appConfig,
+    });
+  },
+
   districts: (req, res) => {
     const seoData = {
       seo: {

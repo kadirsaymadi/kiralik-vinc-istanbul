@@ -7,7 +7,7 @@ const craneController = require("../controllers/craneController");
 
 router.get("/", homeController.index);
 router.get("/hizmet-bolgeleri", homeController.districts);
-router.get("/kiralik-vincler", homeController.craneList);
+// Bu route src/routes/cranes.js dosyasında tanımlı - kopya route kaldırıldı
 router.get("/vinc/:crane", craneController.detail);
 router.get("/kiralik-sepetli-platformlar", equipmentController.platforms);
 router.get(
@@ -20,7 +20,7 @@ router.get(
   equipmentController.forkliftDetail
 );
 router.get("/iletisim", homeController.contact);
-router.get("/teklif-al", homeController.contact);
+router.get("/teklif-al", homeController.contactForOffer);
 router.get("/sitemap.xml", homeController.sitemap);
 
 module.exports = router;
