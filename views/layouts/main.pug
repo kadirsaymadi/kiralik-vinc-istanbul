@@ -14,6 +14,14 @@ html(lang="tr")
     meta(name="ICBM", content="41.0082, 28.9784")
     // Cache control kaldırıldı - CSS yükleme sorunu çözüldü
     
+    // Google tag (gtag.js)
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=AW-17704026770")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17704026770');
+    
     title= title || 'İstanbul Vinç Kiralama - Mobil ve Sabit Vinç Hizmetleri'
     meta(name="description", content=description || 'İstanbul\'da profesyonel vinç kiralama hizmeti')
     meta(name="keywords", content=keywords ? keywords.join(', ') : 'vinç kiralama, istanbul vinç')
